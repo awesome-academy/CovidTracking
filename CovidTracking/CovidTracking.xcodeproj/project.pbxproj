@@ -27,6 +27,16 @@
 		04AF182526535A9C00E3BB57 /* Arvo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04AF182126535A9B00E3BB57 /* Arvo-Regular.ttf */; };
 		04AF182626535A9C00E3BB57 /* Arvo-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04AF182226535A9B00E3BB57 /* Arvo-Italic.ttf */; };
 		04AF182726535A9C00E3BB57 /* Arvo-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04AF182326535A9B00E3BB57 /* Arvo-BoldItalic.ttf */; };
+		04AF18482654986E00E3BB57 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF18472654986E00E3BB57 /* Error.swift */; };
+		04AF184A2654989500E3BB57 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF18492654989500E3BB57 /* APIServices.swift */; };
+		04AF184C265498CE00E3BB57 /* CovidAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF184B265498CE00E3BB57 /* CovidAPIResponse.swift */; };
+		04AF184E2654997B00E3BB57 /* NewsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF184D2654997B00E3BB57 /* NewsAPIResponse.swift */; };
+		04AF185226549A5300E3BB57 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF185126549A5300E3BB57 /* URLs.swift */; };
+		04AFF1D126555AA100C31371 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04AFF1CF26555AA100C31371 /* Model.xcdatamodeld */; };
+		04AFF1DE26555C9100C31371 /* CoreDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFF1DD26555C9100C31371 /* CoreDataServices.swift */; };
+		04AFF1E026555CC900C31371 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFF1DF26555CC900C31371 /* CoreDataManager.swift */; };
+		04AFF1E226555D2A00C31371 /* CoreDataManager.CountryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFF1E126555D2A00C31371 /* CoreDataManager.CountryData.swift */; };
+		04AFF1E526556D1200C31371 /* FollowCountry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AFF1E326556D1200C31371 /* FollowCountry+CoreDataClass.swift */; };
 		3C45C287FB2D1AF1E69BCC7E /* Pods_CovidTracking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9897F711ED7E93D629275FF1 /* Pods_CovidTracking.framework */; };
 		E390B83626538CC600712E17 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390B83526538CC600712E17 /* MainTabBarViewController.swift */; };
 		E3FDAC9C26538E0D00D91465 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FDAC9B26538E0D00D91465 /* BaseNavigationController.swift */; };
@@ -59,6 +69,16 @@
 		04AF182126535A9B00E3BB57 /* Arvo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-Regular.ttf"; sourceTree = "<group>"; };
 		04AF182226535A9B00E3BB57 /* Arvo-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-Italic.ttf"; sourceTree = "<group>"; };
 		04AF182326535A9B00E3BB57 /* Arvo-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-BoldItalic.ttf"; sourceTree = "<group>"; };
+		04AF18472654986E00E3BB57 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		04AF18492654989500E3BB57 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		04AF184B265498CE00E3BB57 /* CovidAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidAPIResponse.swift; sourceTree = "<group>"; };
+		04AF184D2654997B00E3BB57 /* NewsAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIResponse.swift; sourceTree = "<group>"; };
+		04AF185126549A5300E3BB57 /* URLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLs.swift; path = CovidTracking/Utils/URLs.swift; sourceTree = SOURCE_ROOT; };
+		04AFF1D026555AA100C31371 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		04AFF1DD26555C9100C31371 /* CoreDataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServices.swift; sourceTree = "<group>"; };
+		04AFF1DF26555CC900C31371 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		04AFF1E126555D2A00C31371 /* CoreDataManager.CountryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.CountryData.swift; sourceTree = "<group>"; };
+		04AFF1E326556D1200C31371 /* FollowCountry+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FollowCountry+CoreDataClass.swift"; sourceTree = "<group>"; };
 		6ECB3964FB53828327209D15 /* Pods-CovidTracking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidTracking.debug.xcconfig"; path = "Target Support Files/Pods-CovidTracking/Pods-CovidTracking.debug.xcconfig"; sourceTree = "<group>"; };
 		9897F711ED7E93D629275FF1 /* Pods_CovidTracking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidTracking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CC3B6ABF511EC569E2F1A0 /* Pods-CovidTracking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidTracking.release.xcconfig"; path = "Target Support Files/Pods-CovidTracking/Pods-CovidTracking.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +158,7 @@
 			children = (
 				04381CCF2652D3C000B0A914 /* AppDelegate.swift */,
 				04381CD12652D3C000B0A914 /* SceneDelegate.swift */,
+				04AFF1DD26555C9100C31371 /* CoreDataServices.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -173,6 +194,49 @@
 			path = SwiftGen;
 			sourceTree = "<group>";
 		};
+		04AF1844265497F500E3BB57 /* CovidResponse */ = {
+			isa = PBXGroup;
+			children = (
+				04AF184B265498CE00E3BB57 /* CovidAPIResponse.swift */,
+			);
+			path = CovidResponse;
+			sourceTree = "<group>";
+		};
+		04AF18452654980B00E3BB57 /* NewsResponse */ = {
+			isa = PBXGroup;
+			children = (
+				04AF184D2654997B00E3BB57 /* NewsAPIResponse.swift */,
+			);
+			path = NewsResponse;
+			sourceTree = "<group>";
+		};
+		04AF18462654981600E3BB57 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				04AF18472654986E00E3BB57 /* Error.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		04AFF1CE26555A7C00C31371 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04AFF1E326556D1200C31371 /* FollowCountry+CoreDataClass.swift */,
+				04AFF1DC26555C6C00C31371 /* CoreDataManager */,
+				04AFF1CF26555AA100C31371 /* Model.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04AFF1DC26555C6C00C31371 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				04AFF1DF26555CC900C31371 /* CoreDataManager.swift */,
+				04AFF1E126555D2A00C31371 /* CoreDataManager.CountryData.swift */,
+			);
+			path = CoreDataManager;
+			sourceTree = "<group>";
+		};
 		D49931761963768D2903F712 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,16 +249,9 @@
 		E390B82826538BC300712E17 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				E390B82926538BD300712E17 /* Models */,
+				04AFF1CE26555A7C00C31371 /* Models */,
 			);
 			path = Domain;
-			sourceTree = "<group>";
-		};
-		E390B82926538BD300712E17 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		E390B82A26538BF300712E17 /* Scene */ = {
@@ -274,6 +331,10 @@
 		E390B83226538C4200712E17 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				04AF18462654981600E3BB57 /* Error */,
+				04AF18452654980B00E3BB57 /* NewsResponse */,
+				04AF1844265497F500E3BB57 /* CovidResponse */,
+				04AF18492654989500E3BB57 /* APIServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -288,6 +349,7 @@
 		E390B83426538C5B00712E17 /* Uitils */ = {
 			isa = PBXGroup;
 			children = (
+				04AF185126549A5300E3BB57 /* URLs.swift */,
 			);
 			path = Uitils;
 			sourceTree = "<group>";
@@ -430,15 +492,25 @@
 			files = (
 				E390B83626538CC600712E17 /* MainTabBarViewController.swift in Sources */,
 				E3FDAC9F26538ECD00D91465 /* TabBarItems.swift in Sources */,
+				04AF184C265498CE00E3BB57 /* CovidAPIResponse.swift in Sources */,
+				04AF185226549A5300E3BB57 /* URLs.swift in Sources */,
 				E3FDACBF2653958B00D91465 /* NewsViewController.swift in Sources */,
+				04AFF1D126555AA100C31371 /* Model.xcdatamodeld in Sources */,
+				04AFF1E226555D2A00C31371 /* CoreDataManager.CountryData.swift in Sources */,
+				04AF18482654986E00E3BB57 /* Error.swift in Sources */,
 				04AF181B26535A1800E3BB57 /* Fonts.swift in Sources */,
+				04AFF1DE26555C9100C31371 /* CoreDataServices.swift in Sources */,
+				04AF184E2654997B00E3BB57 /* NewsAPIResponse.swift in Sources */,
 				E3FDAC9C26538E0D00D91465 /* BaseNavigationController.swift in Sources */,
 				04381CD02652D3C000B0A914 /* AppDelegate.swift in Sources */,
+				04AFF1E026555CC900C31371 /* CoreDataManager.swift in Sources */,
 				E3FDACC6265395AF00D91465 /* UtilitiesViewController.swift in Sources */,
+				04AFF1E526556D1200C31371 /* FollowCountry+CoreDataClass.swift in Sources */,
 				04381CD22652D3C000B0A914 /* SceneDelegate.swift in Sources */,
 				E3FDACB12653953700D91465 /* TrackingViewController.swift in Sources */,
 				04AF18132653569300E3BB57 /* Assets.swift in Sources */,
 				E3FDACDE26539E4D00D91465 /* Localizable.swift in Sources */,
+				04AF184A2654989500E3BB57 /* APIServices.swift in Sources */,
 				E3FDACB72653956E00D91465 /* RankingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -757,6 +829,19 @@
 			productName = Localize_Swift;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		04AFF1CF26555AA100C31371 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04AFF1D026555AA100C31371 /* Model.xcdatamodel */,
+			);
+			currentVersion = 04AFF1D026555AA100C31371 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 04381CC42652D3C000B0A914 /* Project object */;
 }

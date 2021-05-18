@@ -1,0 +1,57 @@
+//
+//  APIServices.swift
+//  CovidTracking
+//
+//  Created by Tiến on 5/19/21.
+//  Copyright © 2021 Tiến. All rights reserved.
+//
+
+import Foundation
+import Alamofire
+import ObjectMapper
+import RxSwift
+
+struct APIServices {
+    public static let shared = APIServices()
+    
+    private var alamofireManager = Alamofire.Session.default
+    
+    private init() {
+        let configuration = URLSessionConfiguration.default
+        configuration.timeoutIntervalForRequest = 30
+        configuration.timeoutIntervalForResource = 30
+        alamofireManager = Alamofire.Session(configuration: configuration)
+    }
+    
+    func request<T: Mappable>(URL: String, responseType: T.Type) -> Observable<T> {
+        return Observable.create { observable in
+            self.alamofireManager.request(URL)
+            .validate()
+                .responseJSON { response in
+                    switch response.result {
+                    case .success(let value):
+                        guard let statusCode = response.response?.statusCode, statusCode == 200 else {
+                            observable.onError(BaseError.HTTPError)
+                            return
+                        }
+                        var json: Any
+                        if URL == CovidURLs.allCovidCase {
+                            json = ["data":value]
+                        } else {
+                            json = value
+                        }
+                        guard let object = Mapper<T>().map(JSONObject: json) else {
+                            observable.onError(BaseError.MapError)
+                            return
+                        }
+                        observable.onNext(object)
+                        observable.onCompleted()
+                    case .failure(_):
+                        observable.onError(BaseError.networkError)
+                    }
+                }
+            return Disposables.create()
+        }
+    }
+    
+}
