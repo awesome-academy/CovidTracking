@@ -1,3 +1,9 @@
+strings:
+  inputs: CovidTracking/Resource/en.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: CovidTracking/SwiftGen/Localizable.swift
+
 xcassets:
   inputs:
     - CovidTracking/Resource/Assets.xcassets
