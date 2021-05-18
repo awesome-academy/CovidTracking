@@ -5,3 +5,9 @@
   Created by Tiến on 5/18/21.
   Copyright © 2021 Tiến. All rights reserved.
 */
+
+"TrackingTitle" = "Tracking";
+"RankingTitle" = "Ranking";
+"NewsTitle" = "News";
+"UtilitiesTitle" = "Utilities";
+
