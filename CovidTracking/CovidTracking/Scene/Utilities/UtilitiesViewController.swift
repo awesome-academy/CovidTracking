@@ -18,7 +18,7 @@ final class UtilitiesViewController: UIViewController {
     }
     
     private func configureViews() {
-        title = LocalizationSystem.shared.localizedStringForKey(key: L10n.utilitiesTitle, comment: "")
+        title = L10n.utilitiesTitle.localized()
         
         view.backgroundColor = .yellow
     }
