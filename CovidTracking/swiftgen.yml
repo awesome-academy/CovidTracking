@@ -1,0 +1,12 @@
+xcassets:
+  inputs:
+    - CovidTracking/Resource/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: CovidTracking/SwiftGen/Assets.swift
+      
+fonts:
+  inputs: CovidTracking/Resource/Font
+  outputs:
+    templateName: swift5
+    output: CovidTracking/SwiftGen/Fonts.swift
