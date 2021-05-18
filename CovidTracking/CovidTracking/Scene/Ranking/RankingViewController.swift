@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import UIKit
 
 final class RankingViewController: UIViewController {
     
@@ -18,7 +17,7 @@ final class RankingViewController: UIViewController {
     }
     
     private func configureViews() {
-        title = LocalizationSystem.shared.localizedStringForKey(key: L10n.rankingTitle, comment: "")
+        title = L10n.rankingTitle.localized()
         
         view.backgroundColor = .blue
     }

@@ -17,7 +17,7 @@ final class NewsViewController: UIViewController {
     }
     
     private func configureViews() {
-        title = LocalizationSystem.shared.localizedStringForKey(key: L10n.newsTitle, comment: "")
+        title = L10n.newsTitle.localized()
         
         view.backgroundColor = .red
     }

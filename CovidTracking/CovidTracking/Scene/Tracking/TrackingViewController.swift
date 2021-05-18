@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 final class TrackingViewController: UIViewController {
     
@@ -17,7 +18,7 @@ final class TrackingViewController: UIViewController {
     }
     
     private func configureViews() {
-        title = LocalizationSystem.shared.localizedStringForKey(key: L10n.trackingTitle, comment: "")
+        title = L10n.trackingTitle.localized()
         
         view.backgroundColor = .systemPink
     }

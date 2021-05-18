@@ -39,8 +39,8 @@
 		E3FDACC02653958B00D91465 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3FDACBE2653958B00D91465 /* NewsViewController.xib */; };
 		E3FDACC6265395AF00D91465 /* UtilitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FDACC4265395AF00D91465 /* UtilitiesViewController.swift */; };
 		E3FDACC7265395AF00D91465 /* UtilitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3FDACC5265395AF00D91465 /* UtilitiesViewController.xib */; };
-		E3FDACCB265396A700D91465 /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FDACCA265396A700D91465 /* LocalizationSystem.swift */; };
 		E3FDACDE26539E4D00D91465 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FDACDD26539E4D00D91465 /* Localizable.swift */; };
+		E3FDACEA2653B69C00D91465 /* Localize_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = E3FDACE92653B69C00D91465 /* Localize_Swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,7 +73,6 @@
 		E3FDACBE2653958B00D91465 /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
 		E3FDACC4265395AF00D91465 /* UtilitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesViewController.swift; sourceTree = "<group>"; };
 		E3FDACC5265395AF00D91465 /* UtilitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UtilitiesViewController.xib; sourceTree = "<group>"; };
-		E3FDACCA265396A700D91465 /* LocalizationSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocalizationSystem.swift; path = ../../../../../Downloads/LocalizationSystem.swift; sourceTree = "<group>"; };
 		E3FDACDD26539E4D00D91465 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +88,7 @@
 				04381CFB2652D58F00B0A914 /* Alamofire in Frameworks */,
 				04381CF82652D52900B0A914 /* RxCocoa in Frameworks */,
 				04381D012652D5FE00B0A914 /* RxDataSources in Frameworks */,
+				E3FDACEA2653B69C00D91465 /* Localize_Swift in Frameworks */,
 				04381CF62652D52900B0A914 /* RxSwift in Frameworks */,
 				3C45C287FB2D1AF1E69BCC7E /* Pods_CovidTracking.framework in Frameworks */,
 			);
@@ -288,7 +288,6 @@
 		E390B83426538C5B00712E17 /* Uitils */ = {
 			isa = PBXGroup;
 			children = (
-				E3FDACCA265396A700D91465 /* LocalizationSystem.swift */,
 			);
 			path = Uitils;
 			sourceTree = "<group>";
@@ -327,6 +326,7 @@
 				04381D032652D65F00B0A914 /* Then */,
 				04381D062652D68700B0A914 /* Reusable */,
 				04381D092652D6DA00B0A914 /* SDWebImage */,
+				E3FDACE92653B69C00D91465 /* Localize_Swift */,
 			);
 			productName = CovidTracking;
 			productReference = 04381CCC2652D3C000B0A914 /* CovidTracking.app */;
@@ -365,6 +365,7 @@
 				04381D022652D65F00B0A914 /* XCRemoteSwiftPackageReference "Then" */,
 				04381D052652D68700B0A914 /* XCRemoteSwiftPackageReference "Reusable" */,
 				04381D082652D6DA00B0A914 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				E3FDACE82653B69C00D91465 /* XCRemoteSwiftPackageReference "Localize-Swift" */,
 			);
 			productRefGroup = 04381CCD2652D3C000B0A914 /* Products */;
 			projectDirPath = "";
@@ -436,7 +437,6 @@
 				E3FDACC6265395AF00D91465 /* UtilitiesViewController.swift in Sources */,
 				04381CD22652D3C000B0A914 /* SceneDelegate.swift in Sources */,
 				E3FDACB12653953700D91465 /* TrackingViewController.swift in Sources */,
-				E3FDACCB265396A700D91465 /* LocalizationSystem.swift in Sources */,
 				04AF18132653569300E3BB57 /* Assets.swift in Sources */,
 				E3FDACDE26539E4D00D91465 /* Localizable.swift in Sources */,
 				E3FDACB72653956E00D91465 /* RankingViewController.swift in Sources */,
@@ -700,6 +700,14 @@
 				minimumVersion = 5.11.1;
 			};
 		};
+		E3FDACE82653B69C00D91465 /* XCRemoteSwiftPackageReference "Localize-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Localize-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -742,6 +750,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 04381D082652D6DA00B0A914 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
+		};
+		E3FDACE92653B69C00D91465 /* Localize_Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3FDACE82653B69C00D91465 /* XCRemoteSwiftPackageReference "Localize-Swift" */;
+			productName = Localize_Swift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
