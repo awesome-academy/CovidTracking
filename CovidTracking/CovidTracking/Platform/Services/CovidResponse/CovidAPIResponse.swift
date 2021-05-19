@@ -8,6 +8,7 @@
 
 import Foundation
 import ObjectMapper
+import RxDataSources
 
 //MARK: -GroupResponse
 struct GroupResponse {
@@ -104,5 +105,30 @@ extension Details: Mappable {
         updated <- map["updated"]
         history <- map["dates"]
     }
+}
+
+extension Details: Hashable {
+    static func == (lhs: Details, rhs: Details) -> Bool {
+        return
+            lhs.confirmed == rhs.confirmed
+            && lhs.recovered == rhs.recovered
+            && lhs.deaths == rhs.deaths
+            && lhs.country == rhs.country
+            && lhs.sqKMArea == rhs.sqKMArea
+            && lhs.lifeExpectancy == rhs.lifeExpectancy
+            && lhs.continent == rhs.continent
+            && lhs.location == rhs.location
+            && lhs.population == rhs.population
+            && lhs.abbreviation == rhs.abbreviation
+            && lhs.capital == rhs.capital 
+            && lhs.updated == rhs.updated
+    }
+}
+
+extension Details: IdentifiableType {
+    var identity: String {
+        return self.country
+    }
     
+    typealias Identity = String
 }

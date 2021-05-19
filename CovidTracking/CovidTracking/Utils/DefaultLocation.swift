@@ -82,12 +82,10 @@ struct DefaultLocation {
            DefaultLocation.India,
        ]
 
-    func flag(country:String) -> String {
-        let base = 127397
-        var usv = String.UnicodeScalarView()
-        for i in country.utf16 {
-            usv.append(UnicodeScalar(base + Int(i))!)
-        }
-        return String(usv)
-    }
+    static let defaulLocation: [Details] = [
+        Vietnam,
+        Us,
+        India,
+        Brazin
+    ]
 }

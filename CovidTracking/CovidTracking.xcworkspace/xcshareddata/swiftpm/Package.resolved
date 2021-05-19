@@ -65,6 +65,15 @@
         }
       },
       {
+        "package": "RxSwiftExt",
+        "repositoryURL": "https://github.com/RxSwiftCommunity/RxSwiftExt",
+        "state": {
+          "branch": null,
+          "revision": "a42af9caeab63f2dbde318f1f3dc424f05871a37",
+          "version": "6.1.0"
+        }
+      },
+      {
         "package": "SDWebImage",
         "repositoryURL": "https://github.com/SDWebImage/SDWebImage",
         "state": {
