@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 import ObjectMapper
 import RxSwift
+import Then
 
 struct APIServices {
     public static let shared = APIServices()
@@ -17,9 +18,10 @@ struct APIServices {
     private var alamofireManager = Alamofire.Session.default
     
     private init() {
-        let configuration = URLSessionConfiguration.default
-        configuration.timeoutIntervalForRequest = 30
-        configuration.timeoutIntervalForResource = 30
+        let configuration = URLSessionConfiguration.default.then {
+            $0.timeoutIntervalForResource = 30
+            $0.timeoutIntervalForRequest = 30
+        }
         alamofireManager = Alamofire.Session(configuration: configuration)
     }
     
@@ -36,7 +38,7 @@ struct APIServices {
                         }
                         var json: Any
                         if URL == CovidURLs.allCovidCase {
-                            json = ["data":value]
+                            json = ["data": value]
                         } else {
                             json = value
                         }
@@ -46,7 +48,7 @@ struct APIServices {
                         }
                         observable.onNext(object)
                         observable.onCompleted()
-                    case .failure(_):
+                    case .failure:
                         observable.onError(BaseError.networkError)
                     }
                 }
