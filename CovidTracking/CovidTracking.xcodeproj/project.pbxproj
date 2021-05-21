@@ -37,6 +37,7 @@
 		04485CCB26576AC200E85DA3 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04485CC626576AC200E85DA3 /* RankingViewController.swift */; };
 		04485CCC26576AC200E85DA3 /* RankingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04485CC726576AC200E85DA3 /* RankingViewController.xib */; };
 		04485CCD26576AC200E85DA3 /* RankingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04485CC826576AC200E85DA3 /* RankingViewModel.swift */; };
+		046747DB265B3C3500193BF9 /* APIServices+GetAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046747DA265B3C3500193BF9 /* APIServices+GetAll.swift */; };
 		04AF18132653569300E3BB57 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF18122653569300E3BB57 /* Assets.swift */; };
 		04AF18192653590A00E3BB57 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 04AF18182653590A00E3BB57 /* swiftgen.yml */; };
 		04AF181B26535A1800E3BB57 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF181A26535A1800E3BB57 /* Fonts.swift */; };
@@ -96,6 +97,7 @@
 		04485CC626576AC200E85DA3 /* RankingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		04485CC726576AC200E85DA3 /* RankingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankingViewController.xib; sourceTree = "<group>"; };
 		04485CC826576AC200E85DA3 /* RankingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingViewModel.swift; sourceTree = "<group>"; };
+		046747DA265B3C3500193BF9 /* APIServices+GetAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIServices+GetAll.swift"; sourceTree = "<group>"; };
 		04AF18122653569300E3BB57 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		04AF18182653590A00E3BB57 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		04AF181A26535A1800E3BB57 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -414,6 +416,7 @@
 				04AF18462654981600E3BB57 /* Error */,
 				04AF18452654980B00E3BB57 /* NewsResponse */,
 				04AF1844265497F500E3BB57 /* CovidResponse */,
+				046747DA265B3C3500193BF9 /* APIServices+GetAll.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -606,6 +609,7 @@
 				04AF18132653569300E3BB57 /* Assets.swift in Sources */,
 				04485BE3265628A300E85DA3 /* FollowCountry+CoreDataProperties.swift in Sources */,
 				E3FDACDE26539E4D00D91465 /* Localizable.swift in Sources */,
+				046747DB265B3C3500193BF9 /* APIServices+GetAll.swift in Sources */,
 				04AF184A2654989500E3BB57 /* APIServices.swift in Sources */,
 				04485CB62657685800E85DA3 /* Bindable.swift in Sources */,
 				04485BE4265628A300E85DA3 /* FollowCountry+CoreDataClass.swift in Sources */,

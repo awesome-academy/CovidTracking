@@ -32,7 +32,7 @@ struct TrackingViewModel: ViewModel {
         
         let details = input.loadTrigger
             .flatMapLatest { _ in
-                return dataSource
+                return self.dataSource
                     .asDriver(onErrorJustReturn: [])
             }
             .map {

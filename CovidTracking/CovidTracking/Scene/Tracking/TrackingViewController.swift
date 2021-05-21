@@ -98,7 +98,7 @@ extension TrackingViewController {
     
     private var canEditRowAtIndexPath: RxTableViewSectionedAnimatedDataSource<TrackingSectionModel>.CanEditRowAtIndexPath {
         return { [unowned self] _, _ in
-            return tableView.isEditing
+            return self.tableView.isEditing
         }
     }
     
