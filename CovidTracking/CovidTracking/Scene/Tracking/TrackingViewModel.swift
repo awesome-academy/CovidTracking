@@ -14,25 +14,30 @@ import RxSwiftExt
 
 struct TrackingViewModel: ViewModel {
     
+    let navigator: TrackingNavigatorType
+    let useCase: TrackingUseCaseType
+    
     var dataSource = BehaviorRelay<[Details]>(value: DefaultLocation.defaulLocation)
 
     struct Input {
         let loadTrigger: Driver<Void>
         let removeSelect: Driver<IndexPath>
         let moveSelect: Driver<ItemMovedEvent>
+        let addSelect: Driver<Void>
     }
     
     struct Output {
         let details: Driver<[AnimatableSectionModel<String, Details>]>
         let removed: Driver<Void>
         let moved: Driver<Void>
+        let add: Driver<Void>
     }
     
     func transform(_ input: Input) -> Output {
         
         let details = input.loadTrigger
             .flatMapLatest { _ in
-                return dataSource
+                return self.dataSource
                     .asDriver(onErrorJustReturn: [])
             }
             .map {
@@ -62,10 +67,14 @@ struct TrackingViewModel: ViewModel {
             .do(onNext: dataSource.accept)
             .mapToVoid()
         
+        let add = input.addSelect
+            .do(onNext: self.navigator.toAddCountryVC)
+        
         return Output(
             details: details,
             removed: removed,
-            moved: moved
+            moved: moved,
+            add: add
         )
     }
 }
