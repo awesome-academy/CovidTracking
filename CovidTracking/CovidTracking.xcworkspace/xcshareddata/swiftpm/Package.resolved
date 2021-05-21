@@ -20,6 +20,15 @@
         }
       },
       {
+        "package": "NSObject-Rx",
+        "repositoryURL": "https://github.com/RxSwiftCommunity/NSObject-Rx",
+        "state": {
+          "branch": null,
+          "revision": "9d1967fb5f501f77d2ecfeb4f569a5f65a69a33c",
+          "version": "5.2.1"
+        }
+      },
+      {
         "package": "ObjectMapper",
         "repositoryURL": "https://github.com/tristanhimmelman/ObjectMapper",
         "state": {
