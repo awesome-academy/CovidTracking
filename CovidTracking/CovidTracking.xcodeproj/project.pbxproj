@@ -37,7 +37,6 @@
 		04485CCB26576AC200E85DA3 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04485CC626576AC200E85DA3 /* RankingViewController.swift */; };
 		04485CCC26576AC200E85DA3 /* RankingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04485CC726576AC200E85DA3 /* RankingViewController.xib */; };
 		04485CCD26576AC200E85DA3 /* RankingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04485CC826576AC200E85DA3 /* RankingViewModel.swift */; };
-		04485CD226579C4400E85DA3 /* NSObject-Rx in Frameworks */ = {isa = PBXBuildFile; productRef = 04485CD126579C4400E85DA3 /* NSObject-Rx */; };
 		04AF18132653569300E3BB57 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF18122653569300E3BB57 /* Assets.swift */; };
 		04AF18192653590A00E3BB57 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 04AF18182653590A00E3BB57 /* swiftgen.yml */; };
 		04AF181B26535A1800E3BB57 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF181A26535A1800E3BB57 /* Fonts.swift */; };
@@ -50,7 +49,15 @@
 		04AF184C265498CE00E3BB57 /* CovidAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF184B265498CE00E3BB57 /* CovidAPIResponse.swift */; };
 		04AF184E2654997B00E3BB57 /* NewsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF184D2654997B00E3BB57 /* NewsAPIResponse.swift */; };
 		3C45C287FB2D1AF1E69BCC7E /* Pods_CovidTracking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9897F711ED7E93D629275FF1 /* Pods_CovidTracking.framework */; };
+		E353EADD265746E3006D027D /* SharedSequenceConvertibleType+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353EADC265746E3006D027D /* SharedSequenceConvertibleType+.swift */; };
+		E353EAEC2657642A006D027D /* RxSwiftExt in Frameworks */ = {isa = PBXBuildFile; productRef = E353EAEB2657642A006D027D /* RxSwiftExt */; };
+		E366AE8D2654B65B00F546DF /* TrackingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E366AE8A2654B65B00F546DF /* TrackingTableViewCell.xib */; };
+		E366AE8E2654B65B00F546DF /* TrackingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E366AE8B2654B65B00F546DF /* TrackingTableViewCell.swift */; };
+		E366AE922654B6F700F546DF /* TrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E366AE912654B6F700F546DF /* TrackingViewModel.swift */; };
+		E366AE952654B71D00F546DF /* DefaultLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E366AE942654B71D00F546DF /* DefaultLocation.swift */; };
+		E366AEB52654F6A800F546DF /* NSObject-Rx in Frameworks */ = {isa = PBXBuildFile; productRef = E366AEB42654F6A800F546DF /* NSObject-Rx */; };
 		E390B83626538CC600712E17 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390B83526538CC600712E17 /* MainTabBarViewController.swift */; };
+		E39648792657C535008B2F21 /* AllCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39648782657C535008B2F21 /* AllCountry.swift */; };
 		E3FDAC9C26538E0D00D91465 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FDAC9B26538E0D00D91465 /* BaseNavigationController.swift */; };
 		E3FDAC9F26538ECD00D91465 /* TabBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FDAC9E26538ECD00D91465 /* TabBarItems.swift */; };
 		E3FDACB12653953700D91465 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FDACAF2653953700D91465 /* TrackingViewController.swift */; };
@@ -103,7 +110,13 @@
 		6ECB3964FB53828327209D15 /* Pods-CovidTracking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidTracking.debug.xcconfig"; path = "Target Support Files/Pods-CovidTracking/Pods-CovidTracking.debug.xcconfig"; sourceTree = "<group>"; };
 		9897F711ED7E93D629275FF1 /* Pods_CovidTracking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidTracking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CC3B6ABF511EC569E2F1A0 /* Pods-CovidTracking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidTracking.release.xcconfig"; path = "Target Support Files/Pods-CovidTracking/Pods-CovidTracking.release.xcconfig"; sourceTree = "<group>"; };
+		E353EADC265746E3006D027D /* SharedSequenceConvertibleType+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SharedSequenceConvertibleType+.swift"; sourceTree = "<group>"; };
+		E366AE8A2654B65B00F546DF /* TrackingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrackingTableViewCell.xib; sourceTree = "<group>"; };
+		E366AE8B2654B65B00F546DF /* TrackingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingTableViewCell.swift; sourceTree = "<group>"; };
+		E366AE912654B6F700F546DF /* TrackingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingViewModel.swift; sourceTree = "<group>"; };
+		E366AE942654B71D00F546DF /* DefaultLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLocation.swift; sourceTree = "<group>"; };
 		E390B83526538CC600712E17 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		E39648782657C535008B2F21 /* AllCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountry.swift; sourceTree = "<group>"; };
 		E3FDAC9B26538E0D00D91465 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		E3FDAC9E26538ECD00D91465 /* TabBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItems.swift; sourceTree = "<group>"; };
 		E3FDACAF2653953700D91465 /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
@@ -122,10 +135,11 @@
 			files = (
 				04381CFE2652D5AE00B0A914 /* ObjectMapper in Frameworks */,
 				04381D072652D68700B0A914 /* Reusable in Frameworks */,
-				04485CD226579C4400E85DA3 /* NSObject-Rx in Frameworks */,
+				E366AEB52654F6A800F546DF /* NSObject-Rx in Frameworks */,
 				04381D0A2652D6DA00B0A914 /* SDWebImage in Frameworks */,
 				04381D042652D65F00B0A914 /* Then in Frameworks */,
 				04381CFB2652D58F00B0A914 /* Alamofire in Frameworks */,
+				E353EAEC2657642A006D027D /* RxSwiftExt in Frameworks */,
 				04381CF82652D52900B0A914 /* RxCocoa in Frameworks */,
 				04381D012652D5FE00B0A914 /* RxDataSources in Frameworks */,
 				E3FDACEA2653B69C00D91465 /* Localize_Swift in Frameworks */,
@@ -164,6 +178,8 @@
 				04485BDC2656284900E85DA3 /* Domain */,
 				04381CE32652D3D700B0A914 /* AppDelegate */,
 				E390B83126538C3700712E17 /* Platform */,
+				E390B83426538C5B00712E17 /* Utils */,
+				E390B83326538C4C00712E17 /* Extension */,
 				E390B82A26538BF300712E17 /* Scene */,
 				04AF18112653567E00E3BB57 /* SwiftGen */,
 				04381CF32652D4DE00B0A914 /* Resource */,
@@ -301,6 +317,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E366AE892654B61800F546DF /* TrackingCell */ = {
+			isa = PBXGroup;
+			children = (
+				E366AE8B2654B65B00F546DF /* TrackingTableViewCell.swift */,
+				E366AE8A2654B65B00F546DF /* TrackingTableViewCell.xib */,
+			);
+			path = TrackingCell;
+			sourceTree = "<group>";
+		};
 		E390B82A26538BF300712E17 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,7 +370,9 @@
 			isa = PBXGroup;
 			children = (
 				E3FDACAF2653953700D91465 /* TrackingViewController.swift */,
+				E366AE912654B6F700F546DF /* TrackingViewModel.swift */,
 				E3FDACB02653953700D91465 /* TrackingViewController.xib */,
+				E366AE892654B61800F546DF /* TrackingCell */,
 			);
 			path = Tracking;
 			sourceTree = "<group>";
@@ -383,12 +410,29 @@
 		E390B83226538C4200712E17 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				04AF18492654989500E3BB57 /* APIServices.swift */,
 				04AF18462654981600E3BB57 /* Error */,
 				04AF18452654980B00E3BB57 /* NewsResponse */,
 				04AF1844265497F500E3BB57 /* CovidResponse */,
-				04AF18492654989500E3BB57 /* APIServices.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		E390B83326538C4C00712E17 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E353EADC265746E3006D027D /* SharedSequenceConvertibleType+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E390B83426538C5B00712E17 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E366AE942654B71D00F546DF /* DefaultLocation.swift */,
+				E39648782657C535008B2F21 /* AllCountry.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		E55F9E4195FAA0D374774B73 /* Frameworks */ = {
@@ -426,7 +470,8 @@
 				04381D062652D68700B0A914 /* Reusable */,
 				04381D092652D6DA00B0A914 /* SDWebImage */,
 				E3FDACE92653B69C00D91465 /* Localize_Swift */,
-				04485CD126579C4400E85DA3 /* NSObject-Rx */,
+				E366AEB42654F6A800F546DF /* NSObject-Rx */,
+				E353EAEB2657642A006D027D /* RxSwiftExt */,
 			);
 			productName = CovidTracking;
 			productReference = 04381CCC2652D3C000B0A914 /* CovidTracking.app */;
@@ -466,7 +511,8 @@
 				04381D052652D68700B0A914 /* XCRemoteSwiftPackageReference "Reusable" */,
 				04381D082652D6DA00B0A914 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				E3FDACE82653B69C00D91465 /* XCRemoteSwiftPackageReference "Localize-Swift" */,
-				04485CD026579C4400E85DA3 /* XCRemoteSwiftPackageReference "NSObject-Rx" */,
+				E366AEB32654F6A800F546DF /* XCRemoteSwiftPackageReference "NSObject-Rx" */,
+				E353EAEA26576429006D027D /* XCRemoteSwiftPackageReference "RxSwiftExt" */,
 			);
 			productRefGroup = 04381CCD2652D3C000B0A914 /* Products */;
 			projectDirPath = "";
@@ -492,6 +538,7 @@
 				E3FDACB22653953700D91465 /* TrackingViewController.xib in Resources */,
 				04485CCC26576AC200E85DA3 /* RankingViewController.xib in Resources */,
 				04AF182626535A9C00E3BB57 /* Arvo-Italic.ttf in Resources */,
+				E366AE8D2654B65B00F546DF /* TrackingTableViewCell.xib in Resources */,
 				04381CD92652D3C200B0A914 /* Assets.xcassets in Resources */,
 				04AF182426535A9C00E3BB57 /* Arvo-Bold.ttf in Resources */,
 				04AF18192653590A00E3BB57 /* swiftgen.yml in Resources */,
@@ -530,10 +577,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E39648792657C535008B2F21 /* AllCountry.swift in Sources */,
 				04485CBB265768D100E85DA3 /* URLs.swift in Sources */,
 				E390B83626538CC600712E17 /* MainTabBarViewController.swift in Sources */,
 				04485CC226576A0900E85DA3 /* DefaultLocation.swift in Sources */,
 				E3FDAC9F26538ECD00D91465 /* TabBarItems.swift in Sources */,
+				E366AE952654B71D00F546DF /* DefaultLocation.swift in Sources */,
 				04AF184C265498CE00E3BB57 /* CovidAPIResponse.swift in Sources */,
 				04485CCD26576AC200E85DA3 /* RankingViewModel.swift in Sources */,
 				E3FDACBF2653958B00D91465 /* NewsViewController.swift in Sources */,
@@ -542,6 +591,7 @@
 				04AF181B26535A1800E3BB57 /* Fonts.swift in Sources */,
 				04AF184E2654997B00E3BB57 /* NewsAPIResponse.swift in Sources */,
 				E3FDAC9C26538E0D00D91465 /* BaseNavigationController.swift in Sources */,
+				E366AE922654B6F700F546DF /* TrackingViewModel.swift in Sources */,
 				04381CD02652D3C000B0A914 /* AppDelegate.swift in Sources */,
 				04485CCB26576AC200E85DA3 /* RankingViewController.swift in Sources */,
 				04485BE7265628F900E85DA3 /* CoreDataManager.swift in Sources */,
@@ -550,6 +600,8 @@
 				04381CD22652D3C000B0A914 /* SceneDelegate.swift in Sources */,
 				04485BD9265627DC00E85DA3 /* CoreDataServices.swift in Sources */,
 				04485CCA26576AC200E85DA3 /* RankTableViewCell.swift in Sources */,
+				E353EADD265746E3006D027D /* SharedSequenceConvertibleType+.swift in Sources */,
+				E366AE8E2654B65B00F546DF /* TrackingTableViewCell.swift in Sources */,
 				E3FDACB12653953700D91465 /* TrackingViewController.swift in Sources */,
 				04AF18132653569300E3BB57 /* Assets.swift in Sources */,
 				04485BE3265628A300E85DA3 /* FollowCountry+CoreDataProperties.swift in Sources */,
@@ -820,7 +872,15 @@
 				minimumVersion = 5.11.1;
 			};
 		};
-		04485CD026579C4400E85DA3 /* XCRemoteSwiftPackageReference "NSObject-Rx" */ = {
+		E353EAEA26576429006D027D /* XCRemoteSwiftPackageReference "RxSwiftExt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxSwiftExt";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+		E366AEB32654F6A800F546DF /* XCRemoteSwiftPackageReference "NSObject-Rx" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RxSwiftCommunity/NSObject-Rx";
 			requirement = {
@@ -879,9 +939,14 @@
 			package = 04381D082652D6DA00B0A914 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
 		};
-		04485CD126579C4400E85DA3 /* NSObject-Rx */ = {
+		E353EAEB2657642A006D027D /* RxSwiftExt */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 04485CD026579C4400E85DA3 /* XCRemoteSwiftPackageReference "NSObject-Rx" */;
+			package = E353EAEA26576429006D027D /* XCRemoteSwiftPackageReference "RxSwiftExt" */;
+			productName = RxSwiftExt;
+		};
+		E366AEB42654F6A800F546DF /* NSObject-Rx */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E366AEB32654F6A800F546DF /* XCRemoteSwiftPackageReference "NSObject-Rx" */;
 			productName = "NSObject-Rx";
 		};
 		E3FDACE92653B69C00D91465 /* Localize_Swift */ = {
