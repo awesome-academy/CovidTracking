@@ -50,7 +50,10 @@ final class RankingViewController: UIViewController {
     }
     
     func bindView() {
-        viewModel = RankingViewModel()
+        guard let navigationController = navigationController else {
+            return
+        }
+        viewModel = RankingViewModel(navigator: RankNavigator(navigationController: navigationController))
         bindViewModel()
     }
     
@@ -59,7 +62,9 @@ final class RankingViewController: UIViewController {
 extension RankingViewController: Bindable {
     
     func bindViewModel() {
-        let input = RankingViewModel.Input(loadTrigger: Driver.just(()))
+        let input = RankingViewModel.Input(loadTrigger: Driver.just(()),
+                                           sortSelected: sortBarButton.rx.tap.asDriver(),
+                                           cellSeletced: tableView.rx.itemSelected.asDriver())
         
         let output = viewModel.transform(input)
         
@@ -78,6 +83,14 @@ extension RankingViewController: Bindable {
                 return cell
         }
         .disposed(by: rx.disposeBag)
+        
+        output.changeBarButtonTitle
+            .drive(sortBarButton.rx.title)
+            .disposed(by: rx.disposeBag)
+        
+        output.pushToDetails
+            .drive()
+            .disposed(by: rx.disposeBag)
         
     }
     
