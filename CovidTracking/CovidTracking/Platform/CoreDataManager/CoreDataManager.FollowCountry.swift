@@ -60,4 +60,35 @@ extension CoreDataManager.FollowCountryManager {
             return Disposables.create()
         }
     }
+    
+    func deleteCountry(countryName: String, completion: @escaping () -> [Details]) -> Observable<[Details]> {
+        return Observable.create { observer in
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "FollowCountry").then {
+                $0.predicate = NSPredicate(format: "name = %@", countryName)
+            }
+            let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+            do {
+                try CoreDataManager.shared.context.execute(deleteRequest)
+                try CoreDataManager.shared.context.save()
+                observer.onNext(completion())
+                observer.onCompleted()
+            } catch {
+                observer.onError(CoreDataError.deleteError)
+            }
+            return Disposables.create()
+        }
+    }
+    
+    func deleteAll() {
+        do {
+            guard let data = try CoreDataManager.shared.context.fetch(FollowCountry.fetchRequest()) as? [FollowCountry] else {
+                return
+            }
+            for item in data {
+                CoreDataManager.shared.context.delete(item)
+            }
+            try CoreDataManager.shared.context.save()
+        } catch {
+        }
+    }
 }

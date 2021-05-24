@@ -26,7 +26,7 @@ struct AllCountryViewModel: ViewModel {
     struct Output {
         let allCodeCountry: Driver<[CodeCountries]>
         let searchBar: Driver<Void>
-        let showAlert: Driver<String>
+        let showAlert: Driver<Void>
     }
     
     func transform(_ input: Input) -> Output {
@@ -49,14 +49,12 @@ struct AllCountryViewModel: ViewModel {
             .withLatestFrom (dataSource.asDriver()) { (index, country) in
                 return country[index.row]
             }
-            .map {
-                $0.name
-            }
             .do(onNext: { country in
-                self.navigator.showAlert(string: country) {
-                    self.useCase.saveTrackingCountry(country: country)
+                self.navigator.showAlert(string: country.name) {
+                    self.useCase.saveTrackingCountry(country: country.countryCode ?? "")
                 }
             })
+            .mapToVoid()
         
         return Output(
             allCodeCountry: allCodeCountry,

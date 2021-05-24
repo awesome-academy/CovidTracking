@@ -126,7 +126,7 @@ extension TrackingViewController: Bindable {
     private func bindDataSource() {
         
         let input = TrackingViewModel.Input(
-            loadTrigger: Driver.just(()),
+            loadTrigger: self.rx.viewWillAppear.asDriver(onErrorJustReturn: ()),
             removeSelect: tableView.rx.itemDeleted.asDriver(),
             moveSelect: tableView.rx.itemMoved.asDriver(),
             addSelect: addBarButton.rx.tap.asDriver()
@@ -147,6 +147,14 @@ extension TrackingViewController: Bindable {
             .disposed(by: rx.disposeBag)
         
         output.add
+            .drive()
+            .disposed(by: rx.disposeBag)
+        
+        output.getCoreData
+            .drive()
+            .disposed(by: rx.disposeBag)
+        
+        output.getApiData
             .drive()
             .disposed(by: rx.disposeBag)
     }

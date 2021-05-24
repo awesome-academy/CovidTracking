@@ -67,6 +67,7 @@
 		E3BC62E3265B3B830079E1A4 /* AllCountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3BC62E1265B3B830079E1A4 /* AllCountryTableViewCell.xib */; };
 		E3BC62E7265B3E0B0079E1A4 /* CodeCountries.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BC62E6265B3E0B0079E1A4 /* CodeCountries.swift */; };
 		E3BC62F1265B50BC0079E1A4 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BC62F0265B50BC0079E1A4 /* UIViewController+.swift */; };
+		E3BC62FA265C0DDB0079E1A4 /* ViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BC62F9265C0DDB0079E1A4 /* ViewController+Rx.swift */; };
 		E3E989FE26580473006112DB /* AllCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E989FC26580473006112DB /* AllCountryViewController.swift */; };
 		E3E989FF26580473006112DB /* AllCountryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E989FD26580473006112DB /* AllCountryViewController.xib */; };
 		E3E98A032658048B006112DB /* AllCountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E98A022658048B006112DB /* AllCountryViewModel.swift */; };
@@ -142,6 +143,7 @@
 		E3BC62E1265B3B830079E1A4 /* AllCountryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AllCountryTableViewCell.xib; sourceTree = "<group>"; };
 		E3BC62E6265B3E0B0079E1A4 /* CodeCountries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeCountries.swift; sourceTree = "<group>"; };
 		E3BC62F0265B50BC0079E1A4 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		E3BC62F9265C0DDB0079E1A4 /* ViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Rx.swift"; sourceTree = "<group>"; };
 		E3E989FC26580473006112DB /* AllCountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountryViewController.swift; sourceTree = "<group>"; };
 		E3E989FD26580473006112DB /* AllCountryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllCountryViewController.xib; sourceTree = "<group>"; };
 		E3E98A022658048B006112DB /* AllCountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountryViewModel.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 				04485CBD2657698A00E85DA3 /* Formatter+.swift */,
 				04485CBF265769AE00E85DA3 /* Int+.swift */,
 				E3BC62F0265B50BC0079E1A4 /* UIViewController+.swift */,
+				E3BC62F9265C0DDB0079E1A4 /* ViewController+Rx.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -697,6 +700,7 @@
 				04485CB62657685800E85DA3 /* Bindable.swift in Sources */,
 				04485BE4265628A300E85DA3 /* FollowCountry+CoreDataClass.swift in Sources */,
 				04485BE02656285F00E85DA3 /* Model.xcdatamodeld in Sources */,
+				E3BC62FA265C0DDB0079E1A4 /* ViewController+Rx.swift in Sources */,
 				046747DF265B542500193BF9 /* DetailsViewController.swift in Sources */,
 				04485CB42657683700E85DA3 /* ViewModel.swift in Sources */,
 				04485CBE2657698A00E85DA3 /* Formatter+.swift in Sources */,
