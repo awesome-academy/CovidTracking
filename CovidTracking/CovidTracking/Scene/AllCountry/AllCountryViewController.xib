@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllCountryViewController" customModule="CovidTracking" customModuleProvider="target">
             <connections>
-                <outlet property="searchBar" destination="S7I-Pt-8Xr" id="kFh-1D-h7M"/>
+                <outlet property="searchBar" destination="qBe-Ky-AEU" id="ClG-Vx-dxd"/>
                 <outlet property="tableView" destination="S7I-Pt-8Xr" id="o5V-Ud-Lmd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

@@ -13,7 +13,7 @@ import RxSwift
 final class AllCountryViewController: UIViewController, Bindable {
 
     @IBOutlet private weak var tableView: UITableView!
-    @IBOutlet private weak var searchBar: UITableView!
+    @IBOutlet private weak var searchBar: UISearchBar!
     
     var viewModel: AllCountryViewModel!
     
@@ -23,7 +23,6 @@ final class AllCountryViewController: UIViewController, Bindable {
         super.viewDidLoad()
 
         configureViews()
-        //confgiureNavigationBar()
         configureTableView()
     }
     
@@ -41,7 +40,9 @@ final class AllCountryViewController: UIViewController, Bindable {
     
     func bindViewModel() {
         let input = AllCountryViewModel.Input (
-            loadTrigger: Driver.just(())
+            loadTrigger: Driver.just(()),
+            searchBarInput: searchBar.rx.text.orEmpty.asDriver(),
+            selectTrigger: tableView.rx.itemSelected.asDriver()
         )
         
         let output = viewModel.transform(input)
@@ -53,6 +54,14 @@ final class AllCountryViewController: UIViewController, Bindable {
                 cell.configure(model: codeCountry)
                 return cell
             }
+            .disposed(by: rx.disposeBag)
+        
+        output.searchBar
+            .drive()
+            .disposed(by: rx.disposeBag)
+        
+        output.showAlert
+            .drive()
             .disposed(by: rx.disposeBag)
     }
 }

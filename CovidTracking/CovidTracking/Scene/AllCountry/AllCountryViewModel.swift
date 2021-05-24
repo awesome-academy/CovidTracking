@@ -19,10 +19,14 @@ struct AllCountryViewModel: ViewModel {
     
     struct Input {
         let loadTrigger: Driver<Void>
+        let searchBarInput: Driver<String>
+        let selectTrigger: Driver<IndexPath>
     }
     
     struct Output {
         let allCodeCountry: Driver<[CodeCountries]>
+        let searchBar: Driver<Void>
+        let showAlert: Driver<String>
     }
     
     func transform(_ input: Input) -> Output {
@@ -32,8 +36,32 @@ struct AllCountryViewModel: ViewModel {
                     .asDriver(onErrorJustReturn: [])
             }
         
+        let searhBar = input.searchBarInput
+            .filter {
+                !$0.isEmpty
+            }
+            .do (onNext: {text in
+                dataSource.accept(self.useCase.filter(text: text))
+            })
+            .mapToVoid()
+        
+        let showAlert = input.selectTrigger
+            .withLatestFrom (dataSource.asDriver()) { (index, country) in
+                return country[index.row]
+            }
+            .map {
+                $0.name
+            }
+            .do(onNext: { country in
+                self.navigator.showAlert(string: country) {
+                    self.useCase.saveTrackingCountry(country: country)
+                }
+            })
+        
         return Output(
-            allCodeCountry: allCodeCountry
+            allCodeCountry: allCodeCountry,
+            searchBar: searhBar,
+            showAlert: showAlert
         )
     }
 }
