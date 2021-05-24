@@ -38,6 +38,10 @@
 		04485CCC26576AC200E85DA3 /* RankingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04485CC726576AC200E85DA3 /* RankingViewController.xib */; };
 		04485CCD26576AC200E85DA3 /* RankingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04485CC826576AC200E85DA3 /* RankingViewModel.swift */; };
 		046747DB265B3C3500193BF9 /* APIServices+GetAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046747DA265B3C3500193BF9 /* APIServices+GetAll.swift */; };
+		046747DF265B542500193BF9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046747DD265B542500193BF9 /* DetailsViewController.swift */; };
+		046747E0265B542500193BF9 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046747DE265B542500193BF9 /* DetailsViewController.xib */; };
+		046747E2265B54EA00193BF9 /* RankNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046747E1265B54EA00193BF9 /* RankNavigator.swift */; };
+		046747E4265B659900193BF9 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046747E3265B659900193BF9 /* DetailsViewModel.swift */; };
 		04AF18132653569300E3BB57 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF18122653569300E3BB57 /* Assets.swift */; };
 		04AF18192653590A00E3BB57 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 04AF18182653590A00E3BB57 /* swiftgen.yml */; };
 		04AF181B26535A1800E3BB57 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF181A26535A1800E3BB57 /* Fonts.swift */; };
@@ -108,6 +112,10 @@
 		04485CC726576AC200E85DA3 /* RankingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankingViewController.xib; sourceTree = "<group>"; };
 		04485CC826576AC200E85DA3 /* RankingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingViewModel.swift; sourceTree = "<group>"; };
 		046747DA265B3C3500193BF9 /* APIServices+GetAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIServices+GetAll.swift"; sourceTree = "<group>"; };
+		046747DD265B542500193BF9 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		046747DE265B542500193BF9 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		046747E1265B54EA00193BF9 /* RankNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankNavigator.swift; sourceTree = "<group>"; };
+		046747E3265B659900193BF9 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		04AF18122653569300E3BB57 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		04AF18182653590A00E3BB57 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		04AF181A26535A1800E3BB57 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -296,6 +304,16 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		046747DC265B540700193BF9 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				046747DD265B542500193BF9 /* DetailsViewController.swift */,
+				046747DE265B542500193BF9 /* DetailsViewController.xib */,
+				046747E3265B659900193BF9 /* DetailsViewModel.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		04AF18112653567E00E3BB57 /* SwiftGen */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +369,7 @@
 		E390B82A26538BF300712E17 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				046747DC265B540700193BF9 /* Details */,
 				E390B83026538C2F00712E17 /* Base */,
 				E390B82B26538BFD00712E17 /* MainTabBar */,
 				E390B82E26538C1D00712E17 /* Tracking */,
@@ -409,6 +428,7 @@
 				04485CC626576AC200E85DA3 /* RankingViewController.swift */,
 				04485CC726576AC200E85DA3 /* RankingViewController.xib */,
 				04485CC826576AC200E85DA3 /* RankingViewModel.swift */,
+				046747E1265B54EA00193BF9 /* RankNavigator.swift */,
 			);
 			path = Ranking;
 			sourceTree = "<group>";
@@ -593,6 +613,7 @@
 				04381CD92652D3C200B0A914 /* Assets.xcassets in Resources */,
 				04AF182426535A9C00E3BB57 /* Arvo-Bold.ttf in Resources */,
 				04AF18192653590A00E3BB57 /* swiftgen.yml in Resources */,
+				046747E0265B542500193BF9 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,6 +670,7 @@
 				04381CD02652D3C000B0A914 /* AppDelegate.swift in Sources */,
 				E3E98A032658048B006112DB /* AllCountryViewModel.swift in Sources */,
 				04485CCB26576AC200E85DA3 /* RankingViewController.swift in Sources */,
+				046747E4265B659900193BF9 /* DetailsViewModel.swift in Sources */,
 				04485BE7265628F900E85DA3 /* CoreDataManager.swift in Sources */,
 				E3FDACC6265395AF00D91465 /* UtilitiesViewController.swift in Sources */,
 				04485BE92656292400E85DA3 /* CoreDataManager.FollowCountry.swift in Sources */,
@@ -661,6 +683,7 @@
 				E3FDACB12653953700D91465 /* TrackingViewController.swift in Sources */,
 				E3E98A092658080A006112DB /* TrackingUseCase.swift in Sources */,
 				04AF18132653569300E3BB57 /* Assets.swift in Sources */,
+				046747E2265B54EA00193BF9 /* RankNavigator.swift in Sources */,
 				04485BE3265628A300E85DA3 /* FollowCountry+CoreDataProperties.swift in Sources */,
 				E3BC62E7265B3E0B0079E1A4 /* CodeCountries.swift in Sources */,
 				E3E98A06265805B1006112DB /* TrackingNavigator.swift in Sources */,
@@ -670,6 +693,7 @@
 				04485CB62657685800E85DA3 /* Bindable.swift in Sources */,
 				04485BE4265628A300E85DA3 /* FollowCountry+CoreDataClass.swift in Sources */,
 				04485BE02656285F00E85DA3 /* Model.xcdatamodeld in Sources */,
+				046747DF265B542500193BF9 /* DetailsViewController.swift in Sources */,
 				04485CB42657683700E85DA3 /* ViewModel.swift in Sources */,
 				04485CBE2657698A00E85DA3 /* Formatter+.swift in Sources */,
 			);
