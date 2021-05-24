@@ -14,6 +14,8 @@ internal enum L10n {
   internal static let decrease = L10n.tr("Localizable", "Decrease")
   /// Increase
   internal static let increase = L10n.tr("Localizable", "Increase")
+  /// Country
+  internal static let country = L10n.tr("Localizable", "Country")
   /// News
   internal static let newsTitle = L10n.tr("Localizable", "NewsTitle")
   /// Ranking

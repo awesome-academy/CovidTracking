@@ -59,6 +59,9 @@
 		E366AEB52654F6A800F546DF /* NSObject-Rx in Frameworks */ = {isa = PBXBuildFile; productRef = E366AEB42654F6A800F546DF /* NSObject-Rx */; };
 		E390B83626538CC600712E17 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390B83526538CC600712E17 /* MainTabBarViewController.swift */; };
 		E39648792657C535008B2F21 /* AllCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39648782657C535008B2F21 /* AllCountry.swift */; };
+		E3BC62E2265B3B830079E1A4 /* AllCountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BC62E0265B3B830079E1A4 /* AllCountryTableViewCell.swift */; };
+		E3BC62E3265B3B830079E1A4 /* AllCountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3BC62E1265B3B830079E1A4 /* AllCountryTableViewCell.xib */; };
+		E3BC62E7265B3E0B0079E1A4 /* CodeCountries.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BC62E6265B3E0B0079E1A4 /* CodeCountries.swift */; };
 		E3E989FE26580473006112DB /* AllCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E989FC26580473006112DB /* AllCountryViewController.swift */; };
 		E3E989FF26580473006112DB /* AllCountryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E989FD26580473006112DB /* AllCountryViewController.xib */; };
 		E3E98A032658048B006112DB /* AllCountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E98A022658048B006112DB /* AllCountryViewModel.swift */; };
@@ -126,6 +129,9 @@
 		E366AE942654B71D00F546DF /* DefaultLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLocation.swift; sourceTree = "<group>"; };
 		E390B83526538CC600712E17 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		E39648782657C535008B2F21 /* AllCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountry.swift; sourceTree = "<group>"; };
+		E3BC62E0265B3B830079E1A4 /* AllCountryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCountryTableViewCell.swift; sourceTree = "<group>"; };
+		E3BC62E1265B3B830079E1A4 /* AllCountryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AllCountryTableViewCell.xib; sourceTree = "<group>"; };
+		E3BC62E6265B3E0B0079E1A4 /* CodeCountries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeCountries.swift; sourceTree = "<group>"; };
 		E3E989FC26580473006112DB /* AllCountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountryViewController.swift; sourceTree = "<group>"; };
 		E3E989FD26580473006112DB /* AllCountryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllCountryViewController.xib; sourceTree = "<group>"; };
 		E3E98A022658048B006112DB /* AllCountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountryViewModel.swift; sourceTree = "<group>"; };
@@ -413,6 +419,7 @@
 				E3FDAC9B26538E0D00D91465 /* BaseNavigationController.swift */,
 				04485CB32657683700E85DA3 /* ViewModel.swift */,
 				04485CB52657685800E85DA3 /* Bindable.swift */,
+				E3BC62E6265B3E0B0079E1A4 /* CodeCountries.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -455,14 +462,24 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		E3BC62DF265B3B750079E1A4 /* AllCountryCell */ = {
+			isa = PBXGroup;
+			children = (
+				E3BC62E0265B3B830079E1A4 /* AllCountryTableViewCell.swift */,
+				E3BC62E1265B3B830079E1A4 /* AllCountryTableViewCell.xib */,
+			);
+			path = AllCountryCell;
+			sourceTree = "<group>";
+		};
 		E3E989FB2658044B006112DB /* AllCountry */ = {
 			isa = PBXGroup;
 			children = (
 				E3E989FC26580473006112DB /* AllCountryViewController.swift */,
+				E3E989FD26580473006112DB /* AllCountryViewController.xib */,
 				E3E98A022658048B006112DB /* AllCountryViewModel.swift */,
 				E3E98A0B26580E4A006112DB /* AllCountryNavigator.swift */,
 				E3E98A0F26580EAB006112DB /* AllCountryUseCase.swift */,
-				E3E989FD26580473006112DB /* AllCountryViewController.xib */,
+				E3BC62DF265B3B750079E1A4 /* AllCountryCell */,
 			);
 			path = AllCountry;
 			sourceTree = "<group>";
@@ -572,6 +589,7 @@
 				04485CCC26576AC200E85DA3 /* RankingViewController.xib in Resources */,
 				04AF182626535A9C00E3BB57 /* Arvo-Italic.ttf in Resources */,
 				E366AE8D2654B65B00F546DF /* TrackingTableViewCell.xib in Resources */,
+				E3BC62E3265B3B830079E1A4 /* AllCountryTableViewCell.xib in Resources */,
 				04381CD92652D3C200B0A914 /* Assets.xcassets in Resources */,
 				04AF182426535A9C00E3BB57 /* Arvo-Bold.ttf in Resources */,
 				04AF18192653590A00E3BB57 /* swiftgen.yml in Resources */,
@@ -624,6 +642,7 @@
 				E3E98A0C26580E4A006112DB /* AllCountryNavigator.swift in Sources */,
 				04AF18482654986E00E3BB57 /* Error.swift in Sources */,
 				04AF181B26535A1800E3BB57 /* Fonts.swift in Sources */,
+				E3BC62E2265B3B830079E1A4 /* AllCountryTableViewCell.swift in Sources */,
 				04AF184E2654997B00E3BB57 /* NewsAPIResponse.swift in Sources */,
 				E3FDAC9C26538E0D00D91465 /* BaseNavigationController.swift in Sources */,
 				E366AE922654B6F700F546DF /* TrackingViewModel.swift in Sources */,
@@ -643,6 +662,7 @@
 				E3E98A092658080A006112DB /* TrackingUseCase.swift in Sources */,
 				04AF18132653569300E3BB57 /* Assets.swift in Sources */,
 				04485BE3265628A300E85DA3 /* FollowCountry+CoreDataProperties.swift in Sources */,
+				E3BC62E7265B3E0B0079E1A4 /* CodeCountries.swift in Sources */,
 				E3E98A06265805B1006112DB /* TrackingNavigator.swift in Sources */,
 				E3FDACDE26539E4D00D91465 /* Localizable.swift in Sources */,
 				046747DB265B3C3500193BF9 /* APIServices+GetAll.swift in Sources */,
