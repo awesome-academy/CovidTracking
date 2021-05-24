@@ -12,9 +12,13 @@ import RxSwift
 import RxCocoa
 
 protocol AllCountryNavigatorType {
-    
+    func showAlert(string: String, completion: @escaping () -> Void)
 }
 
 struct AllCountryNavigator: AllCountryNavigatorType {
+    func showAlert(string: String, completion: @escaping (() -> Void)) {
+        navigationController.showAddCountryAlert(message: string, completion: completion)
+    }
+    
     unowned let navigationController: UINavigationController
 }

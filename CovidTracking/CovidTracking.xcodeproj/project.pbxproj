@@ -66,6 +66,7 @@
 		E3BC62E2265B3B830079E1A4 /* AllCountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BC62E0265B3B830079E1A4 /* AllCountryTableViewCell.swift */; };
 		E3BC62E3265B3B830079E1A4 /* AllCountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3BC62E1265B3B830079E1A4 /* AllCountryTableViewCell.xib */; };
 		E3BC62E7265B3E0B0079E1A4 /* CodeCountries.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BC62E6265B3E0B0079E1A4 /* CodeCountries.swift */; };
+		E3BC62F1265B50BC0079E1A4 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BC62F0265B50BC0079E1A4 /* UIViewController+.swift */; };
 		E3E989FE26580473006112DB /* AllCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E989FC26580473006112DB /* AllCountryViewController.swift */; };
 		E3E989FF26580473006112DB /* AllCountryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E989FD26580473006112DB /* AllCountryViewController.xib */; };
 		E3E98A032658048B006112DB /* AllCountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E98A022658048B006112DB /* AllCountryViewModel.swift */; };
@@ -140,6 +141,7 @@
 		E3BC62E0265B3B830079E1A4 /* AllCountryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCountryTableViewCell.swift; sourceTree = "<group>"; };
 		E3BC62E1265B3B830079E1A4 /* AllCountryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AllCountryTableViewCell.xib; sourceTree = "<group>"; };
 		E3BC62E6265B3E0B0079E1A4 /* CodeCountries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeCountries.swift; sourceTree = "<group>"; };
+		E3BC62F0265B50BC0079E1A4 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		E3E989FC26580473006112DB /* AllCountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountryViewController.swift; sourceTree = "<group>"; };
 		E3E989FD26580473006112DB /* AllCountryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllCountryViewController.xib; sourceTree = "<group>"; };
 		E3E98A022658048B006112DB /* AllCountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountryViewModel.swift; sourceTree = "<group>"; };
@@ -291,6 +293,7 @@
 			children = (
 				04485CBD2657698A00E85DA3 /* Formatter+.swift */,
 				04485CBF265769AE00E85DA3 /* Int+.swift */,
+				E3BC62F0265B50BC0079E1A4 /* UIViewController+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -495,8 +498,8 @@
 			isa = PBXGroup;
 			children = (
 				E3E989FC26580473006112DB /* AllCountryViewController.swift */,
-				E3E989FD26580473006112DB /* AllCountryViewController.xib */,
 				E3E98A022658048B006112DB /* AllCountryViewModel.swift */,
+				E3E989FD26580473006112DB /* AllCountryViewController.xib */,
 				E3E98A0B26580E4A006112DB /* AllCountryNavigator.swift */,
 				E3E98A0F26580EAB006112DB /* AllCountryUseCase.swift */,
 				E3BC62DF265B3B750079E1A4 /* AllCountryCell */,
@@ -655,6 +658,7 @@
 				04485CC226576A0900E85DA3 /* DefaultLocation.swift in Sources */,
 				E3FDAC9F26538ECD00D91465 /* TabBarItems.swift in Sources */,
 				E366AE952654B71D00F546DF /* DefaultLocation.swift in Sources */,
+				E3BC62F1265B50BC0079E1A4 /* UIViewController+.swift in Sources */,
 				E3E98A1026580EAB006112DB /* AllCountryUseCase.swift in Sources */,
 				04AF184C265498CE00E3BB57 /* CovidAPIResponse.swift in Sources */,
 				04485CCD26576AC200E85DA3 /* RankingViewModel.swift in Sources */,

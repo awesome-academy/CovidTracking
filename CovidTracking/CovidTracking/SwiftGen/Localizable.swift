@@ -22,6 +22,8 @@ internal enum L10n {
   internal static let newsTitle = L10n.tr("Localizable", "NewsTitle")
   /// Ranking
   internal static let rankingTitle = L10n.tr("Localizable", "RankingTitle")
+  /// Tracking this country?
+  internal static let trackingCountryAlert = L10n.tr("Localizable", "TrackingCountryAlert")
   /// Tracking
   internal static let trackingTitle = L10n.tr("Localizable", "TrackingTitle")
   /// Utilities
