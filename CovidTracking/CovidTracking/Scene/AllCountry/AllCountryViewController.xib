@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllCountryViewController" customModule="CovidTracking" customModuleProvider="target">
             <connections>
+                <outlet property="searchBar" destination="S7I-Pt-8Xr" id="kFh-1D-h7M"/>
                 <outlet property="tableView" destination="S7I-Pt-8Xr" id="o5V-Ud-Lmd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,19 +22,26 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="S7I-Pt-8Xr">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="100" width="414" height="762"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="qBe-Ky-AEU">
+                    <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="S7I-Pt-8Xr" secondAttribute="trailing" id="1AN-ce-4Fy"/>
-                <constraint firstItem="S7I-Pt-8Xr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Bc8-L4-m3Z"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="S7I-Pt-8Xr" secondAttribute="bottom" id="L5g-0D-Skv"/>
+                <constraint firstItem="S7I-Pt-8Xr" firstAttribute="top" secondItem="qBe-Ky-AEU" secondAttribute="bottom" id="Q3s-g3-g8o"/>
                 <constraint firstItem="S7I-Pt-8Xr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Z8d-vq-Hcv"/>
+                <constraint firstItem="qBe-Ky-AEU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bfa-Xs-j9T"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qBe-Ky-AEU" secondAttribute="trailing" id="jhb-NE-web"/>
+                <constraint firstItem="qBe-Ky-AEU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="kO4-uf-0zf"/>
             </constraints>
-            <point key="canvasLocation" x="32" y="102"/>
+            <point key="canvasLocation" x="31.884057971014496" y="101.78571428571428"/>
         </view>
     </objects>
     <resources>
