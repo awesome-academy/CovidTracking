@@ -58,6 +58,13 @@
 		E366AEB52654F6A800F546DF /* NSObject-Rx in Frameworks */ = {isa = PBXBuildFile; productRef = E366AEB42654F6A800F546DF /* NSObject-Rx */; };
 		E390B83626538CC600712E17 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390B83526538CC600712E17 /* MainTabBarViewController.swift */; };
 		E39648792657C535008B2F21 /* AllCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39648782657C535008B2F21 /* AllCountry.swift */; };
+		E3E989FE26580473006112DB /* AllCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E989FC26580473006112DB /* AllCountryViewController.swift */; };
+		E3E989FF26580473006112DB /* AllCountryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E989FD26580473006112DB /* AllCountryViewController.xib */; };
+		E3E98A032658048B006112DB /* AllCountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E98A022658048B006112DB /* AllCountryViewModel.swift */; };
+		E3E98A06265805B1006112DB /* TrackingNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E98A05265805B1006112DB /* TrackingNavigator.swift */; };
+		E3E98A092658080A006112DB /* TrackingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E98A082658080A006112DB /* TrackingUseCase.swift */; };
+		E3E98A0C26580E4A006112DB /* AllCountryNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E98A0B26580E4A006112DB /* AllCountryNavigator.swift */; };
+		E3E98A1026580EAB006112DB /* AllCountryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E98A0F26580EAB006112DB /* AllCountryUseCase.swift */; };
 		E3FDAC9C26538E0D00D91465 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FDAC9B26538E0D00D91465 /* BaseNavigationController.swift */; };
 		E3FDAC9F26538ECD00D91465 /* TabBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FDAC9E26538ECD00D91465 /* TabBarItems.swift */; };
 		E3FDACB12653953700D91465 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FDACAF2653953700D91465 /* TrackingViewController.swift */; };
@@ -117,6 +124,13 @@
 		E366AE942654B71D00F546DF /* DefaultLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLocation.swift; sourceTree = "<group>"; };
 		E390B83526538CC600712E17 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		E39648782657C535008B2F21 /* AllCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountry.swift; sourceTree = "<group>"; };
+		E3E989FC26580473006112DB /* AllCountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountryViewController.swift; sourceTree = "<group>"; };
+		E3E989FD26580473006112DB /* AllCountryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllCountryViewController.xib; sourceTree = "<group>"; };
+		E3E98A022658048B006112DB /* AllCountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountryViewModel.swift; sourceTree = "<group>"; };
+		E3E98A05265805B1006112DB /* TrackingNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingNavigator.swift; sourceTree = "<group>"; };
+		E3E98A082658080A006112DB /* TrackingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingUseCase.swift; sourceTree = "<group>"; };
+		E3E98A0B26580E4A006112DB /* AllCountryNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountryNavigator.swift; sourceTree = "<group>"; };
+		E3E98A0F26580EAB006112DB /* AllCountryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountryUseCase.swift; sourceTree = "<group>"; };
 		E3FDAC9B26538E0D00D91465 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		E3FDAC9E26538ECD00D91465 /* TabBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItems.swift; sourceTree = "<group>"; };
 		E3FDACAF2653953700D91465 /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
@@ -332,6 +346,7 @@
 				E390B83026538C2F00712E17 /* Base */,
 				E390B82B26538BFD00712E17 /* MainTabBar */,
 				E390B82E26538C1D00712E17 /* Tracking */,
+				E3E989FB2658044B006112DB /* AllCountry */,
 				E390B82F26538C2900712E17 /* Ranking */,
 				E390B82D26538C1400712E17 /* News */,
 				E390B82C26538C0800712E17 /* Utilities */,
@@ -371,6 +386,8 @@
 			children = (
 				E3FDACAF2653953700D91465 /* TrackingViewController.swift */,
 				E366AE912654B6F700F546DF /* TrackingViewModel.swift */,
+				E3E98A082658080A006112DB /* TrackingUseCase.swift */,
+				E3E98A05265805B1006112DB /* TrackingNavigator.swift */,
 				E3FDACB02653953700D91465 /* TrackingViewController.xib */,
 				E366AE892654B61800F546DF /* TrackingCell */,
 			);
@@ -433,6 +450,18 @@
 				E39648782657C535008B2F21 /* AllCountry.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		E3E989FB2658044B006112DB /* AllCountry */ = {
+			isa = PBXGroup;
+			children = (
+				E3E989FC26580473006112DB /* AllCountryViewController.swift */,
+				E3E98A022658048B006112DB /* AllCountryViewModel.swift */,
+				E3E98A0B26580E4A006112DB /* AllCountryNavigator.swift */,
+				E3E98A0F26580EAB006112DB /* AllCountryUseCase.swift */,
+				E3E989FD26580473006112DB /* AllCountryViewController.xib */,
+			);
+			path = AllCountry;
 			sourceTree = "<group>";
 		};
 		E55F9E4195FAA0D374774B73 /* Frameworks */ = {
@@ -531,6 +560,7 @@
 				04381CDC2652D3C200B0A914 /* LaunchScreen.storyboard in Resources */,
 				04485CC926576AC200E85DA3 /* RankTableViewCell.xib in Resources */,
 				04AF182526535A9C00E3BB57 /* Arvo-Regular.ttf in Resources */,
+				E3E989FF26580473006112DB /* AllCountryViewController.xib in Resources */,
 				E3FDACC02653958B00D91465 /* NewsViewController.xib in Resources */,
 				E3FDACC7265395AF00D91465 /* UtilitiesViewController.xib in Resources */,
 				04381D14265347A700B0A914 /* Localizable.strings in Resources */,
@@ -583,16 +613,19 @@
 				04485CC226576A0900E85DA3 /* DefaultLocation.swift in Sources */,
 				E3FDAC9F26538ECD00D91465 /* TabBarItems.swift in Sources */,
 				E366AE952654B71D00F546DF /* DefaultLocation.swift in Sources */,
+				E3E98A1026580EAB006112DB /* AllCountryUseCase.swift in Sources */,
 				04AF184C265498CE00E3BB57 /* CovidAPIResponse.swift in Sources */,
 				04485CCD26576AC200E85DA3 /* RankingViewModel.swift in Sources */,
 				E3FDACBF2653958B00D91465 /* NewsViewController.swift in Sources */,
 				04485CC0265769AE00E85DA3 /* Int+.swift in Sources */,
+				E3E98A0C26580E4A006112DB /* AllCountryNavigator.swift in Sources */,
 				04AF18482654986E00E3BB57 /* Error.swift in Sources */,
 				04AF181B26535A1800E3BB57 /* Fonts.swift in Sources */,
 				04AF184E2654997B00E3BB57 /* NewsAPIResponse.swift in Sources */,
 				E3FDAC9C26538E0D00D91465 /* BaseNavigationController.swift in Sources */,
 				E366AE922654B6F700F546DF /* TrackingViewModel.swift in Sources */,
 				04381CD02652D3C000B0A914 /* AppDelegate.swift in Sources */,
+				E3E98A032658048B006112DB /* AllCountryViewModel.swift in Sources */,
 				04485CCB26576AC200E85DA3 /* RankingViewController.swift in Sources */,
 				04485BE7265628F900E85DA3 /* CoreDataManager.swift in Sources */,
 				E3FDACC6265395AF00D91465 /* UtilitiesViewController.swift in Sources */,
@@ -602,9 +635,12 @@
 				04485CCA26576AC200E85DA3 /* RankTableViewCell.swift in Sources */,
 				E353EADD265746E3006D027D /* SharedSequenceConvertibleType+.swift in Sources */,
 				E366AE8E2654B65B00F546DF /* TrackingTableViewCell.swift in Sources */,
+				E3E989FE26580473006112DB /* AllCountryViewController.swift in Sources */,
 				E3FDACB12653953700D91465 /* TrackingViewController.swift in Sources */,
+				E3E98A092658080A006112DB /* TrackingUseCase.swift in Sources */,
 				04AF18132653569300E3BB57 /* Assets.swift in Sources */,
 				04485BE3265628A300E85DA3 /* FollowCountry+CoreDataProperties.swift in Sources */,
+				E3E98A06265805B1006112DB /* TrackingNavigator.swift in Sources */,
 				E3FDACDE26539E4D00D91465 /* Localizable.swift in Sources */,
 				04AF184A2654989500E3BB57 /* APIServices.swift in Sources */,
 				04485CB62657685800E85DA3 /* Bindable.swift in Sources */,

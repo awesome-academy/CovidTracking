@@ -9,18 +9,22 @@
 import Foundation
 import UIKit
 
-protocol Bindable {
-    associatedtype ViewModelType
-    
-    var viewModel: ViewModelType! { get set }
-    
+public protocol Bindable : AnyObject {
+
+    associatedtype ViewModel
+
+    var viewModel: Self.ViewModel! { get set }
+
     func bindViewModel()
 }
 
-extension Bindable where Self: UIViewController {
-    mutating func bind(to viewModel: Self.ViewModelType) {
-        self.viewModel = viewModel
+extension Bindable where Self : UIViewController {
+
+    public func bindViewModel(to model: Self.ViewModel) {
+        viewModel = model
         loadViewIfNeeded()
         bindViewModel()
     }
 }
+
+

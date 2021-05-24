@@ -39,7 +39,14 @@ final class TrackingViewController: UIViewController {
     }
     
     private func bindView() {
-        viewModel = TrackingViewModel()
+        
+        guard let navigationcontroller = navigationController else {
+            return
+        }
+        
+        let navigator = TrackingNavigator(navigationController: navigationcontroller)
+        let useCase = TrackingUseCase()
+        viewModel = TrackingViewModel(navigator: navigator, useCase: useCase)
         bindViewModel()
     }
     
@@ -121,7 +128,8 @@ extension TrackingViewController: Bindable {
         let input = TrackingViewModel.Input(
             loadTrigger: Driver.just(()),
             removeSelect: tableView.rx.itemDeleted.asDriver(),
-            moveSelect: tableView.rx.itemMoved.asDriver()
+            moveSelect: tableView.rx.itemMoved.asDriver(),
+            addSelect: addBarButton.rx.tap.asDriver()
         )
         
         let output = viewModel.transform(input)
@@ -135,6 +143,10 @@ extension TrackingViewController: Bindable {
             .disposed(by: rx.disposeBag)
         
         output.moved
+            .drive()
+            .disposed(by: rx.disposeBag)
+        
+        output.add
             .drive()
             .disposed(by: rx.disposeBag)
     }
