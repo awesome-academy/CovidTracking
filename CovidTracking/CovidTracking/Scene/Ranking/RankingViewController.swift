@@ -39,7 +39,7 @@ final class RankingViewController: UIViewController {
     }
     
     func configureNavigationBar() {
-        sortBarButton = UIBarButtonItem(title: "Sort",
+        sortBarButton = UIBarButtonItem(title: L10n.decrease.localized(),
                                         style: .done,
                                         target: nil,
                                         action: nil)
@@ -68,6 +68,13 @@ extension RankingViewController: Bindable {
                 let indexPath = IndexPath(item: index, section: 0)
                 let cell: RankTableViewCell = tableView.dequeueReusableCell(for: indexPath)
                 cell.setContent(details: details, order: index)
+                cell.alpha = 0
+                UIView.animate(
+                    withDuration: 0.3,
+                    delay: 0.03 * Double(indexPath.row),
+                    animations: {
+                        cell.alpha = 1
+                })
                 return cell
         }
         .disposed(by: rx.disposeBag)

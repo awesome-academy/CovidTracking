@@ -11,9 +11,7 @@ import RxSwift
 import RxCocoa
 
 struct RankingViewModel: ViewModel {
-    
-    var dataSource = BehaviorRelay<[Details]>(value: DefaultLocation.mockData)
-    
+            
     struct Input {
         let loadTrigger: Driver<Void>
     }
@@ -23,11 +21,18 @@ struct RankingViewModel: ViewModel {
     }
     
     func transform(_ input: Input) -> Output {
+        
         let details = input.loadTrigger
-            .withLatestFrom(dataSource.asDriver()) { (_, details) -> [Details] in
-                   return details.sorted { $0.confirmed > $1.confirmed }
+        .flatMapLatest { _  in
+            return APIServices.shared.getAllCaseAroudTheWorld()
+            .map { (response) -> [Details] in
+                response.sorted { $0.confirmed > $1.confirmed }
             }
+            .asDriver(onErrorJustReturn: [])
+        }
+        
         return Output(details: details)
+        
     }
     
 }

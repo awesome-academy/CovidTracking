@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 import ObjectMapper
 import RxSwift
+import RxCocoa
 import Then
 
 struct APIServices {
