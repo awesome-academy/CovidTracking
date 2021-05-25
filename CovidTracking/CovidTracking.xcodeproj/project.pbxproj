@@ -47,6 +47,8 @@
 		046747EE265C98F000193BF9 /* NewsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046747ED265C98F000193BF9 /* NewsUseCase.swift */; };
 		046747F1265C99F000193BF9 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046747EF265C99F000193BF9 /* NewsTableViewCell.swift */; };
 		046747F2265C99F000193BF9 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046747F0265C99F000193BF9 /* NewsTableViewCell.xib */; };
+		046747F8265CE40200193BF9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046747F7265CE40200193BF9 /* API.swift */; };
+		046747FA265CE4C200193BF9 /* APIServices+getNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046747F9265CE4C200193BF9 /* APIServices+getNews.swift */; };
 		04AF18132653569300E3BB57 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF18122653569300E3BB57 /* Assets.swift */; };
 		04AF18192653590A00E3BB57 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 04AF18182653590A00E3BB57 /* swiftgen.yml */; };
 		04AF181B26535A1800E3BB57 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF181A26535A1800E3BB57 /* Fonts.swift */; };
@@ -127,6 +129,8 @@
 		046747ED265C98F000193BF9 /* NewsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsUseCase.swift; sourceTree = "<group>"; };
 		046747EF265C99F000193BF9 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		046747F0265C99F000193BF9 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		046747F7265CE40200193BF9 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		046747F9265CE4C200193BF9 /* APIServices+getNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIServices+getNews.swift"; sourceTree = "<group>"; };
 		04AF18122653569300E3BB57 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		04AF18182653590A00E3BB57 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		04AF181A26535A1800E3BB57 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -487,6 +491,7 @@
 				04AF18452654980B00E3BB57 /* NewsResponse */,
 				04AF1844265497F500E3BB57 /* CovidResponse */,
 				046747DA265B3C3500193BF9 /* APIServices+GetAll.swift */,
+				046747F9265CE4C200193BF9 /* APIServices+getNews.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -504,6 +509,7 @@
 			children = (
 				E366AE942654B71D00F546DF /* DefaultLocation.swift */,
 				E39648782657C535008B2F21 /* AllCountry.swift */,
+				046747F7265CE40200193BF9 /* API.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -680,6 +686,7 @@
 				04485CBB265768D100E85DA3 /* URLs.swift in Sources */,
 				E390B83626538CC600712E17 /* MainTabBarViewController.swift in Sources */,
 				04485CC226576A0900E85DA3 /* DefaultLocation.swift in Sources */,
+				046747FA265CE4C200193BF9 /* APIServices+getNews.swift in Sources */,
 				E3FDAC9F26538ECD00D91465 /* TabBarItems.swift in Sources */,
 				E366AE952654B71D00F546DF /* DefaultLocation.swift in Sources */,
 				E3BC62F1265B50BC0079E1A4 /* UIViewController+.swift in Sources */,
@@ -702,6 +709,7 @@
 				046747E4265B659900193BF9 /* DetailsViewModel.swift in Sources */,
 				046747EE265C98F000193BF9 /* NewsUseCase.swift in Sources */,
 				04485BE7265628F900E85DA3 /* CoreDataManager.swift in Sources */,
+				046747F8265CE40200193BF9 /* API.swift in Sources */,
 				E3FDACC6265395AF00D91465 /* UtilitiesViewController.swift in Sources */,
 				04485BE92656292400E85DA3 /* CoreDataManager.FollowCountry.swift in Sources */,
 				04381CD22652D3C000B0A914 /* SceneDelegate.swift in Sources */,
