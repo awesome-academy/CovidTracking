@@ -41,7 +41,7 @@ struct AllCountryViewModel: ViewModel {
                 !$0.isEmpty
             }
             .do (onNext: {text in
-                dataSource.accept(self.useCase.filter(text: text))
+                self.dataSource.accept(self.useCase.filter(text: text))
             })
             .mapToVoid()
         
