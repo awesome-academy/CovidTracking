@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Localize_Swift
 
 struct CovidURLs {
     
@@ -20,4 +21,8 @@ struct CovidURLs {
     
     public static let recoveredHistory = "https://covid-api.mmediagroup.fr/v1/history?country=%@&status=recovered"
     
+}
+
+struct NewsURLs {
+    public static let baseURL = "https://gnewsapi.net/api/search?q=covid-19&language=\(Localize.currentLanguage())&api_token=\(API.newsToken)"
 }

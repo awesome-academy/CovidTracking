@@ -16,7 +16,7 @@ protocol NewsUseCaseType {
 
 struct NewsUseCase: NewsUseCaseType {
     func getNews() -> Observable<[Articles]> {
-        return Observable.just(DefaultLocation.mockNews)
+        return APIServices.shared.getNews()
     }
     
 }
