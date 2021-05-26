@@ -8,6 +8,7 @@
 
 import Foundation
 import ObjectMapper
+import Then
 
 struct CovidNews {
     var dateTime: String
@@ -40,7 +41,7 @@ extension CovidNews: Mappable {
     }
 }
 
-struct Articles {
+struct Articles: Then {
     var articlesUrl: String
     var title: String
     var description: String
@@ -51,6 +52,7 @@ struct Articles {
     var sourceName: String
     var sourceUrl: String
     var sourceDomain: String
+    var isSaved: Bool
 }
 
 extension Articles {
@@ -65,7 +67,8 @@ extension Articles {
             imageUrl: "",
             sourceName: "",
             sourceUrl: "",
-            sourceDomain: ""
+            sourceDomain: "",
+            isSaved: false
         )
     }
 }

@@ -27,7 +27,7 @@ final class MainTabBarViewController: UITabBarController {
         viewControllers = [
             configureNavigationController(vc: TrackingViewController(), item: TabBarItems.tracking.item),
             configureNavigationController(vc: RankingViewController(), item: TabBarItems.ranking.item),
-            configureNavigationController(vc: NewsViewController(), item: TabBarItems.news.item),
+            createNewsNavi(),
             configureNavigationController(vc: UtilitiesViewController(), item: TabBarItems.utilities.item)
         ]
         
@@ -39,4 +39,14 @@ final class MainTabBarViewController: UITabBarController {
         return navigationController
     }
     
+    func createNewsNavi() -> UINavigationController {
+        let vc = NewsViewController()
+        vc.tabBarItem = TabBarItems.news.item
+        let newsNavi = UINavigationController(rootViewController: vc)
+        let navigator = NewsNavigator(navigationController: newsNavi)
+        let usecase = NewsUseCase()
+        let viewModel = NewsViewModel(navigator: navigator, useCase: usecase)
+        vc.bindViewModel(to: viewModel)
+        return newsNavi
+    }
 }

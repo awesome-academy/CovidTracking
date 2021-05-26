@@ -8,6 +8,8 @@
 
 import UIKit
 import Reusable
+import RxCocoa
+import RxSwift
 import SDWebImage
 
 final class NewsTableViewCell: UITableViewCell, NibReusable {
@@ -18,15 +20,20 @@ final class NewsTableViewCell: UITableViewCell, NibReusable {
     @IBOutlet private weak var thumbImage: UIImageView!
     @IBOutlet private weak var saveButton: UIButton!
     
+    var didTapSaveButton: ((Int, Bool) -> Void)?
+    var indexPath: Int?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        bindSaveAction()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
-    func setContent(article: Articles) {
+    func setContent(article: Articles, index: Int) {
+        self.indexPath = index
         titleLabel.text = article.title
         timeLabel.text = article.publishedDateTime
         descriptionLabel.text = article.description
@@ -35,6 +42,20 @@ final class NewsTableViewCell: UITableViewCell, NibReusable {
         }
         thumbImage.sd_setImage(with: url,
                                completed: nil)
+        saveButton.isSelected = article.isSaved
+    }
+    
+    func bindSaveAction() {
+        saveButton.rx.tap.asDriver()
+            .drive(onNext: { [weak self] _ in
+                self?.saveButton.isSelected = !(self?.saveButton.isSelected ?? false)
+                self?.didTapSaveButton?(self?.indexPath ?? 0, !(self?.saveButton.isSelected ?? false))
+            })
+            .disposed(by: rx.disposeBag)
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
     }
     
 }

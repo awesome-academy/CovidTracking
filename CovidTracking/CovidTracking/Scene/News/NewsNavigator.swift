@@ -7,11 +7,24 @@
 //
 
 import Foundation
+import UIKit
+import SafariServices
 
 protocol NewsNavigatorType {
-    
+    func pushToSafari(urlString: String)
 }
 
 struct NewsNavigator: NewsNavigatorType {
+    
+    unowned let navigationController: UINavigationController
+    
+    func pushToSafari(urlString: String) {
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        let vc = SFSafariViewController(url: url)
+        vc.hidesBottomBarWhenPushed = true
+        navigationController.pushViewController(vc, animated: true)
+    }
     
 }

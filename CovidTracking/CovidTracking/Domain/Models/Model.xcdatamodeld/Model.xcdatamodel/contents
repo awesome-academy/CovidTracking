@@ -3,7 +3,15 @@
     <entity name="FollowCountry" representedClassName="FollowCountry" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="SavedArticles" representedClassName="SavedArticles" syncable="YES">
+        <attribute name="articlesUrl" optional="YES" attributeType="String"/>
+        <attribute name="descripton" optional="YES" attributeType="String"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String"/>
+        <attribute name="publishTime" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
     <elements>
         <element name="FollowCountry" positionX="-45" positionY="0" width="128" height="58"/>
+        <element name="SavedArticles" positionX="-45" positionY="9" width="128" height="118"/>
     </elements>
 </model>
