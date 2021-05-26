@@ -17,8 +17,9 @@ struct TrackingViewModel: ViewModel {
     let navigator: TrackingNavigatorType
     let useCase: TrackingUseCaseType
     
-    var dataSource = BehaviorRelay<[Details]>(value: DefaultLocation.defaulLocation)
-
+    var dataSource = BehaviorRelay<[Details]>(value: [])
+    var coreData = BehaviorRelay<[String]>(value: [])
+    
     struct Input {
         let loadTrigger: Driver<Void>
         let removeSelect: Driver<IndexPath>
@@ -31,24 +32,50 @@ struct TrackingViewModel: ViewModel {
         let removed: Driver<Void>
         let moved: Driver<Void>
         let add: Driver<Void>
+        let getCoreData: Driver<Void>
+        let getApiData: Driver<Void>
     }
     
     func transform(_ input: Input) -> Output {
         
-        let details = input.loadTrigger
-            .flatMapLatest { _ in
-                return self.dataSource
-                    .asDriver(onErrorJustReturn: [])
-            }
+        let details = dataSource.asDriver()
             .map {
                 [AnimatableSectionModel(model: "", items: $0) ]
             }
         
+        let getCoreData = input.loadTrigger
+            .flatMapLatest { _ in
+                return useCase.getcoreData()
+                    .asDriver(onErrorJustReturn: [])
+            }
+            .map { data -> [String] in
+                let newData = data.map { $0.name ?? "" }
+                return newData
+            }
+            .do(onNext: coreData.accept)
+            .mapToVoid()
+        
+        let getApiData = input.loadTrigger
+            .flatMapLatest { _ in
+                return useCase.getAllCase()
+                    .asDriver(onErrorJustReturn: [])
+            }
+            .withLatestFrom(coreData.asDriver()) { countries, data -> [Details] in
+                
+                let newList =  data.map { useCase.filter(list: countries, text: $0) }
+                return newList.flatMap {$0}
+                
+            }
+            .do(onNext: dataSource.accept)
+            .mapToVoid()
+        
         let removed = input.removeSelect
-            .withLatestFrom(dataSource.asDriver()) { indexPath, details -> [Details] in
-                return details.with {
-                    $0.remove(at: indexPath.row)
+            .withLatestFrom(dataSource.asDriver()) { ($0, $1) }
+            .flatMapLatest { indexPath, details -> Driver<[Details]> in
+                return useCase.deleteCoreData(abbreviation: details[indexPath.row].abbreviation) {
+                    details.with { $0.remove(at: indexPath.row) }
                 }
+                .asDriver(onErrorJustReturn: [])
             }
             .do(onNext: dataSource.accept)
             .mapToVoid()
@@ -74,7 +101,9 @@ struct TrackingViewModel: ViewModel {
             details: details,
             removed: removed,
             moved: moved,
-            add: add
+            add: add,
+            getCoreData: getCoreData,
+            getApiData: getApiData
         )
     }
 }
