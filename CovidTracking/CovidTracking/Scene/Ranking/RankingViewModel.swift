@@ -57,8 +57,9 @@ struct RankingViewModel: ViewModel {
             .withLatestFrom(displayData) { indexPath, details in
                 return details[indexPath.row]
             }
-            .do(onNext: { detail in
-                self.navigator.pushToDetails(countryName: detail.country)
+            .do(onNext: { details in
+                self.navigator.pushToDetails(details: details)
+
             })
             .mapToVoid()
         

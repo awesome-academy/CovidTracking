@@ -12,7 +12,8 @@ import RxCocoa
 
 struct DetailsViewModel: ViewModel {
     
-    var countryName: String
+    let useCase: DetailsUseCaseType
+    let details: Details
     
     struct Input {
         let loadTrigger: Driver<Void>
@@ -20,14 +21,31 @@ struct DetailsViewModel: ViewModel {
     
     struct Output {
         let title: Driver<String>
+        let details: Driver<[DetailsSectionModel]>
     }
     
     func transform(_ input: Input) -> Output {
         let title = input.loadTrigger
-            .map { self.countryName }
+            .map { self.details.country }
+            .asDriver()
+        
+        let details = input.loadTrigger
+            .map { _ -> [DetailsSectionModel] in
+                let section: [DetailsSectionModel] = [
+                    .detail(items: [
+                        .about(model: self.details),
+                        .info(model: self.details),
+                        .chart(model: self.details)
+                    ])
+                ]
+                return section
+            }
             .asDriver()
             
-        return Output(title: title)
+        return Output(
+            title: title,
+            details: details
+            )
     }
     
 }

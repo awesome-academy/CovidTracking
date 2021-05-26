@@ -10,17 +10,19 @@ import Foundation
 import UIKit
 
 protocol RankNavigatorType {
-    func pushToDetails(countryName: String)
-}
+    func pushToDetails(details: Details)}
 
 struct RankNavigator: RankNavigatorType {
         
     unowned let navigationController: UINavigationController
     
-    func pushToDetails(countryName: String) {
-        let vc = DetailsViewController()
-        let viewModel = DetailsViewModel(countryName: countryName)
-        vc.bindViewModel(to: viewModel)
-        navigationController.pushViewController(vc, animated: true)
+    func pushToDetails(details: Details) {
+        let viewController = DetailsViewController()
+        let useCase = DetailUseCase()
+        let viewModel = DetailsViewModel(useCase: useCase,
+                                        details: details)
+        
+        viewController.bindViewModel(to: viewModel)
+        navigationController.pushViewController(viewController, animated: true)
     }
 }

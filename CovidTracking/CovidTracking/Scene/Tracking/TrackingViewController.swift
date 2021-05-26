@@ -119,7 +119,6 @@ extension TrackingViewController {
 extension TrackingViewController: Bindable {
     func bindViewModel() {
         bindDataSource()
-        bindSelected()
         bindNavigationBar()
     }
     
@@ -129,7 +128,8 @@ extension TrackingViewController: Bindable {
             loadTrigger: self.rx.viewWillAppear.asDriver(onErrorJustReturn: ()),
             removeSelect: tableView.rx.itemDeleted.asDriver(),
             moveSelect: tableView.rx.itemMoved.asDriver(),
-            addSelect: addBarButton.rx.tap.asDriver()
+            addSelect: addBarButton.rx.tap.asDriver(),
+            selectItem: tableView.rx.itemSelected.asDriver()
         )
         
         let output = viewModel.transform(input)
@@ -157,14 +157,9 @@ extension TrackingViewController: Bindable {
         output.getApiData
             .drive()
             .disposed(by: rx.disposeBag)
-    }
-    
-    private func bindSelected() {
-        tableView.rx.modelSelected(Details.self)
-            .asDriver()
-            .drive(onNext: { detail in
-                print(detail)
-            })
+        
+        output.selected
+            .drive()
             .disposed(by: rx.disposeBag)
     }
     
