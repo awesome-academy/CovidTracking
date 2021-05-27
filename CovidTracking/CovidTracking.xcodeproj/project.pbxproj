@@ -31,7 +31,6 @@
 		04485CBB265768D100E85DA3 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04485CBA265768D100E85DA3 /* URLs.swift */; };
 		04485CBE2657698A00E85DA3 /* Formatter+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04485CBD2657698A00E85DA3 /* Formatter+.swift */; };
 		04485CC0265769AE00E85DA3 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04485CBF265769AE00E85DA3 /* Int+.swift */; };
-		04485CC226576A0900E85DA3 /* DefaultLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04485CC126576A0900E85DA3 /* DefaultLocation.swift */; };
 		04485CC926576AC200E85DA3 /* RankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04485CC426576AC200E85DA3 /* RankTableViewCell.xib */; };
 		04485CCA26576AC200E85DA3 /* RankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04485CC526576AC200E85DA3 /* RankTableViewCell.swift */; };
 		04485CCB26576AC200E85DA3 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04485CC626576AC200E85DA3 /* RankingViewController.swift */; };
@@ -61,12 +60,21 @@
 		04AF184C265498CE00E3BB57 /* CovidAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF184B265498CE00E3BB57 /* CovidAPIResponse.swift */; };
 		04AF184E2654997B00E3BB57 /* NewsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF184D2654997B00E3BB57 /* NewsAPIResponse.swift */; };
 		3C45C287FB2D1AF1E69BCC7E /* Pods_CovidTracking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9897F711ED7E93D629275FF1 /* Pods_CovidTracking.framework */; };
+		E30CE217265E79DB00C134D7 /* DetailsSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30CE214265E79DB00C134D7 /* DetailsSectionModel.swift */; };
+		E30CE218265E79DB00C134D7 /* DetailsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30CE215265E79DB00C134D7 /* DetailsUseCase.swift */; };
+		E30CE220265E7A1200C134D7 /* AboutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E30CE21E265E7A1200C134D7 /* AboutTableViewCell.xib */; };
+		E30CE221265E7A1200C134D7 /* AboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30CE21F265E7A1200C134D7 /* AboutTableViewCell.swift */; };
+		E30CE225265E7A1800C134D7 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30CE223265E7A1800C134D7 /* InfoTableViewCell.swift */; };
+		E30CE226265E7A1800C134D7 /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E30CE224265E7A1800C134D7 /* InfoTableViewCell.xib */; };
+		E30CE22A265E7A1E00C134D7 /* ChartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E30CE228265E7A1E00C134D7 /* ChartTableViewCell.xib */; };
+		E30CE22B265E7A1E00C134D7 /* ChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30CE229265E7A1E00C134D7 /* ChartTableViewCell.swift */; };
+		E30CE22F265E7BF300C134D7 /* DefaultLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30CE22E265E7BF300C134D7 /* DefaultLocation.swift */; };
+		E30CE233265E7C0100C134D7 /* DefaultLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30CE232265E7C0100C134D7 /* DefaultLocation.swift */; };
 		E353EADD265746E3006D027D /* SharedSequenceConvertibleType+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353EADC265746E3006D027D /* SharedSequenceConvertibleType+.swift */; };
 		E353EAEC2657642A006D027D /* RxSwiftExt in Frameworks */ = {isa = PBXBuildFile; productRef = E353EAEB2657642A006D027D /* RxSwiftExt */; };
 		E366AE8D2654B65B00F546DF /* TrackingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E366AE8A2654B65B00F546DF /* TrackingTableViewCell.xib */; };
 		E366AE8E2654B65B00F546DF /* TrackingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E366AE8B2654B65B00F546DF /* TrackingTableViewCell.swift */; };
 		E366AE922654B6F700F546DF /* TrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E366AE912654B6F700F546DF /* TrackingViewModel.swift */; };
-		E366AE952654B71D00F546DF /* DefaultLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E366AE942654B71D00F546DF /* DefaultLocation.swift */; };
 		E366AEB52654F6A800F546DF /* NSObject-Rx in Frameworks */ = {isa = PBXBuildFile; productRef = E366AEB42654F6A800F546DF /* NSObject-Rx */; };
 		E390B83626538CC600712E17 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390B83526538CC600712E17 /* MainTabBarViewController.swift */; };
 		E39648792657C535008B2F21 /* AllCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39648782657C535008B2F21 /* AllCountry.swift */; };
@@ -114,7 +122,6 @@
 		04485CBA265768D100E85DA3 /* URLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 		04485CBD2657698A00E85DA3 /* Formatter+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatter+.swift"; sourceTree = "<group>"; };
 		04485CBF265769AE00E85DA3 /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
-		04485CC126576A0900E85DA3 /* DefaultLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLocation.swift; sourceTree = "<group>"; };
 		04485CC426576AC200E85DA3 /* RankTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankTableViewCell.xib; sourceTree = "<group>"; };
 		04485CC526576AC200E85DA3 /* RankTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankTableViewCell.swift; sourceTree = "<group>"; };
 		04485CC626576AC200E85DA3 /* RankingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
@@ -146,11 +153,20 @@
 		6ECB3964FB53828327209D15 /* Pods-CovidTracking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidTracking.debug.xcconfig"; path = "Target Support Files/Pods-CovidTracking/Pods-CovidTracking.debug.xcconfig"; sourceTree = "<group>"; };
 		9897F711ED7E93D629275FF1 /* Pods_CovidTracking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidTracking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CC3B6ABF511EC569E2F1A0 /* Pods-CovidTracking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidTracking.release.xcconfig"; path = "Target Support Files/Pods-CovidTracking/Pods-CovidTracking.release.xcconfig"; sourceTree = "<group>"; };
+		E30CE214265E79DB00C134D7 /* DetailsSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsSectionModel.swift; sourceTree = "<group>"; };
+		E30CE215265E79DB00C134D7 /* DetailsUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsUseCase.swift; sourceTree = "<group>"; };
+		E30CE21E265E7A1200C134D7 /* AboutTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutTableViewCell.xib; sourceTree = "<group>"; };
+		E30CE21F265E7A1200C134D7 /* AboutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewCell.swift; sourceTree = "<group>"; };
+		E30CE223265E7A1800C134D7 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		E30CE224265E7A1800C134D7 /* InfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
+		E30CE228265E7A1E00C134D7 /* ChartTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartTableViewCell.xib; sourceTree = "<group>"; };
+		E30CE229265E7A1E00C134D7 /* ChartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartTableViewCell.swift; sourceTree = "<group>"; };
+		E30CE22E265E7BF300C134D7 /* DefaultLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLocation.swift; sourceTree = "<group>"; };
+		E30CE232265E7C0100C134D7 /* DefaultLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLocation.swift; sourceTree = "<group>"; };
 		E353EADC265746E3006D027D /* SharedSequenceConvertibleType+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SharedSequenceConvertibleType+.swift"; sourceTree = "<group>"; };
 		E366AE8A2654B65B00F546DF /* TrackingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrackingTableViewCell.xib; sourceTree = "<group>"; };
 		E366AE8B2654B65B00F546DF /* TrackingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingTableViewCell.swift; sourceTree = "<group>"; };
 		E366AE912654B6F700F546DF /* TrackingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingViewModel.swift; sourceTree = "<group>"; };
-		E366AE942654B71D00F546DF /* DefaultLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLocation.swift; sourceTree = "<group>"; };
 		E390B83526538CC600712E17 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		E39648782657C535008B2F21 /* AllCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountry.swift; sourceTree = "<group>"; };
 		E3BC62E0265B3B830079E1A4 /* AllCountryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCountryTableViewCell.swift; sourceTree = "<group>"; };
@@ -299,7 +315,8 @@
 			isa = PBXGroup;
 			children = (
 				04485CBA265768D100E85DA3 /* URLs.swift */,
-				04485CC126576A0900E85DA3 /* DefaultLocation.swift */,
+				E30CE232265E7C0100C134D7 /* DefaultLocation.swift */,
+				E30CE22E265E7BF300C134D7 /* DefaultLocation.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -330,6 +347,11 @@
 				046747DD265B542500193BF9 /* DetailsViewController.swift */,
 				046747DE265B542500193BF9 /* DetailsViewController.xib */,
 				046747E3265B659900193BF9 /* DetailsViewModel.swift */,
+				E30CE214265E79DB00C134D7 /* DetailsSectionModel.swift */,
+				E30CE215265E79DB00C134D7 /* DetailsUseCase.swift */,
+				E30CE21B265E79E600C134D7 /* About Cell */,
+				E30CE21C265E79F200C134D7 /* Info Cell */,
+				E30CE21D265E7A0200C134D7 /* Chart Cell */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -386,6 +408,33 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E30CE21B265E79E600C134D7 /* About Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E30CE21F265E7A1200C134D7 /* AboutTableViewCell.swift */,
+				E30CE21E265E7A1200C134D7 /* AboutTableViewCell.xib */,
+			);
+			path = "About Cell";
+			sourceTree = "<group>";
+		};
+		E30CE21C265E79F200C134D7 /* Info Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E30CE223265E7A1800C134D7 /* InfoTableViewCell.swift */,
+				E30CE224265E7A1800C134D7 /* InfoTableViewCell.xib */,
+			);
+			path = "Info Cell";
+			sourceTree = "<group>";
+		};
+		E30CE21D265E7A0200C134D7 /* Chart Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E30CE229265E7A1E00C134D7 /* ChartTableViewCell.swift */,
+				E30CE228265E7A1E00C134D7 /* ChartTableViewCell.xib */,
+			);
+			path = "Chart Cell";
+			sourceTree = "<group>";
+		};
 		E366AE892654B61800F546DF /* TrackingCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,10 +447,10 @@
 		E390B82A26538BF300712E17 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				046747DC265B540700193BF9 /* Details */,
 				E390B83026538C2F00712E17 /* Base */,
 				E390B82B26538BFD00712E17 /* MainTabBar */,
 				E390B82E26538C1D00712E17 /* Tracking */,
+				046747DC265B540700193BF9 /* Details */,
 				E3E989FB2658044B006112DB /* AllCountry */,
 				E390B82F26538C2900712E17 /* Ranking */,
 				E390B82D26538C1400712E17 /* News */,
@@ -510,7 +559,6 @@
 		E390B83426538C5B00712E17 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				E366AE942654B71D00F546DF /* DefaultLocation.swift */,
 				E39648782657C535008B2F21 /* AllCountry.swift */,
 				046747F7265CE40200193BF9 /* API.swift */,
 			);
@@ -637,10 +685,13 @@
 				04AF182526535A9C00E3BB57 /* Arvo-Regular.ttf in Resources */,
 				E3E989FF26580473006112DB /* AllCountryViewController.xib in Resources */,
 				046747F2265C99F000193BF9 /* NewsTableViewCell.xib in Resources */,
+				E30CE226265E7A1800C134D7 /* InfoTableViewCell.xib in Resources */,
 				E3FDACC02653958B00D91465 /* NewsViewController.xib in Resources */,
+				E30CE220265E7A1200C134D7 /* AboutTableViewCell.xib in Resources */,
 				E3FDACC7265395AF00D91465 /* UtilitiesViewController.xib in Resources */,
 				04381D14265347A700B0A914 /* Localizable.strings in Resources */,
 				04AF182726535A9C00E3BB57 /* Arvo-BoldItalic.ttf in Resources */,
+				E30CE22A265E7A1E00C134D7 /* ChartTableViewCell.xib in Resources */,
 				E3FDACB22653953700D91465 /* TrackingViewController.xib in Resources */,
 				04485CCC26576AC200E85DA3 /* RankingViewController.xib in Resources */,
 				04AF182626535A9C00E3BB57 /* Arvo-Italic.ttf in Resources */,
@@ -688,10 +739,8 @@
 				E39648792657C535008B2F21 /* AllCountry.swift in Sources */,
 				04485CBB265768D100E85DA3 /* URLs.swift in Sources */,
 				E390B83626538CC600712E17 /* MainTabBarViewController.swift in Sources */,
-				04485CC226576A0900E85DA3 /* DefaultLocation.swift in Sources */,
 				046747FA265CE4C200193BF9 /* APIServices+getNews.swift in Sources */,
 				E3FDAC9F26538ECD00D91465 /* TabBarItems.swift in Sources */,
-				E366AE952654B71D00F546DF /* DefaultLocation.swift in Sources */,
 				E3BC62F1265B50BC0079E1A4 /* UIViewController+.swift in Sources */,
 				E3E98A1026580EAB006112DB /* AllCountryUseCase.swift in Sources */,
 				04AF184C265498CE00E3BB57 /* CovidAPIResponse.swift in Sources */,
@@ -702,9 +751,11 @@
 				E3E98A0C26580E4A006112DB /* AllCountryNavigator.swift in Sources */,
 				04AF18482654986E00E3BB57 /* Error.swift in Sources */,
 				04AF181B26535A1800E3BB57 /* Fonts.swift in Sources */,
+				E30CE221265E7A1200C134D7 /* AboutTableViewCell.swift in Sources */,
 				E3BC62E2265B3B830079E1A4 /* AllCountryTableViewCell.swift in Sources */,
 				04AF184E2654997B00E3BB57 /* NewsAPIResponse.swift in Sources */,
 				E3FDAC9C26538E0D00D91465 /* BaseNavigationController.swift in Sources */,
+				E30CE225265E7A1800C134D7 /* InfoTableViewCell.swift in Sources */,
 				E366AE922654B6F700F546DF /* TrackingViewModel.swift in Sources */,
 				04381CD02652D3C000B0A914 /* AppDelegate.swift in Sources */,
 				E3E98A032658048B006112DB /* AllCountryViewModel.swift in Sources */,
@@ -717,10 +768,12 @@
 				04485BE92656292400E85DA3 /* CoreDataManager.FollowCountry.swift in Sources */,
 				04381CD22652D3C000B0A914 /* SceneDelegate.swift in Sources */,
 				04485BD9265627DC00E85DA3 /* CoreDataServices.swift in Sources */,
+				E30CE217265E79DB00C134D7 /* DetailsSectionModel.swift in Sources */,
 				046747F1265C99F000193BF9 /* NewsTableViewCell.swift in Sources */,
 				04485CCA26576AC200E85DA3 /* RankTableViewCell.swift in Sources */,
 				E353EADD265746E3006D027D /* SharedSequenceConvertibleType+.swift in Sources */,
 				E366AE8E2654B65B00F546DF /* TrackingTableViewCell.swift in Sources */,
+				E30CE22B265E7A1E00C134D7 /* ChartTableViewCell.swift in Sources */,
 				E3E989FE26580473006112DB /* AllCountryViewController.swift in Sources */,
 				E3FDACB12653953700D91465 /* TrackingViewController.swift in Sources */,
 				E3E98A092658080A006112DB /* TrackingUseCase.swift in Sources */,
@@ -732,6 +785,7 @@
 				E3FDACDE26539E4D00D91465 /* Localizable.swift in Sources */,
 				046747DB265B3C3500193BF9 /* APIServices+GetAll.swift in Sources */,
 				04AF184A2654989500E3BB57 /* APIServices.swift in Sources */,
+				E30CE218265E79DB00C134D7 /* DetailsUseCase.swift in Sources */,
 				04485CB62657685800E85DA3 /* Bindable.swift in Sources */,
 				046747EC265C98E000193BF9 /* NewsNavigator.swift in Sources */,
 				04485BE4265628A300E85DA3 /* FollowCountry+CoreDataClass.swift in Sources */,
@@ -740,6 +794,8 @@
 				046747DF265B542500193BF9 /* DetailsViewController.swift in Sources */,
 				04485CB42657683700E85DA3 /* ViewModel.swift in Sources */,
 				04485CBE2657698A00E85DA3 /* Formatter+.swift in Sources */,
+				E30CE22F265E7BF300C134D7 /* DefaultLocation.swift in Sources */,
+				E30CE233265E7C0100C134D7 /* DefaultLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,7 @@ import UIKit
 
 protocol TrackingNavigatorType {
     func toAddCountryVC()
+    func toDetailVC(details: Details)
 }
 
 struct TrackingNavigator: TrackingNavigatorType {
@@ -24,6 +25,16 @@ struct TrackingNavigator: TrackingNavigatorType {
         let navigator = AllCountryNavigator(navigationController: navigationController)
         let viewModel = AllCountryViewModel(navigator: navigator,
                                             useCase: useCase)
+        viewController.bindViewModel(to: viewModel)
+        navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    func toDetailVC(details: Details) {
+        let viewController = DetailsViewController()
+        let useCase = DetailUseCase()
+        let viewModel = DetailsViewModel(useCase: useCase,
+                                         details: details)
+        
         viewController.bindViewModel(to: viewModel)
         navigationController.pushViewController(viewController, animated: true)
     }

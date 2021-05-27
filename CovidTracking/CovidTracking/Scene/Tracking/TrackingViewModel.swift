@@ -25,6 +25,7 @@ struct TrackingViewModel: ViewModel {
         let removeSelect: Driver<IndexPath>
         let moveSelect: Driver<ItemMovedEvent>
         let addSelect: Driver<Void>
+        let selectItem: Driver<IndexPath>
     }
     
     struct Output {
@@ -34,6 +35,7 @@ struct TrackingViewModel: ViewModel {
         let add: Driver<Void>
         let getCoreData: Driver<Void>
         let getApiData: Driver<Void>
+        let selected: Driver<Void>
     }
     
     func transform(_ input: Input) -> Output {
@@ -97,13 +99,23 @@ struct TrackingViewModel: ViewModel {
         let add = input.addSelect
             .do(onNext: self.navigator.toAddCountryVC)
         
+        let selected = input.selectItem
+            .withLatestFrom(dataSource.asDriver()) { index, details in
+                return details[index.row]
+            }
+            .do(onNext: { details in
+                navigator.toDetailVC(details: details)
+            })
+            .mapToVoid()
+        
         return Output(
             details: details,
             removed: removed,
             moved: moved,
             add: add,
             getCoreData: getCoreData,
-            getApiData: getApiData
+            getApiData: getApiData,
+            selected: selected
         )
     }
 }

@@ -63,6 +63,8 @@ struct Details {
     var abbreviation: String
     var location: String
     var capital: String
+    var lat: String
+    var long: String
     var updated: String
     var history: [String: Int]
 }
@@ -80,6 +82,8 @@ extension Details {
                   abbreviation: "",
                   location: "",
                   capital: "",
+                  lat: "",
+                  long: "",
                   updated: "",
                   history: [:])
     }
@@ -102,6 +106,8 @@ extension Details: Mappable {
         abbreviation <- map["abbreviation"]
         location <- map["location"]
         capital <- map["capital_city"]
+        lat <- map["lat"]
+        long <- map["long"]
         updated <- map["updated"]
         history <- map["dates"]
     }
