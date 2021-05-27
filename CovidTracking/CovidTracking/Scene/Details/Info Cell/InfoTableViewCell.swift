@@ -20,7 +20,7 @@ final class InfoTableViewCell: UITableViewCell, NibReusable {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-       configureView()
+        configureView()
     }
     
     private func configureView() {

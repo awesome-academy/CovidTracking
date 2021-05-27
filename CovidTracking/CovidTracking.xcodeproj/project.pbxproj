@@ -66,7 +66,6 @@
 		E30CE221265E7A1200C134D7 /* AboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30CE21F265E7A1200C134D7 /* AboutTableViewCell.swift */; };
 		E30CE225265E7A1800C134D7 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30CE223265E7A1800C134D7 /* InfoTableViewCell.swift */; };
 		E30CE226265E7A1800C134D7 /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E30CE224265E7A1800C134D7 /* InfoTableViewCell.xib */; };
-		E30CE22A265E7A1E00C134D7 /* ChartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E30CE228265E7A1E00C134D7 /* ChartTableViewCell.xib */; };
 		E30CE22B265E7A1E00C134D7 /* ChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30CE229265E7A1E00C134D7 /* ChartTableViewCell.swift */; };
 		E30CE22F265E7BF300C134D7 /* DefaultLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30CE22E265E7BF300C134D7 /* DefaultLocation.swift */; };
 		E30CE233265E7C0100C134D7 /* DefaultLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30CE232265E7C0100C134D7 /* DefaultLocation.swift */; };
@@ -76,6 +75,11 @@
 		E366AE8E2654B65B00F546DF /* TrackingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E366AE8B2654B65B00F546DF /* TrackingTableViewCell.swift */; };
 		E366AE922654B6F700F546DF /* TrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E366AE912654B6F700F546DF /* TrackingViewModel.swift */; };
 		E366AEB52654F6A800F546DF /* NSObject-Rx in Frameworks */ = {isa = PBXBuildFile; productRef = E366AEB42654F6A800F546DF /* NSObject-Rx */; };
+		E3690168265F87B1006F494B /* ChartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3690167265F87B1006F494B /* ChartTableViewCell.xib */; };
+		E369016D265F887C006F494B /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = E369016C265F887C006F494B /* Charts */; };
+		E3690171265F88D0006F494B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E3690170265F88D0006F494B /* SnapKit */; };
+		E3690174265F8A9E006F494B /* APIServices+GetHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3690173265F8A9E006F494B /* APIServices+GetHistory.swift */; };
+		E3690178265F8AB3006F494B /* HistoryAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3690177265F8AB3006F494B /* HistoryAPIResponse.swift */; };
 		E390B83626538CC600712E17 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390B83526538CC600712E17 /* MainTabBarViewController.swift */; };
 		E39648792657C535008B2F21 /* AllCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39648782657C535008B2F21 /* AllCountry.swift */; };
 		E3BC62E2265B3B830079E1A4 /* AllCountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BC62E0265B3B830079E1A4 /* AllCountryTableViewCell.swift */; };
@@ -159,7 +163,6 @@
 		E30CE21F265E7A1200C134D7 /* AboutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewCell.swift; sourceTree = "<group>"; };
 		E30CE223265E7A1800C134D7 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		E30CE224265E7A1800C134D7 /* InfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
-		E30CE228265E7A1E00C134D7 /* ChartTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartTableViewCell.xib; sourceTree = "<group>"; };
 		E30CE229265E7A1E00C134D7 /* ChartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartTableViewCell.swift; sourceTree = "<group>"; };
 		E30CE22E265E7BF300C134D7 /* DefaultLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLocation.swift; sourceTree = "<group>"; };
 		E30CE232265E7C0100C134D7 /* DefaultLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLocation.swift; sourceTree = "<group>"; };
@@ -167,6 +170,9 @@
 		E366AE8A2654B65B00F546DF /* TrackingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrackingTableViewCell.xib; sourceTree = "<group>"; };
 		E366AE8B2654B65B00F546DF /* TrackingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingTableViewCell.swift; sourceTree = "<group>"; };
 		E366AE912654B6F700F546DF /* TrackingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingViewModel.swift; sourceTree = "<group>"; };
+		E3690167265F87B1006F494B /* ChartTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartTableViewCell.xib; sourceTree = "<group>"; };
+		E3690173265F8A9E006F494B /* APIServices+GetHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APIServices+GetHistory.swift"; sourceTree = "<group>"; };
+		E3690177265F8AB3006F494B /* HistoryAPIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryAPIResponse.swift; sourceTree = "<group>"; };
 		E390B83526538CC600712E17 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		E39648782657C535008B2F21 /* AllCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountry.swift; sourceTree = "<group>"; };
 		E3BC62E0265B3B830079E1A4 /* AllCountryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCountryTableViewCell.swift; sourceTree = "<group>"; };
@@ -197,8 +203,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E369016D265F887C006F494B /* Charts in Frameworks */,
 				04381CFE2652D5AE00B0A914 /* ObjectMapper in Frameworks */,
 				04381D072652D68700B0A914 /* Reusable in Frameworks */,
+				E3690171265F88D0006F494B /* SnapKit in Frameworks */,
 				E366AEB52654F6A800F546DF /* NSObject-Rx in Frameworks */,
 				04381D0A2652D6DA00B0A914 /* SDWebImage in Frameworks */,
 				04381D042652D65F00B0A914 /* Then in Frameworks */,
@@ -430,7 +438,7 @@
 			isa = PBXGroup;
 			children = (
 				E30CE229265E7A1E00C134D7 /* ChartTableViewCell.swift */,
-				E30CE228265E7A1E00C134D7 /* ChartTableViewCell.xib */,
+				E3690167265F87B1006F494B /* ChartTableViewCell.xib */,
 			);
 			path = "Chart Cell";
 			sourceTree = "<group>";
@@ -442,6 +450,14 @@
 				E366AE8A2654B65B00F546DF /* TrackingTableViewCell.xib */,
 			);
 			path = TrackingCell;
+			sourceTree = "<group>";
+		};
+		E3690176265F8AA7006F494B /* HistoryResponse */ = {
+			isa = PBXGroup;
+			children = (
+				E3690177265F8AB3006F494B /* HistoryAPIResponse.swift */,
+			);
+			path = HistoryResponse;
 			sourceTree = "<group>";
 		};
 		E390B82A26538BF300712E17 /* Scene */ = {
@@ -542,8 +558,10 @@
 				04AF18462654981600E3BB57 /* Error */,
 				04AF18452654980B00E3BB57 /* NewsResponse */,
 				04AF1844265497F500E3BB57 /* CovidResponse */,
+				E3690176265F8AA7006F494B /* HistoryResponse */,
 				046747DA265B3C3500193BF9 /* APIServices+GetAll.swift */,
 				046747F9265CE4C200193BF9 /* APIServices+getNews.swift */,
+				E3690173265F8A9E006F494B /* APIServices+GetHistory.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -624,6 +642,8 @@
 				E3FDACE92653B69C00D91465 /* Localize_Swift */,
 				E366AEB42654F6A800F546DF /* NSObject-Rx */,
 				E353EAEB2657642A006D027D /* RxSwiftExt */,
+				E369016C265F887C006F494B /* Charts */,
+				E3690170265F88D0006F494B /* SnapKit */,
 			);
 			productName = CovidTracking;
 			productReference = 04381CCC2652D3C000B0A914 /* CovidTracking.app */;
@@ -665,6 +685,8 @@
 				E3FDACE82653B69C00D91465 /* XCRemoteSwiftPackageReference "Localize-Swift" */,
 				E366AEB32654F6A800F546DF /* XCRemoteSwiftPackageReference "NSObject-Rx" */,
 				E353EAEA26576429006D027D /* XCRemoteSwiftPackageReference "RxSwiftExt" */,
+				E369016B265F887C006F494B /* XCRemoteSwiftPackageReference "Charts" */,
+				E369016F265F88D0006F494B /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 04381CCD2652D3C000B0A914 /* Products */;
 			projectDirPath = "";
@@ -691,7 +713,7 @@
 				E3FDACC7265395AF00D91465 /* UtilitiesViewController.xib in Resources */,
 				04381D14265347A700B0A914 /* Localizable.strings in Resources */,
 				04AF182726535A9C00E3BB57 /* Arvo-BoldItalic.ttf in Resources */,
-				E30CE22A265E7A1E00C134D7 /* ChartTableViewCell.xib in Resources */,
+				E3690168265F87B1006F494B /* ChartTableViewCell.xib in Resources */,
 				E3FDACB22653953700D91465 /* TrackingViewController.xib in Resources */,
 				04485CCC26576AC200E85DA3 /* RankingViewController.xib in Resources */,
 				04AF182626535A9C00E3BB57 /* Arvo-Italic.ttf in Resources */,
@@ -744,6 +766,7 @@
 				E3BC62F1265B50BC0079E1A4 /* UIViewController+.swift in Sources */,
 				E3E98A1026580EAB006112DB /* AllCountryUseCase.swift in Sources */,
 				04AF184C265498CE00E3BB57 /* CovidAPIResponse.swift in Sources */,
+				E3690178265F8AB3006F494B /* HistoryAPIResponse.swift in Sources */,
 				04485CCD26576AC200E85DA3 /* RankingViewModel.swift in Sources */,
 				E3FDACBF2653958B00D91465 /* NewsViewController.swift in Sources */,
 				046747EA265C97D700193BF9 /* NewsViewModel.swift in Sources */,
@@ -791,6 +814,7 @@
 				04485BE4265628A300E85DA3 /* FollowCountry+CoreDataClass.swift in Sources */,
 				04485BE02656285F00E85DA3 /* Model.xcdatamodeld in Sources */,
 				E3BC62FA265C0DDB0079E1A4 /* ViewController+Rx.swift in Sources */,
+				E3690174265F8A9E006F494B /* APIServices+GetHistory.swift in Sources */,
 				046747DF265B542500193BF9 /* DetailsViewController.swift in Sources */,
 				04485CB42657683700E85DA3 /* ViewModel.swift in Sources */,
 				04485CBE2657698A00E85DA3 /* Formatter+.swift in Sources */,
@@ -1072,6 +1096,22 @@
 				minimumVersion = 5.2.1;
 			};
 		};
+		E369016B265F887C006F494B /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+		E369016F265F88D0006F494B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 		E3FDACE82653B69C00D91465 /* XCRemoteSwiftPackageReference "Localize-Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/marmelroy/Localize-Swift";
@@ -1132,6 +1172,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E366AEB32654F6A800F546DF /* XCRemoteSwiftPackageReference "NSObject-Rx" */;
 			productName = "NSObject-Rx";
+		};
+		E369016C265F887C006F494B /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E369016B265F887C006F494B /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+		E3690170265F88D0006F494B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E369016F265F88D0006F494B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 		E3FDACE92653B69C00D91465 /* Localize_Swift */ = {
 			isa = XCSwiftPackageProductDependency;

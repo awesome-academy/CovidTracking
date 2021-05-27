@@ -15,3 +15,5 @@
 "Country" = "Country";
 "DetailTitle" = "Details";
 "TrackingCountryAlert" = "Tracking this country?";
+"ChartLabel" = "covid cases by day";
+"Chart" = "Chart";
