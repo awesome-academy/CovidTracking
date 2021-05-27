@@ -24,7 +24,7 @@ final class DetailsViewController: UIViewController, Bindable {
     
     let aboutRowHeight: CGFloat = 300
     let infoRowHeight: CGFloat = 250
-    let chartRowHeight: CGFloat = 100
+    let chartRowHeight: CGFloat = 500
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -101,6 +101,7 @@ extension DetailsViewController {
                 return cell
             case .chart(let model):
                 let cell = tableView.dequeueReusableCell(for: indexPath, cellType: ChartTableViewCell.self)
+                cell.config(date: [], value: [])
                 return cell
             }
         }
