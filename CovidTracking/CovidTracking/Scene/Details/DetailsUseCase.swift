@@ -7,11 +7,15 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol DetailsUseCaseType {
-    
+    func getHistory(url: String) -> Observable<Details>
 }
 
 struct DetailUseCase: DetailsUseCaseType {
-    
+    func getHistory(url: String) -> Observable<Details> {
+        let url = String(format: CovidURLs.confirmedHistory, url )
+        return APIServices.shared.getCountryHistoryDetail(url: url)
+    }
 }

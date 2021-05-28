@@ -10,11 +10,9 @@ import Foundation
 import RxSwift
 
 extension APIServices {
-    func getHistory() -> Observable<HistoryDetail> {
-        return APIServices.shared.request(URL: CovidURLs.confirmedHistory, responseType: History.self)
-            .map {
-                $0.detail
-            }
-            .catchAndReturn(HistoryDetail())
+    func getCountryHistoryDetail(url: String) -> Observable<Details> {
+        return APIServices.shared.request(URL: url, responseType: Country.self)
+            .map { $0.details }
+            .catchAndReturn(Details())
     }
 }

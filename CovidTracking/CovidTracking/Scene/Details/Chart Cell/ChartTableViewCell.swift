@@ -16,12 +16,12 @@ final class ChartTableViewCell: UITableViewCell, NibReusable {
     @IBOutlet private weak var chartLabel: UILabel!
     @IBOutlet private weak var backView: UIView!
     
-    let  barChart = BarChartView().then {
+    let barChart = BarChartView().then {
         $0.legend.font = FontFamily.Arvo.regular.font(size: 17 )
         $0.legend.textColor = .darkGray
-        $0.xAxis.labelTextColor = .clear
+        $0.xAxis.labelTextColor = .darkGray
     }
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         configureView()
@@ -39,28 +39,42 @@ final class ChartTableViewCell: UITableViewCell, NibReusable {
         
         barChart.snp.makeConstraints { make in
             make.top.equalTo(chartLabel.snp.bottom).inset(-10)
-            make.left.right.equalToSuperview().inset(20)
+            make.left.right.equalToSuperview().inset(10)
             make.bottom.equalToSuperview().inset(50)
         }
     }
     
-    func config(date: [String], value: [Double] ){
-        var entries = [BarChartDataEntry]()
-        //datamock
-        for x in 0..<10 {
-            entries.append(BarChartDataEntry(
-                            x: Double(x),
-                            y: Double(Int.random(in: 50...200)))
-            )
+    func config(model: Details){
+        if !model.history.isEmpty {
+            let newModel = model.history.sorted {
+                guard let d1 = $0.key.shortDateUS, let d2 = $1.key.shortDateUS else { return false }
+                return d1 > d2
+            }
+            
+            var entries = [BarChartDataEntry]()
+            var day = [String]()
+            
+            let count = 9
+            for x in 0...count {
+                entries.append(BarChartDataEntry(
+                                x: Double(count - x),
+                                y: Double(newModel[x].value))
+                )
+                day.append(String(newModel[count-x].key.dropFirst(count-3)))
+            }
+            
+            let set = BarChartDataSet(entries: entries, label: L10n.chartLabel.localized())
+            
+            set.colors = [
+                NSUIColor(cgColor: UIColor.systemPink.cgColor)
+            ]
+            
+            let data = BarChartData(dataSet: set)
+            barChart.data = data
+            barChart.xAxis.do {
+                $0.valueFormatter = IndexAxisValueFormatter(values: day)
+                $0.labelPosition = XAxis.LabelPosition.bottom
+            }
         }
-        
-        let set = BarChartDataSet(entries: entries, label: L10n.chartLabel.localized())
-        
-        set.colors = [
-            NSUIColor(cgColor: UIColor.systemPink.cgColor)
-        ]
-        
-        let data = BarChartData(dataSet: set)
-        barChart.data = data
     }
 }

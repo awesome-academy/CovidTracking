@@ -30,12 +30,16 @@ struct DetailsViewModel: ViewModel {
             .asDriver()
         
         let details = input.loadTrigger
-            .map { _ -> [DetailsSectionModel] in
+            .flatMapLatest { _ in
+                return useCase.getHistory(url: self.details.country)
+                    .asDriverOnErrorJustComplete()
+            }
+            .map { history -> [DetailsSectionModel] in
                 let section: [DetailsSectionModel] = [
                     .detail(items: [
                         .about(model: self.details),
                         .info(model: self.details),
-                        .chart(model: self.details)
+                        .chart(model: history)
                     ])
                 ]
                 return section
@@ -45,7 +49,6 @@ struct DetailsViewModel: ViewModel {
         return Output(
             title: title,
             details: details
-            )
+        )
     }
-    
 }
