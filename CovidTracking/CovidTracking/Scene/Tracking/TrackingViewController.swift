@@ -34,22 +34,8 @@ final class TrackingViewController: UIViewController {
         configureViews()
         configureNavigationBar()
         configureTableView()
-        
-        bindView()
     }
-    
-    private func bindView() {
-        
-        guard let navigationcontroller = navigationController else {
-            return
-        }
-        
-        let navigator = TrackingNavigator(navigationController: navigationcontroller)
-        let useCase = TrackingUseCase()
-        viewModel = TrackingViewModel(navigator: navigator, useCase: useCase)
-        bindViewModel()
-    }
-    
+
     private func configureViews() {
         title = L10n.trackingTitle.localized()
         

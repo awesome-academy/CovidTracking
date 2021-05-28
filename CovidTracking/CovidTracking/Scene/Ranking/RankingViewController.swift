@@ -25,7 +25,6 @@ final class RankingViewController: UIViewController {
         super.viewDidLoad()
         configureNavigationBar()
         configureViews()
-        bindView()
     }
     
     func configureViews() {
@@ -48,15 +47,6 @@ final class RankingViewController: UIViewController {
             $0.rightBarButtonItem?.tintColor = .systemPink
         }
     }
-    
-    func bindView() {
-        guard let navigationController = navigationController else {
-            return
-        }
-        viewModel = RankingViewModel(navigator: RankNavigator(navigationController: navigationController))
-        bindViewModel()
-    }
-    
 }
 
 extension RankingViewController: Bindable {

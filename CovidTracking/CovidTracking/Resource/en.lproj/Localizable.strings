@@ -18,3 +18,7 @@
 "ChartLabel" = "covid cases by day";
 "Chart" = "Chart";
 "Nodata" = "No data";
+"EmergencyCall" = "Emergency call";
+"WashingHand" = "Washing hand";
+"SavedNews" = "Saved news";
+"Language" = "Language";
