@@ -71,6 +71,7 @@
 		E30CE233265E7C0100C134D7 /* DefaultLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30CE232265E7C0100C134D7 /* DefaultLocation.swift */; };
 		E353EADD265746E3006D027D /* SharedSequenceConvertibleType+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353EADC265746E3006D027D /* SharedSequenceConvertibleType+.swift */; };
 		E353EAEC2657642A006D027D /* RxSwiftExt in Frameworks */ = {isa = PBXBuildFile; productRef = E353EAEB2657642A006D027D /* RxSwiftExt */; };
+		E35C7F3426608DB7000BB183 /* ObservableType+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35C7F3326608DB7000BB183 /* ObservableType+.swift */; };
 		E366AE8D2654B65B00F546DF /* TrackingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E366AE8A2654B65B00F546DF /* TrackingTableViewCell.xib */; };
 		E366AE8E2654B65B00F546DF /* TrackingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E366AE8B2654B65B00F546DF /* TrackingTableViewCell.swift */; };
 		E366AE922654B6F700F546DF /* TrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E366AE912654B6F700F546DF /* TrackingViewModel.swift */; };
@@ -79,7 +80,7 @@
 		E369016D265F887C006F494B /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = E369016C265F887C006F494B /* Charts */; };
 		E3690171265F88D0006F494B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E3690170265F88D0006F494B /* SnapKit */; };
 		E3690174265F8A9E006F494B /* APIServices+GetHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3690173265F8A9E006F494B /* APIServices+GetHistory.swift */; };
-		E3690178265F8AB3006F494B /* HistoryAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3690177265F8AB3006F494B /* HistoryAPIResponse.swift */; };
+		E3731E0A265FE2B1003937AA /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3731E09265FE2B1003937AA /* String+.swift */; };
 		E390B83626538CC600712E17 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390B83526538CC600712E17 /* MainTabBarViewController.swift */; };
 		E39648792657C535008B2F21 /* AllCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39648782657C535008B2F21 /* AllCountry.swift */; };
 		E3BC62E2265B3B830079E1A4 /* AllCountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BC62E0265B3B830079E1A4 /* AllCountryTableViewCell.swift */; };
@@ -167,12 +168,13 @@
 		E30CE22E265E7BF300C134D7 /* DefaultLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLocation.swift; sourceTree = "<group>"; };
 		E30CE232265E7C0100C134D7 /* DefaultLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLocation.swift; sourceTree = "<group>"; };
 		E353EADC265746E3006D027D /* SharedSequenceConvertibleType+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SharedSequenceConvertibleType+.swift"; sourceTree = "<group>"; };
+		E35C7F3326608DB7000BB183 /* ObservableType+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+.swift"; sourceTree = "<group>"; };
 		E366AE8A2654B65B00F546DF /* TrackingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrackingTableViewCell.xib; sourceTree = "<group>"; };
 		E366AE8B2654B65B00F546DF /* TrackingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingTableViewCell.swift; sourceTree = "<group>"; };
 		E366AE912654B6F700F546DF /* TrackingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingViewModel.swift; sourceTree = "<group>"; };
 		E3690167265F87B1006F494B /* ChartTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartTableViewCell.xib; sourceTree = "<group>"; };
 		E3690173265F8A9E006F494B /* APIServices+GetHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APIServices+GetHistory.swift"; sourceTree = "<group>"; };
-		E3690177265F8AB3006F494B /* HistoryAPIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryAPIResponse.swift; sourceTree = "<group>"; };
+		E3731E09265FE2B1003937AA /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		E390B83526538CC600712E17 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		E39648782657C535008B2F21 /* AllCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountry.swift; sourceTree = "<group>"; };
 		E3BC62E0265B3B830079E1A4 /* AllCountryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCountryTableViewCell.swift; sourceTree = "<group>"; };
@@ -334,8 +336,10 @@
 			children = (
 				04485CBD2657698A00E85DA3 /* Formatter+.swift */,
 				04485CBF265769AE00E85DA3 /* Int+.swift */,
+				E35C7F3326608DB7000BB183 /* ObservableType+.swift */,
 				E3BC62F0265B50BC0079E1A4 /* UIViewController+.swift */,
 				E3BC62F9265C0DDB0079E1A4 /* ViewController+Rx.swift */,
+				E3731E09265FE2B1003937AA /* String+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -452,14 +456,6 @@
 			path = TrackingCell;
 			sourceTree = "<group>";
 		};
-		E3690176265F8AA7006F494B /* HistoryResponse */ = {
-			isa = PBXGroup;
-			children = (
-				E3690177265F8AB3006F494B /* HistoryAPIResponse.swift */,
-			);
-			path = HistoryResponse;
-			sourceTree = "<group>";
-		};
 		E390B82A26538BF300712E17 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
@@ -558,7 +554,6 @@
 				04AF18462654981600E3BB57 /* Error */,
 				04AF18452654980B00E3BB57 /* NewsResponse */,
 				04AF1844265497F500E3BB57 /* CovidResponse */,
-				E3690176265F8AA7006F494B /* HistoryResponse */,
 				046747DA265B3C3500193BF9 /* APIServices+GetAll.swift */,
 				046747F9265CE4C200193BF9 /* APIServices+getNews.swift */,
 				E3690173265F8A9E006F494B /* APIServices+GetHistory.swift */,
@@ -766,7 +761,6 @@
 				E3BC62F1265B50BC0079E1A4 /* UIViewController+.swift in Sources */,
 				E3E98A1026580EAB006112DB /* AllCountryUseCase.swift in Sources */,
 				04AF184C265498CE00E3BB57 /* CovidAPIResponse.swift in Sources */,
-				E3690178265F8AB3006F494B /* HistoryAPIResponse.swift in Sources */,
 				04485CCD26576AC200E85DA3 /* RankingViewModel.swift in Sources */,
 				E3FDACBF2653958B00D91465 /* NewsViewController.swift in Sources */,
 				046747EA265C97D700193BF9 /* NewsViewModel.swift in Sources */,
@@ -777,8 +771,10 @@
 				E30CE221265E7A1200C134D7 /* AboutTableViewCell.swift in Sources */,
 				E3BC62E2265B3B830079E1A4 /* AllCountryTableViewCell.swift in Sources */,
 				04AF184E2654997B00E3BB57 /* NewsAPIResponse.swift in Sources */,
+				E3731E0A265FE2B1003937AA /* String+.swift in Sources */,
 				E3FDAC9C26538E0D00D91465 /* BaseNavigationController.swift in Sources */,
 				E30CE225265E7A1800C134D7 /* InfoTableViewCell.swift in Sources */,
+				E35C7F3426608DB7000BB183 /* ObservableType+.swift in Sources */,
 				E366AE922654B6F700F546DF /* TrackingViewModel.swift in Sources */,
 				04381CD02652D3C000B0A914 /* AppDelegate.swift in Sources */,
 				E3E98A032658048B006112DB /* AllCountryViewModel.swift in Sources */,

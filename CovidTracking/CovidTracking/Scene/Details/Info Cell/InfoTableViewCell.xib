@@ -164,7 +164,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Bnp-CK-Pz3" secondAttribute="trailing" id="0eZ-NB-CbI"/>
                                     <constraint firstItem="Bnp-CK-Pz3" firstAttribute="top" secondItem="NGL-Ni-Lbo" secondAttribute="top" constant="30" id="ERP-hF-zce"/>
