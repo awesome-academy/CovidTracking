@@ -19,10 +19,12 @@ struct UtilitiesViewModel: ViewModel {
     
     struct Input {
         let triggerLoad: Driver<Void>
+        let selectItem: Driver<IndexPath>
     }
     
     struct Output {
         let utilities: Driver<[UtilitiesModel]>
+        let seleted: Driver<Void>
     }
     
     func transform(_ input: Input) -> Output {
@@ -33,6 +35,24 @@ struct UtilitiesViewModel: ViewModel {
                     .asDriverOnErrorJustComplete()
             }
         
-        return Output(utilities: utilities)
+        let selected = input.selectItem
+            .do(onNext: { indexPath in
+                switch indexPath.row {
+                case 0:
+                    navigator.toEmergencyCallVC()
+                case 1:
+                    break
+                case 2:
+                    break
+                case 3:
+                    break
+                default:
+                    break
+                }
+            })
+            .mapToVoid()
+        
+        return Output(utilities: utilities,
+                      seleted: selected)
     }
 }
