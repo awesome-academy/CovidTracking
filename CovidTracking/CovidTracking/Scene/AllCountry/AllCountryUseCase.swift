@@ -32,7 +32,7 @@ struct AllCountryUseCase: AllCountryUseCaseType {
     }
     
     func saveTrackingCountry(country: String) {
-        CoreDataManager.FollowCountryManager.shared.addNewCountry(countryName: country).subscribe{ value in
+        CoreDataManager.FollowCountryManager.shared.addNewCountry(countryName: country).subscribe { value in
             switch value {
             case .error(let error):
                 print(error.localizedDescription)

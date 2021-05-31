@@ -10,7 +10,6 @@ import Foundation
 import ObjectMapper
 import RxDataSources
 
-//MARK: -GroupResponse
 struct GroupResponse {
     var result: [String: Country]
 }
@@ -30,7 +29,7 @@ extension GroupResponse: Mappable {
         result <- map["data"]
     }
 }
-//MARK: -Country
+
 struct Country {
     var details: Details
 }
@@ -50,7 +49,7 @@ extension Country: Mappable {
         details <- map["All"]
     }
 }
-//MARK: - Details
+
 struct Details {
     var confirmed: Int
     var recovered: Int

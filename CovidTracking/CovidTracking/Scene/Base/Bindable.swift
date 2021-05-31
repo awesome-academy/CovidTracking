@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public protocol Bindable : AnyObject {
+public protocol Bindable: AnyObject {
 
     associatedtype ViewModel
 
@@ -18,7 +18,7 @@ public protocol Bindable : AnyObject {
     func bindViewModel()
 }
 
-extension Bindable where Self : UIViewController {
+extension Bindable where Self: UIViewController {
 
     public func bindViewModel(to model: Self.ViewModel) {
         viewModel = model
@@ -26,5 +26,3 @@ extension Bindable where Self : UIViewController {
         bindViewModel()
     }
 }
-
-

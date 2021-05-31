@@ -26,3 +26,5 @@
 "English" = "English";
 "ChangeLanguage" = "Change Language";
 "ChangeLanguageMess" = "You need restart app to apply change language";
+"washingNeeded" = "When to wash your hands?";
+"washingSteps" = "Hand washing steps";

@@ -6,7 +6,6 @@
 //  Copyright © 2021 Tiến. All rights reserved.
 //
 
-
 import UIKit
 import RxCocoa
 import RxSwift
@@ -55,4 +54,3 @@ final class UtilitiesViewController: UIViewController, Bindable {
             .disposed(by: rx.disposeBag)
     }
 }
-

@@ -51,4 +51,3 @@ final class TrackingTableViewCell: UITableViewCell, NibReusable {
         deathsLabel.text = "\(detail.deaths.formattedWithDot)"
     }
 }
-

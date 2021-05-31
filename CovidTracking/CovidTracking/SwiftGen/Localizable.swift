@@ -50,6 +50,10 @@ internal enum L10n {
   internal static let vietnamese = L10n.tr("Localizable", "Vietnamese")
   /// Washing hand
   internal static let washingHand = L10n.tr("Localizable", "WashingHand")
+  /// When to wash your hands?
+  internal static let washingNeeded = L10n.tr("Localizable", "washingNeeded")
+  /// Hand washing steps
+  internal static let washingSteps = L10n.tr("Localizable", "washingSteps")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

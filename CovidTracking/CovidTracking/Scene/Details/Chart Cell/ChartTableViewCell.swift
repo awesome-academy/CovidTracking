@@ -44,23 +44,23 @@ final class ChartTableViewCell: UITableViewCell, NibReusable {
         }
     }
     
-    func config(model: Details){
+    func config(model: Details) {
         if !model.history.isEmpty {
             let newModel = model.history.sorted {
-                guard let d1 = $0.key.shortDateUS, let d2 = $1.key.shortDateUS else { return false }
-                return d1 > d2
+                guard let day1 = $0.key.shortDateUS, let day2 = $1.key.shortDateUS else { return false }
+                return day1 > day2
             }
             
             var entries = [BarChartDataEntry]()
             var day = [String]()
             
             let count = 9
-            for x in 0...count {
+            for date in 0...count {
                 entries.append(BarChartDataEntry(
-                                x: Double(count - x),
-                                y: Double(newModel[x].value))
+                                x: Double(count - date),
+                                y: Double(newModel[date].value))
                 )
-                day.append(String(newModel[count-x].key.dropFirst(count-3)))
+                day.append(String(newModel[count-date].key.dropFirst(count-3)))
             }
             
             let set = BarChartDataSet(entries: entries, label: L10n.chartLabel.localized())

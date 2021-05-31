@@ -33,7 +33,7 @@ extension CoreDataManager.FollowCountryManager {
             do {
                 let check = try CoreDataManager.shared.context.fetch(fetchRequest)
                 if check.isEmpty {
-                    let _ = FollowCountry(context: CoreDataManager.shared.context).do {
+                    FollowCountry(context: CoreDataManager.shared.context).do {
                         $0.name = countryName
                     }
                     try CoreDataManager.shared.context.save()

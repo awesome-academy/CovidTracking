@@ -12,5 +12,5 @@ enum BaseError: Error {
     case networkError
     case URLError
     case HTTPError
-    case MapError
+    case mapError
 }

@@ -13,6 +13,7 @@ import UIKit
 protocol UtilitiesNavigatorType {
     func toEmergencyCallVC()
     func pushToLanguage()
+    func toWashingHandVC()
 }
 
 struct UtilitiesNavigator: UtilitiesNavigatorType {
@@ -35,5 +36,12 @@ struct UtilitiesNavigator: UtilitiesNavigatorType {
         let viewModel = LanguageViewModel(usecase: usecase, navigator: navigator)
         vc.bindViewModel(to: viewModel)
         navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func toWashingHandVC() {
+        let viewController = WashingHandViewController()
+        let viewModel = WashingHandViewModel()
+        viewController.bindViewModel(to: viewModel)
+        navigationController.pushViewController(viewController, animated: true)
     }
 }

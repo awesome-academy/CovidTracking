@@ -44,7 +44,7 @@ struct APIServices {
                             json = value
                         }
                         guard let object = Mapper<T>().map(JSONObject: json) else {
-                            observable.onError(BaseError.MapError)
+                            observable.onError(BaseError.mapError)
                             return
                         }
                         observable.onNext(object)
