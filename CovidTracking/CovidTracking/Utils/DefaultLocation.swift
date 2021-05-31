@@ -20,7 +20,8 @@ struct DefaultLocation {
                             imageUrl: "https://www.coe.int/documents/16695/63022230/shutterstock_1161779020.jpg/3f9b522b-2d4c-b7cd-d91e-72fcb3b2069e",
                             sourceName: "",
                             sourceUrl: "",
-                            sourceDomain: "")
+                            sourceDomain: "",
+                            isSaved: false)
     
     static let mockNews = [articles,
                            articles,

@@ -22,6 +22,12 @@ struct CoreDataManager {
 
         private init() {}
     }
+    
+    struct SavedNewsManager {
+        static let shared = CoreDataManager.SavedNewsManager()
+        
+        private init() {}
+    }
 
 }
 

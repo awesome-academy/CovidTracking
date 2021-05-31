@@ -31,7 +31,7 @@ struct DetailsViewModel: ViewModel {
         
         let details = input.loadTrigger
             .flatMapLatest { _ in
-                return useCase.getHistory(url: self.details.country)
+                return self.useCase.getHistory(url: self.details.country)
                     .asDriverOnErrorJustComplete()
             }
             .map { history -> [DetailsSectionModel] in

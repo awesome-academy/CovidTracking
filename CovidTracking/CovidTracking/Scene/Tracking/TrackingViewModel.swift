@@ -47,7 +47,7 @@ struct TrackingViewModel: ViewModel {
         
         let getCoreData = input.loadTrigger
             .flatMapLatest { _ in
-                return useCase.getcoreData()
+                return self.useCase.getcoreData()
                     .asDriver(onErrorJustReturn: [])
             }
             .map { data -> [String] in
@@ -59,12 +59,12 @@ struct TrackingViewModel: ViewModel {
         
         let getApiData = input.loadTrigger
             .flatMapLatest { _ in
-                return useCase.getAllCase()
+                return self.useCase.getAllCase()
                     .asDriver(onErrorJustReturn: [])
             }
             .withLatestFrom(coreData.asDriver()) { countries, data -> [Details] in
                 
-                let newList =  data.map { useCase.filter(list: countries, text: $0) }
+                let newList =  data.map { self.useCase.filter(list: countries, text: $0) }
                 return newList.flatMap {$0}
                 
             }
@@ -74,7 +74,7 @@ struct TrackingViewModel: ViewModel {
         let removed = input.removeSelect
             .withLatestFrom(dataSource.asDriver()) { ($0, $1) }
             .flatMapLatest { indexPath, details -> Driver<[Details]> in
-                return useCase.deleteCoreData(abbreviation: details[indexPath.row].abbreviation) {
+                return self.useCase.deleteCoreData(abbreviation: details[indexPath.row].abbreviation) {
                     details.with { $0.remove(at: indexPath.row) }
                 }
                 .asDriver(onErrorJustReturn: [])
@@ -104,7 +104,7 @@ struct TrackingViewModel: ViewModel {
                 return details[index.row]
             }
             .do(onNext: { details in
-                navigator.toDetailVC(details: details)
+                self.navigator.toDetailVC(details: details)
             })
             .mapToVoid()
         
