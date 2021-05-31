@@ -24,4 +24,14 @@ extension UIViewController {
         ac.addAction(cancel)
         present(ac, animated: true, completion: nil)
     }
+    
+    func changeLanguageAlert(message: String) {
+        let ac = UIAlertController(title: L10n.changeLanguage.localized(),
+                                   message: message,
+                                   preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .destructive)
+
+        ac.addAction(okAction)
+        present(ac, animated: true)
+    }
 }

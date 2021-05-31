@@ -48,6 +48,12 @@
 		046747F2265C99F000193BF9 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046747F0265C99F000193BF9 /* NewsTableViewCell.xib */; };
 		046747F8265CE40200193BF9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046747F7265CE40200193BF9 /* API.swift */; };
 		046747FA265CE4C200193BF9 /* APIServices+getNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046747F9265CE4C200193BF9 /* APIServices+getNews.swift */; };
+		047C0D082664B12000A2314E /* ChangeLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C0D062664B12000A2314E /* ChangeLanguageViewController.swift */; };
+		047C0D092664B12000A2314E /* ChangeLanguageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047C0D072664B12000A2314E /* ChangeLanguageViewController.xib */; };
+		047C0D0B2664B13F00A2314E /* ChangeLanguageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C0D0A2664B13F00A2314E /* ChangeLanguageViewModel.swift */; };
+		047C0D0D2664B15000A2314E /* ChangeLanguageUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C0D0C2664B15000A2314E /* ChangeLanguageUsecase.swift */; };
+		047C0D0F2664B15F00A2314E /* ChangeLanguageNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C0D0E2664B15F00A2314E /* ChangeLanguageNavigator.swift */; };
+		047C0D112664B79000A2314E /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C0D102664B79000A2314E /* Localize.swift */; };
 		04AC2210265EB14200725741 /* SavedNews+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC220E265EB14200725741 /* SavedNews+CoreDataClass.swift */; };
 		04AC2213265EB1F400725741 /* CoreDate.SavedNewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC2212265EB1F400725741 /* CoreDate.SavedNewsManager.swift */; };
 		04AF18132653569300E3BB57 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF18122653569300E3BB57 /* Assets.swift */; };
@@ -160,6 +166,12 @@
 		046747F0265C99F000193BF9 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		046747F7265CE40200193BF9 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		046747F9265CE4C200193BF9 /* APIServices+getNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIServices+getNews.swift"; sourceTree = "<group>"; };
+		047C0D062664B12000A2314E /* ChangeLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageViewController.swift; sourceTree = "<group>"; };
+		047C0D072664B12000A2314E /* ChangeLanguageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeLanguageViewController.xib; sourceTree = "<group>"; };
+		047C0D0A2664B13F00A2314E /* ChangeLanguageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageViewModel.swift; sourceTree = "<group>"; };
+		047C0D0C2664B15000A2314E /* ChangeLanguageUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageUsecase.swift; sourceTree = "<group>"; };
+		047C0D0E2664B15F00A2314E /* ChangeLanguageNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageNavigator.swift; sourceTree = "<group>"; };
+		047C0D102664B79000A2314E /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
 		04AC220E265EB14200725741 /* SavedNews+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SavedNews+CoreDataClass.swift"; sourceTree = "<group>"; };
 		04AC2212265EB1F400725741 /* CoreDate.SavedNewsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDate.SavedNewsManager.swift; sourceTree = "<group>"; };
 		04AF18122653569300E3BB57 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
@@ -361,6 +373,7 @@
 				E30CE232265E7C0100C134D7 /* DefaultLocation.swift */,
 				E3DD8B272664A4CB000FF398 /* EmergencyCallModel.swift */,
 				E30CE22E265E7BF300C134D7 /* DefaultLocation.swift */,
+				047C0D102664B79000A2314E /* Localize.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -409,6 +422,18 @@
 				046747F0265C99F000193BF9 /* NewsTableViewCell.xib */,
 			);
 			path = NewsCell;
+			sourceTree = "<group>";
+		};
+		047C0D052664B0EF00A2314E /* ChangeLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				047C0D062664B12000A2314E /* ChangeLanguageViewController.swift */,
+				047C0D072664B12000A2314E /* ChangeLanguageViewController.xib */,
+				047C0D0A2664B13F00A2314E /* ChangeLanguageViewModel.swift */,
+				047C0D0C2664B15000A2314E /* ChangeLanguageUsecase.swift */,
+				047C0D0E2664B15F00A2314E /* ChangeLanguageNavigator.swift */,
+			);
+			path = ChangeLanguage;
 			sourceTree = "<group>";
 		};
 		04AC220C265EB07C00725741 /* FollowCountry */ = {
@@ -519,6 +544,7 @@
 		E390B82A26538BF300712E17 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				047C0D052664B0EF00A2314E /* ChangeLanguage */,
 				E390B83026538C2F00712E17 /* Base */,
 				E390B82B26538BFD00712E17 /* MainTabBar */,
 				E390B82E26538C1D00712E17 /* Tracking */,
@@ -787,6 +813,7 @@
 			files = (
 				04381CDC2652D3C200B0A914 /* LaunchScreen.storyboard in Resources */,
 				04485CC926576AC200E85DA3 /* RankTableViewCell.xib in Resources */,
+				047C0D092664B12000A2314E /* ChangeLanguageViewController.xib in Resources */,
 				04AF182526535A9C00E3BB57 /* Arvo-Regular.ttf in Resources */,
 				E3E989FF26580473006112DB /* AllCountryViewController.xib in Resources */,
 				046747F2265C99F000193BF9 /* NewsTableViewCell.xib in Resources */,
@@ -860,6 +887,7 @@
 				04485CC0265769AE00E85DA3 /* Int+.swift in Sources */,
 				E3E98A0C26580E4A006112DB /* AllCountryNavigator.swift in Sources */,
 				04AF18482654986E00E3BB57 /* Error.swift in Sources */,
+				047C0D0F2664B15F00A2314E /* ChangeLanguageNavigator.swift in Sources */,
 				04AF181B26535A1800E3BB57 /* Fonts.swift in Sources */,
 				E30CE221265E7A1200C134D7 /* AboutTableViewCell.swift in Sources */,
 				E35C7F4926609EF3000BB183 /* UtilitiesModel.swift in Sources */,
@@ -867,12 +895,15 @@
 				04AF184E2654997B00E3BB57 /* NewsAPIResponse.swift in Sources */,
 				E3731E0A265FE2B1003937AA /* String+.swift in Sources */,
 				E3FDAC9C26538E0D00D91465 /* BaseNavigationController.swift in Sources */,
+				047C0D0B2664B13F00A2314E /* ChangeLanguageViewModel.swift in Sources */,
 				E30CE225265E7A1800C134D7 /* InfoTableViewCell.swift in Sources */,
 				E35C7F3426608DB7000BB183 /* ObservableType+.swift in Sources */,
 				E366AE922654B6F700F546DF /* TrackingViewModel.swift in Sources */,
+				047C0D112664B79000A2314E /* Localize.swift in Sources */,
 				04381CD02652D3C000B0A914 /* AppDelegate.swift in Sources */,
 				E3E98A032658048B006112DB /* AllCountryViewModel.swift in Sources */,
 				04485CCB26576AC200E85DA3 /* RankingViewController.swift in Sources */,
+				047C0D0D2664B15000A2314E /* ChangeLanguageUsecase.swift in Sources */,
 				046747E4265B659900193BF9 /* DetailsViewModel.swift in Sources */,
 				E3DD8B282664A4CB000FF398 /* EmergencyCallModel.swift in Sources */,
 				E35C7F3E266099E9000BB183 /* UtilitiesNavigator.swift in Sources */,
@@ -886,6 +917,7 @@
 				04381CD22652D3C000B0A914 /* SceneDelegate.swift in Sources */,
 				04485BD9265627DC00E85DA3 /* CoreDataServices.swift in Sources */,
 				E30CE217265E79DB00C134D7 /* DetailsSectionModel.swift in Sources */,
+				047C0D082664B12000A2314E /* ChangeLanguageViewController.swift in Sources */,
 				046747F1265C99F000193BF9 /* NewsTableViewCell.swift in Sources */,
 				04485CCA26576AC200E85DA3 /* RankTableViewCell.swift in Sources */,
 				E3DD8B1D2664A4A5000FF398 /* EmergencyCallNavigator.swift in Sources */,

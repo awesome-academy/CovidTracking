@@ -33,7 +33,7 @@ struct EmergencyCallViewModel: ViewModel {
         
         let emergencyCall = input.loadTrigger
             .flatMapLatest { _ in
-                return dataSource
+                return self.dataSource
                     .asDriverOnErrorJustComplete()
             }
         
@@ -42,14 +42,14 @@ struct EmergencyCallViewModel: ViewModel {
                 return datasource[index.row]
             }
             .do(onNext: { phone in
-                navigator.makeCall(number: phone.phoneNumber)
+                self.navigator.makeCall(number: phone.phoneNumber)
             })
             .mapToVoid()
         
         let searhBar = input.searchBarInput
             .withLatestFrom(dataSource.asDriver()) { ($0, $1) }
             .flatMapLatest { text, data -> Driver<[Phone]> in
-                return !text.isEmpty ? .just(useCase.filter(text: text)) : .just(data)
+                return !text.isEmpty ? .just(self.useCase.filter(text: text)) : .just(data)
             }
             .do(onNext: dataSource.accept)
             .mapToVoid()

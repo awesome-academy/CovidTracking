@@ -12,6 +12,7 @@ import UIKit
 
 protocol UtilitiesNavigatorType {
     func toEmergencyCallVC()
+    func pushToLanguage()
 }
 
 struct UtilitiesNavigator: UtilitiesNavigatorType {
@@ -25,5 +26,14 @@ struct UtilitiesNavigator: UtilitiesNavigatorType {
                                                useCase: useCase)
         viewController.bindViewModel(to: viewModel)
         navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    func pushToLanguage() {
+        let vc = ChangeLanguageViewController()
+        let navigator = ChangeLanguageNavigator(navigationController: navigationController)
+        let usecase = ChangeLanguageUseCase()
+        let viewModel = LanguageViewModel(usecase: usecase, navigator: navigator)
+        vc.bindViewModel(to: viewModel)
+        navigationController.pushViewController(vc, animated: true)
     }
 }
