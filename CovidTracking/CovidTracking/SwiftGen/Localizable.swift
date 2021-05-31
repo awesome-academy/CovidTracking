@@ -20,20 +20,28 @@ internal enum L10n {
   internal static let decrease = L10n.tr("Localizable", "Decrease")
   /// Details
   internal static let detailTitle = L10n.tr("Localizable", "DetailTitle")
+  /// Emergency call
+  internal static let emergencyCall = L10n.tr("Localizable", "EmergencyCall")
   /// Increase
   internal static let increase = L10n.tr("Localizable", "Increase")
+  /// Language
+  internal static let language = L10n.tr("Localizable", "Language")
   /// News
   internal static let newsTitle = L10n.tr("Localizable", "NewsTitle")
   /// No data
   internal static let nodata = L10n.tr("Localizable", "Nodata")
   /// Ranking
   internal static let rankingTitle = L10n.tr("Localizable", "RankingTitle")
+  /// Saved news
+  internal static let savedNews = L10n.tr("Localizable", "SavedNews")
   /// Tracking this country?
   internal static let trackingCountryAlert = L10n.tr("Localizable", "TrackingCountryAlert")
   /// Tracking
   internal static let trackingTitle = L10n.tr("Localizable", "TrackingTitle")
   /// Utilities
   internal static let utilitiesTitle = L10n.tr("Localizable", "UtilitiesTitle")
+  /// Washing hand
+  internal static let washingHand = L10n.tr("Localizable", "WashingHand")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces
