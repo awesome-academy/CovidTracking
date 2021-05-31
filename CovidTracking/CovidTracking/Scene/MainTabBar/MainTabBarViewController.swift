@@ -42,10 +42,10 @@ final class MainTabBarViewController: UITabBarController {
         let vc = UtilitiesViewController()
         vc.tabBarItem = TabBarItems.utilities.item
         let useCase = UtilitiesUseCase()
-        let navigator = UtilitiesNavigator()
+        let navigationController = BaseNavigationController(rootViewController: vc)
+        let navigator = UtilitiesNavigator(navigationController: navigationController)
         let viewModel = UtilitiesViewModel(navigator: navigator, useCase: useCase)
         vc.bindViewModel(to: viewModel)
-        let navigationController = BaseNavigationController(rootViewController: vc)
         return navigationController
     }
     

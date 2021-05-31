@@ -75,7 +75,6 @@
 		E353EAEC2657642A006D027D /* RxSwiftExt in Frameworks */ = {isa = PBXBuildFile; productRef = E353EAEB2657642A006D027D /* RxSwiftExt */; };
 		E35C7F3426608DB7000BB183 /* ObservableType+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35C7F3326608DB7000BB183 /* ObservableType+.swift */; };
 		E35C7F38266099CA000BB183 /* UtilitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35C7F37266099CA000BB183 /* UtilitiesViewModel.swift */; };
-		E35C7F3B266099DA000BB183 /* UtilitiesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35C7F3A266099DA000BB183 /* UtilitiesUseCase.swift */; };
 		E35C7F3E266099E9000BB183 /* UtilitiesNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35C7F3D266099E9000BB183 /* UtilitiesNavigator.swift */; };
 		E35C7F4326609DA7000BB183 /* UtilitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35C7F4126609DA7000BB183 /* UtilitiesTableViewCell.swift */; };
 		E35C7F4426609DA7000BB183 /* UtilitiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E35C7F4226609DA7000BB183 /* UtilitiesTableViewCell.xib */; };
@@ -96,6 +95,15 @@
 		E3BC62E7265B3E0B0079E1A4 /* CodeCountries.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BC62E6265B3E0B0079E1A4 /* CodeCountries.swift */; };
 		E3BC62F1265B50BC0079E1A4 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BC62F0265B50BC0079E1A4 /* UIViewController+.swift */; };
 		E3BC62FA265C0DDB0079E1A4 /* ViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BC62F9265C0DDB0079E1A4 /* ViewController+Rx.swift */; };
+		E3DD8B1B2664A4A5000FF398 /* EmergencyCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD8B162664A4A4000FF398 /* EmergencyCallViewController.swift */; };
+		E3DD8B1C2664A4A5000FF398 /* EmergencyCallUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD8B172664A4A4000FF398 /* EmergencyCallUseCase.swift */; };
+		E3DD8B1D2664A4A5000FF398 /* EmergencyCallNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD8B182664A4A5000FF398 /* EmergencyCallNavigator.swift */; };
+		E3DD8B1E2664A4A5000FF398 /* EmergencyCallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3DD8B192664A4A5000FF398 /* EmergencyCallViewController.xib */; };
+		E3DD8B1F2664A4A5000FF398 /* EmergencyCallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD8B1A2664A4A5000FF398 /* EmergencyCallViewModel.swift */; };
+		E3DD8B242664A4B9000FF398 /* EmergencyCallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD8B222664A4B9000FF398 /* EmergencyCallTableViewCell.swift */; };
+		E3DD8B252664A4B9000FF398 /* EmergencyCallTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3DD8B232664A4B9000FF398 /* EmergencyCallTableViewCell.xib */; };
+		E3DD8B282664A4CB000FF398 /* EmergencyCallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD8B272664A4CB000FF398 /* EmergencyCallModel.swift */; };
+		E3DD8B2C2664AA7B000FF398 /* UtilitiesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD8B2B2664AA7B000FF398 /* UtilitiesUseCase.swift */; };
 		E3E989FE26580473006112DB /* AllCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E989FC26580473006112DB /* AllCountryViewController.swift */; };
 		E3E989FF26580473006112DB /* AllCountryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E989FD26580473006112DB /* AllCountryViewController.xib */; };
 		E3E98A032658048B006112DB /* AllCountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E98A022658048B006112DB /* AllCountryViewModel.swift */; };
@@ -180,7 +188,6 @@
 		E353EADC265746E3006D027D /* SharedSequenceConvertibleType+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SharedSequenceConvertibleType+.swift"; sourceTree = "<group>"; };
 		E35C7F3326608DB7000BB183 /* ObservableType+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+.swift"; sourceTree = "<group>"; };
 		E35C7F37266099CA000BB183 /* UtilitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesViewModel.swift; sourceTree = "<group>"; };
-		E35C7F3A266099DA000BB183 /* UtilitiesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UtilitiesUseCase.swift; path = ../../../../../../Downloads/UtilitiesUseCase.swift; sourceTree = "<group>"; };
 		E35C7F3D266099E9000BB183 /* UtilitiesNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesNavigator.swift; sourceTree = "<group>"; };
 		E35C7F4126609DA7000BB183 /* UtilitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesTableViewCell.swift; sourceTree = "<group>"; };
 		E35C7F4226609DA7000BB183 /* UtilitiesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UtilitiesTableViewCell.xib; sourceTree = "<group>"; };
@@ -198,6 +205,15 @@
 		E3BC62E6265B3E0B0079E1A4 /* CodeCountries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeCountries.swift; sourceTree = "<group>"; };
 		E3BC62F0265B50BC0079E1A4 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		E3BC62F9265C0DDB0079E1A4 /* ViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Rx.swift"; sourceTree = "<group>"; };
+		E3DD8B162664A4A4000FF398 /* EmergencyCallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyCallViewController.swift; sourceTree = "<group>"; };
+		E3DD8B172664A4A4000FF398 /* EmergencyCallUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyCallUseCase.swift; sourceTree = "<group>"; };
+		E3DD8B182664A4A5000FF398 /* EmergencyCallNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyCallNavigator.swift; sourceTree = "<group>"; };
+		E3DD8B192664A4A5000FF398 /* EmergencyCallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmergencyCallViewController.xib; sourceTree = "<group>"; };
+		E3DD8B1A2664A4A5000FF398 /* EmergencyCallViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyCallViewModel.swift; sourceTree = "<group>"; };
+		E3DD8B222664A4B9000FF398 /* EmergencyCallTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyCallTableViewCell.swift; sourceTree = "<group>"; };
+		E3DD8B232664A4B9000FF398 /* EmergencyCallTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmergencyCallTableViewCell.xib; sourceTree = "<group>"; };
+		E3DD8B272664A4CB000FF398 /* EmergencyCallModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyCallModel.swift; sourceTree = "<group>"; };
+		E3DD8B2B2664AA7B000FF398 /* UtilitiesUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilitiesUseCase.swift; sourceTree = "<group>"; };
 		E3E989FC26580473006112DB /* AllCountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountryViewController.swift; sourceTree = "<group>"; };
 		E3E989FD26580473006112DB /* AllCountryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllCountryViewController.xib; sourceTree = "<group>"; };
 		E3E98A022658048B006112DB /* AllCountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountryViewModel.swift; sourceTree = "<group>"; };
@@ -343,6 +359,7 @@
 			children = (
 				04485CBA265768D100E85DA3 /* URLs.swift */,
 				E30CE232265E7C0100C134D7 /* DefaultLocation.swift */,
+				E3DD8B272664A4CB000FF398 /* EmergencyCallModel.swift */,
 				E30CE22E265E7BF300C134D7 /* DefaultLocation.swift */,
 			);
 			path = Utils;
@@ -510,6 +527,7 @@
 				E390B82F26538C2900712E17 /* Ranking */,
 				E390B82D26538C1400712E17 /* News */,
 				E390B82C26538C0800712E17 /* Utilities */,
+				E3DD8B152664A48D000FF398 /* EmergencyCall */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -528,8 +546,8 @@
 			children = (
 				E3FDACC4265395AF00D91465 /* UtilitiesViewController.swift */,
 				E35C7F37266099CA000BB183 /* UtilitiesViewModel.swift */,
-				E35C7F3A266099DA000BB183 /* UtilitiesUseCase.swift */,
 				E35C7F3D266099E9000BB183 /* UtilitiesNavigator.swift */,
+				E3DD8B2B2664AA7B000FF398 /* UtilitiesUseCase.swift */,
 				E3FDACC5265395AF00D91465 /* UtilitiesViewController.xib */,
 				E35C7F4026609D7A000BB183 /* Utilities Cell */,
 			);
@@ -633,6 +651,28 @@
 				E3BC62E1265B3B830079E1A4 /* AllCountryTableViewCell.xib */,
 			);
 			path = AllCountryCell;
+			sourceTree = "<group>";
+		};
+		E3DD8B152664A48D000FF398 /* EmergencyCall */ = {
+			isa = PBXGroup;
+			children = (
+				E3DD8B182664A4A5000FF398 /* EmergencyCallNavigator.swift */,
+				E3DD8B172664A4A4000FF398 /* EmergencyCallUseCase.swift */,
+				E3DD8B162664A4A4000FF398 /* EmergencyCallViewController.swift */,
+				E3DD8B192664A4A5000FF398 /* EmergencyCallViewController.xib */,
+				E3DD8B1A2664A4A5000FF398 /* EmergencyCallViewModel.swift */,
+				E3DD8B212664A4A8000FF398 /* EmergencyCall Cell */,
+			);
+			path = EmergencyCall;
+			sourceTree = "<group>";
+		};
+		E3DD8B212664A4A8000FF398 /* EmergencyCall Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E3DD8B222664A4B9000FF398 /* EmergencyCallTableViewCell.swift */,
+				E3DD8B232664A4B9000FF398 /* EmergencyCallTableViewCell.xib */,
+			);
+			path = "EmergencyCall Cell";
 			sourceTree = "<group>";
 		};
 		E3E989FB2658044B006112DB /* AllCountry */ = {
@@ -751,12 +791,14 @@
 				E3E989FF26580473006112DB /* AllCountryViewController.xib in Resources */,
 				046747F2265C99F000193BF9 /* NewsTableViewCell.xib in Resources */,
 				E30CE226265E7A1800C134D7 /* InfoTableViewCell.xib in Resources */,
+				E3DD8B1E2664A4A5000FF398 /* EmergencyCallViewController.xib in Resources */,
 				E3FDACC02653958B00D91465 /* NewsViewController.xib in Resources */,
 				E30CE220265E7A1200C134D7 /* AboutTableViewCell.xib in Resources */,
 				E3FDACC7265395AF00D91465 /* UtilitiesViewController.xib in Resources */,
 				04381D14265347A700B0A914 /* Localizable.strings in Resources */,
 				04AF182726535A9C00E3BB57 /* Arvo-BoldItalic.ttf in Resources */,
 				E3690168265F87B1006F494B /* ChartTableViewCell.xib in Resources */,
+				E3DD8B252664A4B9000FF398 /* EmergencyCallTableViewCell.xib in Resources */,
 				E35C7F4426609DA7000BB183 /* UtilitiesTableViewCell.xib in Resources */,
 				E3FDACB22653953700D91465 /* TrackingViewController.xib in Resources */,
 				04485CCC26576AC200E85DA3 /* RankingViewController.xib in Resources */,
@@ -803,6 +845,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E39648792657C535008B2F21 /* AllCountry.swift in Sources */,
+				E3DD8B1B2664A4A5000FF398 /* EmergencyCallViewController.swift in Sources */,
 				04485CBB265768D100E85DA3 /* URLs.swift in Sources */,
 				E390B83626538CC600712E17 /* MainTabBarViewController.swift in Sources */,
 				046747FA265CE4C200193BF9 /* APIServices+getNews.swift in Sources */,
@@ -830,8 +873,8 @@
 				04381CD02652D3C000B0A914 /* AppDelegate.swift in Sources */,
 				E3E98A032658048B006112DB /* AllCountryViewModel.swift in Sources */,
 				04485CCB26576AC200E85DA3 /* RankingViewController.swift in Sources */,
-				E35C7F3B266099DA000BB183 /* UtilitiesUseCase.swift in Sources */,
 				046747E4265B659900193BF9 /* DetailsViewModel.swift in Sources */,
+				E3DD8B282664A4CB000FF398 /* EmergencyCallModel.swift in Sources */,
 				E35C7F3E266099E9000BB183 /* UtilitiesNavigator.swift in Sources */,
 				046747EE265C98F000193BF9 /* NewsUseCase.swift in Sources */,
 				E35C7F4326609DA7000BB183 /* UtilitiesTableViewCell.swift in Sources */,
@@ -845,11 +888,13 @@
 				E30CE217265E79DB00C134D7 /* DetailsSectionModel.swift in Sources */,
 				046747F1265C99F000193BF9 /* NewsTableViewCell.swift in Sources */,
 				04485CCA26576AC200E85DA3 /* RankTableViewCell.swift in Sources */,
+				E3DD8B1D2664A4A5000FF398 /* EmergencyCallNavigator.swift in Sources */,
 				E353EADD265746E3006D027D /* SharedSequenceConvertibleType+.swift in Sources */,
 				E366AE8E2654B65B00F546DF /* TrackingTableViewCell.swift in Sources */,
 				E30CE22B265E7A1E00C134D7 /* ChartTableViewCell.swift in Sources */,
 				E3E989FE26580473006112DB /* AllCountryViewController.swift in Sources */,
 				E3FDACB12653953700D91465 /* TrackingViewController.swift in Sources */,
+				E3DD8B1C2664A4A5000FF398 /* EmergencyCallUseCase.swift in Sources */,
 				E3E98A092658080A006112DB /* TrackingUseCase.swift in Sources */,
 				04AF18132653569300E3BB57 /* Assets.swift in Sources */,
 				046747E2265B54EA00193BF9 /* RankNavigator.swift in Sources */,
@@ -859,10 +904,13 @@
 				E3FDACDE26539E4D00D91465 /* Localizable.swift in Sources */,
 				046747DB265B3C3500193BF9 /* APIServices+GetAll.swift in Sources */,
 				04AF184A2654989500E3BB57 /* APIServices.swift in Sources */,
+				E3DD8B1F2664A4A5000FF398 /* EmergencyCallViewModel.swift in Sources */,
 				E30CE218265E79DB00C134D7 /* DetailsUseCase.swift in Sources */,
 				04485CB62657685800E85DA3 /* Bindable.swift in Sources */,
 				046747EC265C98E000193BF9 /* NewsNavigator.swift in Sources */,
 				04485BE4265628A300E85DA3 /* FollowCountry+CoreDataClass.swift in Sources */,
+				E3DD8B242664A4B9000FF398 /* EmergencyCallTableViewCell.swift in Sources */,
+				E3DD8B2C2664AA7B000FF398 /* UtilitiesUseCase.swift in Sources */,
 				04485BE02656285F00E85DA3 /* Model.xcdatamodeld in Sources */,
 				E3BC62FA265C0DDB0079E1A4 /* ViewController+Rx.swift in Sources */,
 				E3690174265F8A9E006F494B /* APIServices+GetHistory.swift in Sources */,

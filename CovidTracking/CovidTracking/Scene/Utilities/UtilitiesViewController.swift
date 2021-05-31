@@ -37,7 +37,8 @@ final class UtilitiesViewController: UIViewController, Bindable {
     }
     
     func bindViewModel() {
-        let input = UtilitiesViewModel.Input(triggerLoad: Driver.just(()))
+        let input = UtilitiesViewModel.Input(triggerLoad: Driver.just(()),
+                                             selectItem: tableView.rx.itemSelected.asDriver())
         let output = viewModel.transform(input)
         
         output.utilities
@@ -47,6 +48,10 @@ final class UtilitiesViewController: UIViewController, Bindable {
                 cell.config(model: model)
                 return cell
             }
+            .disposed(by: rx.disposeBag)
+        
+        output.seleted
+            .drive()
             .disposed(by: rx.disposeBag)
     }
 }
