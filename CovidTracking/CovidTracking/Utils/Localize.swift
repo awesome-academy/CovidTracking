@@ -21,14 +21,14 @@ class LocalizeSystem: NSObject {
         bundle = Bundle.main
     }
 
-    func setLanguage(languageCode:String) {
+    func setLanguage(languageCode: String) {
         var appleLanguages = UserDefaults.standard.object(forKey: "AppleLanguages") as? [String]
         appleLanguages?.remove(at: 0)
         appleLanguages?.insert(languageCode, at: 0)
         UserDefaults.standard.set(appleLanguages, forKey: "AppleLanguages")
         UserDefaults.standard.synchronize()
 
-        if let languageDirectoryPath = Bundle.main.path(forResource: languageCode, ofType: "lproj")  {
+        if let languageDirectoryPath = Bundle.main.path(forResource: languageCode, ofType: "lproj") {
             bundle = Bundle(path: languageDirectoryPath)
         } else {
             resetLocalization()

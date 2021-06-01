@@ -12,7 +12,7 @@ import Foundation
 internal enum L10n {
   /// Change Language
   internal static let changeLanguage = L10n.tr("Localizable", "ChangeLanguage")
-  /// You need restart app to apply change
+  /// You need restart app to apply change language
   internal static let changeLanguageMess = L10n.tr("Localizable", "ChangeLanguageMess")
   /// Chart
   internal static let chart = L10n.tr("Localizable", "Chart")
