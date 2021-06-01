@@ -53,7 +53,7 @@ extension NewsViewController: Bindable {
         }
         .disposed(by: rx.disposeBag)
         
-        output.getAPI
+        output.getData
             .drive()
             .disposed(by: rx.disposeBag)
         
