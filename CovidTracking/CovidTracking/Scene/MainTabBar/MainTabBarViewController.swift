@@ -66,7 +66,7 @@ final class MainTabBarViewController: UITabBarController {
         let navigationController = BaseNavigationController(rootViewController: viewController)
         let useCase = NewsUseCase()
         let navigator = NewsNavigator(navigationController: navigationController)
-        let viewModel = NewsViewModel(navigator: navigator, useCase: useCase)
+        let viewModel = NewsViewModel(navigator: navigator, useCase: useCase, isSavedNews: false)
         viewController.bindViewModel(to: viewModel)
         return navigationController
     }

@@ -16,6 +16,7 @@ struct NewsViewModel: ViewModel {
     
     let navigator: NewsNavigatorType
     let useCase: NewsUseCaseType
+    let isSavedNews: Bool
     
     let dataSource = BehaviorRelay<[Articles]>(value: [])
     let savedData = BehaviorRelay<[String]>(value: [])
@@ -28,7 +29,7 @@ struct NewsViewModel: ViewModel {
     
     struct Output {
         let newsList: Driver<[Articles]>
-        let getAPI: Driver<[Articles]>
+        let getData: Driver<[Articles]>
         let loadCoreData: Driver<Void>
         let pushToSafariView: Driver<Void>
         var saveButtonAction: Driver<Void>
@@ -47,22 +48,6 @@ struct NewsViewModel: ViewModel {
         }
         .do(onNext: savedData.accept)
         .mapToVoid()
-        
-        let getAPI = input.loadTrigger
-            .flatMapLatest {
-                return self.useCase.getNews().asDriver(onErrorJustReturn: [])
-        }
-        .withLatestFrom(savedData.asDriver()) { articles, urls in
-            return articles.map {
-                if urls.contains($0.articlesUrl) {
-                    return $0.with {
-                        $0.isSaved = true
-                    }
-                }
-                return $0
-            }
-        }
-        .do(onNext: dataSource.accept)
         
         let selected = input.cellSelected
             .withLatestFrom(newsList) { indexPath, newsList in
@@ -91,11 +76,53 @@ struct NewsViewModel: ViewModel {
             })
             .do(onNext: dataSource.accept)
             .mapToVoid()
-                
-        return Output(newsList: newsList,
-                      getAPI: getAPI,
-                      loadCoreData: loadCoreData,
-                      pushToSafariView: selected,
-                      saveButtonAction: saveButtonAction)
+        
+        if !isSavedNews {
+            let getData = input.loadTrigger
+                .flatMapLatest {
+                    return self.useCase.getNews().asDriver(onErrorJustReturn: [])
+            }
+            .withLatestFrom(savedData.asDriver()) { articles, urls in
+                return articles.map {
+                    if urls.contains($0.articlesUrl) {
+                        return $0.with {
+                            $0.isSaved = true
+                        }
+                    }
+                    return $0
+                }
+            }
+            .do(onNext: dataSource.accept)
+            
+            return Output(newsList: newsList,
+                                 getData: getData,
+                                 loadCoreData: loadCoreData,
+                                 pushToSafariView: selected,
+                                 saveButtonAction: saveButtonAction)
+        } else {
+            let getData = input.loadTrigger
+                .flatMapLatest {
+                    return self.useCase.getSavedArticles().asDriverOnErrorJustComplete()
+            }
+            .map { (savedArticles) -> [Articles] in
+                return savedArticles.map { (savedArticle) -> Articles in
+                    return Articles().with {
+                        $0.title = savedArticle.title ?? ""
+                        $0.description = savedArticle.descripton ?? ""
+                        $0.publishedDateTime = savedArticle.publishTime ?? ""
+                        $0.imageUrl = savedArticle.imageUrl ?? ""
+                        $0.articlesUrl = savedArticle.articlesUrl ?? ""
+                        $0.isSaved = true
+                    }
+                }
+            }
+            .do(onNext: dataSource.accept)
+            
+            return Output(newsList: newsList,
+                                 getData: getData,
+                                 loadCoreData: loadCoreData,
+                                 pushToSafariView: selected,
+                                 saveButtonAction: saveButtonAction)
+        }
     }
 }

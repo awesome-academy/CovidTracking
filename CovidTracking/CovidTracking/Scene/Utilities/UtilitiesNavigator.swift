@@ -14,6 +14,7 @@ protocol UtilitiesNavigatorType {
     func toEmergencyCallVC()
     func pushToLanguage()
     func toWashingHandVC()
+    func pushToSavedNews()
 }
 
 struct UtilitiesNavigator: UtilitiesNavigatorType {
@@ -43,5 +44,14 @@ struct UtilitiesNavigator: UtilitiesNavigatorType {
         let viewModel = WashingHandViewModel()
         viewController.bindViewModel(to: viewModel)
         navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    func pushToSavedNews() {
+        let vc = NewsViewController()
+        let navigator = NewsNavigator(navigationController: navigationController)
+        let usecase = NewsUseCase()
+        let viewModel = NewsViewModel(navigator: navigator, useCase: usecase, isSavedNews: true)
+        vc.bindViewModel(to: viewModel)
+        navigationController.pushViewController(vc, animated: true)
     }
 }

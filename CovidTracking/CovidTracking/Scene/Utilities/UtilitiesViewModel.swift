@@ -41,9 +41,9 @@ struct UtilitiesViewModel: ViewModel {
                 case 0:
                     self.navigator.toEmergencyCallVC()
                 case 1:
-                    navigator.toWashingHandVC()
+                    self.navigator.toWashingHandVC()
                 case 2:
-                    break
+                    self.navigator.pushToSavedNews()
                 case 3:
                     self.navigator.pushToLanguage()
                 default:
