@@ -31,21 +31,22 @@ struct UtilitiesViewModel: ViewModel {
         
         let utilities = input.triggerLoad
             .flatMapLatest { _ in
-                return dataSource
+                return self.dataSource
                     .asDriverOnErrorJustComplete()
             }
-        
+
         let selected = input.selectItem
             .do(onNext: { indexPath in
                 switch indexPath.row {
                 case 0:
-                    navigator.toEmergencyCallVC()
+                    self.navigator.toEmergencyCallVC()
+                    break
                 case 1:
                     break
                 case 2:
                     break
                 case 3:
-                    break
+                    self.navigator.pushToLanguage()
                 default:
                     break
                 }

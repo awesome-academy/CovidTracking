@@ -10,6 +10,10 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  /// Change Language
+  internal static let changeLanguage = L10n.tr("Localizable", "ChangeLanguage")
+  /// You need restart app to apply change
+  internal static let changeLanguageMess = L10n.tr("Localizable", "ChangeLanguageMess")
   /// Chart
   internal static let chart = L10n.tr("Localizable", "Chart")
   /// covid cases by day
@@ -22,6 +26,8 @@ internal enum L10n {
   internal static let detailTitle = L10n.tr("Localizable", "DetailTitle")
   /// Emergency call
   internal static let emergencyCall = L10n.tr("Localizable", "EmergencyCall")
+  /// English
+  internal static let english = L10n.tr("Localizable", "English")
   /// Increase
   internal static let increase = L10n.tr("Localizable", "Increase")
   /// Language
@@ -40,6 +46,8 @@ internal enum L10n {
   internal static let trackingTitle = L10n.tr("Localizable", "TrackingTitle")
   /// Utilities
   internal static let utilitiesTitle = L10n.tr("Localizable", "UtilitiesTitle")
+  /// Vietnamese
+  internal static let vietnamese = L10n.tr("Localizable", "Vietnamese")
   /// Washing hand
   internal static let washingHand = L10n.tr("Localizable", "WashingHand")
 }

@@ -22,3 +22,7 @@
 "WashingHand" = "Washing hand";
 "SavedNews" = "Saved news";
 "Language" = "Language";
+"Vietnamese" = "Vietnamese";
+"English" = "English";
+"ChangeLanguage" = "Change Language";
+"ChangeLanguageMess" = "You need restart app to apply change language";

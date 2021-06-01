@@ -10,6 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import NSObject_Rx
+import Localize_Swift
 
 final class RankingViewController: UIViewController {
     
