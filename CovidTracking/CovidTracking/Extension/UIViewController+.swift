@@ -26,12 +26,12 @@ extension UIViewController {
     }
     
     func changeLanguageAlert(message: String) {
-        let ac = UIAlertController(title: L10n.changeLanguage.localized(),
+        let alertController = UIAlertController(title: L10n.changeLanguage.localized(),
                                    message: message,
                                    preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .destructive)
 
-        ac.addAction(okAction)
-        present(ac, animated: true)
+        alertController.addAction(okAction)
+        present(alertController, animated: true)
     }
 }

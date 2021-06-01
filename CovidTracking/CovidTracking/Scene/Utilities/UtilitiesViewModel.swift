@@ -40,7 +40,6 @@ struct UtilitiesViewModel: ViewModel {
                 switch indexPath.row {
                 case 0:
                     self.navigator.toEmergencyCallVC()
-                    break
                 case 1:
                     navigator.toWashingHandVC()
                 case 2:

@@ -44,6 +44,7 @@ internal enum Asset {
   internal static let buoc6 = ImageAsset(name: "buoc6")
   internal static let ruatay0 = ImageAsset(name: "ruatay0")
   internal static let ruatay1 = ImageAsset(name: "ruatay1")
+  internal static let launchScreen = ImageAsset(name: "launchScreen")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
