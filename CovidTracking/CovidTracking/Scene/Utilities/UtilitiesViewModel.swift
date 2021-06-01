@@ -42,7 +42,7 @@ struct UtilitiesViewModel: ViewModel {
                     self.navigator.toEmergencyCallVC()
                     break
                 case 1:
-                    break
+                    navigator.toWashingHandVC()
                 case 2:
                     break
                 case 3:

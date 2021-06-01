@@ -47,7 +47,7 @@ extension NewsViewController: Bindable {
             let cell: NewsTableViewCell = tableView.dequeueReusableCell(for: indexPath)
             cell.setContent(article: news, index: indexPath.row)
             cell.didTapSaveButton = { [weak self] in
-                self?.selectSaveButton.onNext(($0,$1))
+                self?.selectSaveButton.onNext(($0, $1))
             }
             return cell
         }

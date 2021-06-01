@@ -35,7 +35,7 @@ extension CoreDataManager.SavedNewsManager {
             do {
                 let check = try CoreDataManager.shared.context.fetch(fetchRequest)
                 if check.isEmpty {
-                    let _ = SavedArticles(context: CoreDataManager.shared.context)
+                    SavedArticles(context: CoreDataManager.shared.context)
                         .do {
                             $0.title = articles.title
                             $0.descripton = articles.description

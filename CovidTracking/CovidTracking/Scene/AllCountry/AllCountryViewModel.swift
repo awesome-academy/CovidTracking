@@ -40,13 +40,13 @@ struct AllCountryViewModel: ViewModel {
             .filter {
                 !$0.isEmpty
             }
-            .do (onNext: {text in
+            .do(onNext: {text in
                 self.dataSource.accept(self.useCase.filter(text: text))
             })
             .mapToVoid()
         
         let showAlert = input.selectTrigger
-            .withLatestFrom (dataSource.asDriver()) { (index, country) in
+            .withLatestFrom(dataSource.asDriver()) { (index, country) in
                 return country[index.row]
             }
             .do(onNext: { country in

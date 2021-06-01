@@ -26,3 +26,5 @@
 "English" = "Tiếng Anh";
 "ChangeLanguage" = "Đổi ngôn ngữ";
 "ChangeLanguageMess" = "Bạn cần khởi động lại ứng dụng để thay đổi ngôn ngữ được thực hiện";
+"washingNeeded" = "Các thời điểm cần rửa tay";
+"washingSteps" = "Các bước rửa tay";

@@ -12,7 +12,7 @@ import UIKit
 extension UIViewController {
     
     func showAddCountryAlert(message: String, completion: (() -> Void)? = nil) {
-        let ac = UIAlertController(title: L10n.trackingCountryAlert.localized(),
+        let alertViewController = UIAlertController(title: L10n.trackingCountryAlert.localized(),
                                    message: message,
                                    preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .cancel) { _ in
@@ -20,9 +20,9 @@ extension UIViewController {
         }
         
         let cancel = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
-        ac.addAction(okAction)
-        ac.addAction(cancel)
-        present(ac, animated: true, completion: nil)
+        alertViewController.addAction(okAction)
+        alertViewController.addAction(cancel)
+        present(alertViewController, animated: true, completion: nil)
     }
     
     func changeLanguageAlert(message: String) {

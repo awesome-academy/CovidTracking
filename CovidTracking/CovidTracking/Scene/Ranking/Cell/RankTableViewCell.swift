@@ -18,7 +18,6 @@ final class RankTableViewCell: UITableViewCell, NibReusable {
     @IBOutlet private weak var recoverLabel: UILabel!
     @IBOutlet private weak var view: UIView!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         configView()

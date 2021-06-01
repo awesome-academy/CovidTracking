@@ -16,7 +16,6 @@ struct EmergencyCallViewModel: ViewModel {
     let useCase: EmergencyUseCase
     let dataSource = BehaviorRelay<[Phone]>(value: EmergencyCall.phone)
 
-    
     struct Input {
         let loadTrigger: Driver<Void>
         let selectItem: Driver<IndexPath>

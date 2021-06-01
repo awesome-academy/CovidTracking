@@ -39,7 +39,7 @@ final class AllCountryViewController: UIViewController, Bindable {
     }
     
     func bindViewModel() {
-        let input = AllCountryViewModel.Input (
+        let input = AllCountryViewModel.Input(
             loadTrigger: Driver.just(()),
             searchBarInput: searchBar.rx.text.orEmpty.asDriver(),
             selectTrigger: tableView.rx.itemSelected.asDriver()
@@ -65,4 +65,3 @@ final class AllCountryViewController: UIViewController, Bindable {
             .disposed(by: rx.disposeBag)
     }
 }
-

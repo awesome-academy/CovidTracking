@@ -23,6 +23,6 @@ struct UtilsDefault {
         UtilitiesModel(image: Asset.save.image,
                        name: L10n.savedNews.localized()),
         UtilitiesModel(image: Asset.us.image,
-                       name: L10n.language.localized()),
+                       name: L10n.language.localized())
     ]
 }

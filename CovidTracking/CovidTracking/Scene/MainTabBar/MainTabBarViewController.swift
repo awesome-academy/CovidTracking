@@ -32,52 +32,52 @@ final class MainTabBarViewController: UITabBarController {
         ]
     }
     
-    func configureNavigationController(vc: UIViewController, item: UITabBarItem) -> UINavigationController {
-        let navigationController = BaseNavigationController(rootViewController: vc)
-        vc.tabBarItem = item
+    func configureNavigationController(viewController: UIViewController, item: UITabBarItem) -> UINavigationController {
+        let navigationController = BaseNavigationController(rootViewController: viewController)
+        viewController.tabBarItem = item
         return navigationController
     }
     
     func createUtilitiesNavigationController() -> UINavigationController {
-        let vc = UtilitiesViewController()
-        vc.tabBarItem = TabBarItems.utilities.item
+        let viewController = UtilitiesViewController()
+        viewController.tabBarItem = TabBarItems.utilities.item
         let useCase = UtilitiesUseCase()
-        let navigationController = BaseNavigationController(rootViewController: vc)
+        let navigationController = BaseNavigationController(rootViewController: viewController)
         let navigator = UtilitiesNavigator(navigationController: navigationController)
         let viewModel = UtilitiesViewModel(navigator: navigator, useCase: useCase)
-        vc.bindViewModel(to: viewModel)
+        viewController.bindViewModel(to: viewModel)
         return navigationController
     }
     
     func createTrackingNavigationController() -> UINavigationController {
-        let vc = TrackingViewController()
-        vc.tabBarItem = TabBarItems.tracking.item
-        let navigationController = BaseNavigationController(rootViewController: vc)
+        let viewController = TrackingViewController()
+        viewController.tabBarItem = TabBarItems.tracking.item
+        let navigationController = BaseNavigationController(rootViewController: viewController)
         let useCase = TrackingUseCase()
         let navigator = TrackingNavigator(navigationController: navigationController)
         let viewModel = TrackingViewModel(navigator: navigator, useCase: useCase)
-        vc.bindViewModel(to: viewModel)
+        viewController.bindViewModel(to: viewModel)
         return navigationController
     }
     
     func createNewsNavigationController() -> UINavigationController {
-        let vc = NewsViewController()
-        vc.tabBarItem = TabBarItems.news.item
-        let navigationController = BaseNavigationController(rootViewController: vc)
+        let viewController = NewsViewController()
+        viewController.tabBarItem = TabBarItems.news.item
+        let navigationController = BaseNavigationController(rootViewController: viewController)
         let useCase = NewsUseCase()
         let navigator = NewsNavigator(navigationController: navigationController)
         let viewModel = NewsViewModel(navigator: navigator, useCase: useCase)
-        vc.bindViewModel(to: viewModel)
+        viewController.bindViewModel(to: viewModel)
         return navigationController
     }
     
     func createRankNavigationController() -> UINavigationController {
-        let vc = RankingViewController()
-        vc.tabBarItem = TabBarItems.ranking.item
-        let navigationController = BaseNavigationController(rootViewController: vc)
+        let viewController = RankingViewController()
+        viewController.tabBarItem = TabBarItems.ranking.item
+        let navigationController = BaseNavigationController(rootViewController: viewController)
         let navigator = RankNavigator(navigationController: navigationController)
         let viewModel = RankingViewModel(navigator: navigator)
-        vc.bindViewModel(to: viewModel)
+        viewController.bindViewModel(to: viewModel)
         return navigationController
     }
 }

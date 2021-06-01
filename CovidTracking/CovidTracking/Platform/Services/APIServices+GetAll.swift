@@ -17,7 +17,7 @@ extension APIServices {
                 var details = response.result.values.map {
                     $0.details
                 }
-                details.removeAll { $0.country == "" }
+                details.removeAll { $0.country.isEmpty}
                 return details
         }
         .catchAndReturn([])

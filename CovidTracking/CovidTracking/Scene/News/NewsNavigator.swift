@@ -22,9 +22,9 @@ struct NewsNavigator: NewsNavigatorType {
         guard let url = URL(string: urlString) else {
             return
         }
-        let vc = SFSafariViewController(url: url)
-        vc.hidesBottomBarWhenPushed = true
-        navigationController.pushViewController(vc, animated: true)
+        let viewController = SFSafariViewController(url: url)
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController.pushViewController(viewController, animated: true)
     }
     
 }

@@ -119,5 +119,3 @@ struct TrackingViewModel: ViewModel {
         )
     }
 }
-
-

@@ -14,7 +14,7 @@ protocol TrackingUseCaseType {
     func getAllCase() -> Observable<[Details]>
     func getcoreData() -> Observable<[FollowCountry]>
     func filter(list: [Details], text: String) -> [Details]
-    func deleteCoreData(abbreviation: String,completion: @escaping  () -> [Details] ) -> Observable<[Details]>
+    func deleteCoreData(abbreviation: String, completion: @escaping  () -> [Details] ) -> Observable<[Details]>
 }
 
 struct TrackingUseCase: TrackingUseCaseType {
@@ -36,6 +36,4 @@ struct TrackingUseCase: TrackingUseCaseType {
             return detail.abbreviation.range(of: string, options: .caseInsensitive, range: nil, locale: nil) != nil
         }
     }
-
 }
-

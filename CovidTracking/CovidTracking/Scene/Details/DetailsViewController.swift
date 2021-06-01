@@ -89,7 +89,7 @@ extension DetailsViewController: UITableViewDelegate {
 
 extension DetailsViewController {
     private var configureCell: DataSource.ConfigureCell {
-        return { dataSource, tableView, indexPath, source in
+        return { dataSource, tableView, indexPath, _ in
             switch dataSource[indexPath] {
             case .about(let model):
                 let cell = tableView.dequeueReusableCell(for: indexPath, cellType: AboutTableViewCell.self)

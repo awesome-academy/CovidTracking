@@ -110,6 +110,15 @@
 		E3DD8B252664A4B9000FF398 /* EmergencyCallTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3DD8B232664A4B9000FF398 /* EmergencyCallTableViewCell.xib */; };
 		E3DD8B282664A4CB000FF398 /* EmergencyCallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD8B272664A4CB000FF398 /* EmergencyCallModel.swift */; };
 		E3DD8B2C2664AA7B000FF398 /* UtilitiesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD8B2B2664AA7B000FF398 /* UtilitiesUseCase.swift */; };
+		E3DD8B3A2664C6B4000FF398 /* WahsingHandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD8B362664C6B4000FF398 /* WahsingHandViewController.swift */; };
+		E3DD8B3B2664C6B4000FF398 /* WashingHandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD8B372664C6B4000FF398 /* WashingHandViewModel.swift */; };
+		E3DD8B3C2664C6B4000FF398 /* WashingHandSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD8B382664C6B4000FF398 /* WashingHandSectionModel.swift */; };
+		E3DD8B3D2664C6B4000FF398 /* WashingHandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3DD8B392664C6B4000FF398 /* WashingHandViewController.xib */; };
+		E3DD8B412664C6BC000FF398 /* WashingHandTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3DD8B3F2664C6BC000FF398 /* WashingHandTableViewCell.xib */; };
+		E3DD8B422664C6BC000FF398 /* WashingHandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD8B402664C6BC000FF398 /* WashingHandTableViewCell.swift */; };
+		E3DD8B462664C6C4000FF398 /* WashingHandCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3DD8B442664C6C4000FF398 /* WashingHandCollectionViewCell.xib */; };
+		E3DD8B472664C6C4000FF398 /* WashingHandCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD8B452664C6C4000FF398 /* WashingHandCollectionViewCell.swift */; };
+		E3DD8B4A2664C6EA000FF398 /* HandWashingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD8B492664C6EA000FF398 /* HandWashingModel.swift */; };
 		E3E989FE26580473006112DB /* AllCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E989FC26580473006112DB /* AllCountryViewController.swift */; };
 		E3E989FF26580473006112DB /* AllCountryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E989FD26580473006112DB /* AllCountryViewController.xib */; };
 		E3E98A032658048B006112DB /* AllCountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E98A022658048B006112DB /* AllCountryViewModel.swift */; };
@@ -226,6 +235,15 @@
 		E3DD8B232664A4B9000FF398 /* EmergencyCallTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmergencyCallTableViewCell.xib; sourceTree = "<group>"; };
 		E3DD8B272664A4CB000FF398 /* EmergencyCallModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyCallModel.swift; sourceTree = "<group>"; };
 		E3DD8B2B2664AA7B000FF398 /* UtilitiesUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilitiesUseCase.swift; sourceTree = "<group>"; };
+		E3DD8B362664C6B4000FF398 /* WahsingHandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WahsingHandViewController.swift; sourceTree = "<group>"; };
+		E3DD8B372664C6B4000FF398 /* WashingHandViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WashingHandViewModel.swift; sourceTree = "<group>"; };
+		E3DD8B382664C6B4000FF398 /* WashingHandSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WashingHandSectionModel.swift; sourceTree = "<group>"; };
+		E3DD8B392664C6B4000FF398 /* WashingHandViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WashingHandViewController.xib; sourceTree = "<group>"; };
+		E3DD8B3F2664C6BC000FF398 /* WashingHandTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WashingHandTableViewCell.xib; sourceTree = "<group>"; };
+		E3DD8B402664C6BC000FF398 /* WashingHandTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WashingHandTableViewCell.swift; sourceTree = "<group>"; };
+		E3DD8B442664C6C4000FF398 /* WashingHandCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WashingHandCollectionViewCell.xib; sourceTree = "<group>"; };
+		E3DD8B452664C6C4000FF398 /* WashingHandCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WashingHandCollectionViewCell.swift; sourceTree = "<group>"; };
+		E3DD8B492664C6EA000FF398 /* HandWashingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandWashingModel.swift; sourceTree = "<group>"; };
 		E3E989FC26580473006112DB /* AllCountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountryViewController.swift; sourceTree = "<group>"; };
 		E3E989FD26580473006112DB /* AllCountryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllCountryViewController.xib; sourceTree = "<group>"; };
 		E3E98A022658048B006112DB /* AllCountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountryViewModel.swift; sourceTree = "<group>"; };
@@ -374,6 +392,7 @@
 				E3DD8B272664A4CB000FF398 /* EmergencyCallModel.swift */,
 				E30CE22E265E7BF300C134D7 /* DefaultLocation.swift */,
 				047C0D102664B79000A2314E /* Localize.swift */,
+				E3DD8B492664C6EA000FF398 /* HandWashingModel.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -554,6 +573,7 @@
 				E390B82D26538C1400712E17 /* News */,
 				E390B82C26538C0800712E17 /* Utilities */,
 				E3DD8B152664A48D000FF398 /* EmergencyCall */,
+				E3DD8B332664C638000FF398 /* HandWashing */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -701,6 +721,37 @@
 			path = "EmergencyCall Cell";
 			sourceTree = "<group>";
 		};
+		E3DD8B332664C638000FF398 /* HandWashing */ = {
+			isa = PBXGroup;
+			children = (
+				E3DD8B362664C6B4000FF398 /* WahsingHandViewController.swift */,
+				E3DD8B382664C6B4000FF398 /* WashingHandSectionModel.swift */,
+				E3DD8B392664C6B4000FF398 /* WashingHandViewController.xib */,
+				E3DD8B372664C6B4000FF398 /* WashingHandViewModel.swift */,
+				E3DD8B342664C650000FF398 /* HandWashing TableCell */,
+			);
+			path = HandWashing;
+			sourceTree = "<group>";
+		};
+		E3DD8B342664C650000FF398 /* HandWashing TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				E3DD8B402664C6BC000FF398 /* WashingHandTableViewCell.swift */,
+				E3DD8B3F2664C6BC000FF398 /* WashingHandTableViewCell.xib */,
+				E3DD8B352664C69D000FF398 /* HandWashing CollectionCell */,
+			);
+			path = "HandWashing TableCell";
+			sourceTree = "<group>";
+		};
+		E3DD8B352664C69D000FF398 /* HandWashing CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				E3DD8B452664C6C4000FF398 /* WashingHandCollectionViewCell.swift */,
+				E3DD8B442664C6C4000FF398 /* WashingHandCollectionViewCell.xib */,
+			);
+			path = "HandWashing CollectionCell";
+			sourceTree = "<group>";
+		};
 		E3E989FB2658044B006112DB /* AllCountry */ = {
 			isa = PBXGroup;
 			children = (
@@ -730,6 +781,7 @@
 			buildConfigurationList = 04381CE02652D3C200B0A914 /* Build configuration list for PBXNativeTarget "CovidTracking" */;
 			buildPhases = (
 				02712A1680F97503C6485B03 /* [CP] Check Pods Manifest.lock */,
+				E31D7D162665D50A002699F2 /* Swiftlint */,
 				04381CC82652D3C000B0A914 /* Sources */,
 				04381CC92652D3C000B0A914 /* Frameworks */,
 				04381CCA2652D3C000B0A914 /* Resources */,
@@ -828,11 +880,14 @@
 				E3DD8B252664A4B9000FF398 /* EmergencyCallTableViewCell.xib in Resources */,
 				E35C7F4426609DA7000BB183 /* UtilitiesTableViewCell.xib in Resources */,
 				E3FDACB22653953700D91465 /* TrackingViewController.xib in Resources */,
+				E3DD8B3D2664C6B4000FF398 /* WashingHandViewController.xib in Resources */,
 				04485CCC26576AC200E85DA3 /* RankingViewController.xib in Resources */,
 				04AF182626535A9C00E3BB57 /* Arvo-Italic.ttf in Resources */,
 				E366AE8D2654B65B00F546DF /* TrackingTableViewCell.xib in Resources */,
+				E3DD8B412664C6BC000FF398 /* WashingHandTableViewCell.xib in Resources */,
 				E3BC62E3265B3B830079E1A4 /* AllCountryTableViewCell.xib in Resources */,
 				04381CD92652D3C200B0A914 /* Assets.xcassets in Resources */,
+				E3DD8B462664C6C4000FF398 /* WashingHandCollectionViewCell.xib in Resources */,
 				04AF182426535A9C00E3BB57 /* Arvo-Bold.ttf in Resources */,
 				04AF18192653590A00E3BB57 /* swiftgen.yml in Resources */,
 				046747E0265B542500193BF9 /* DetailsViewController.xib in Resources */,
@@ -864,6 +919,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E31D7D162665D50A002699F2 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -879,6 +952,7 @@
 				E3FDAC9F26538ECD00D91465 /* TabBarItems.swift in Sources */,
 				E3BC62F1265B50BC0079E1A4 /* UIViewController+.swift in Sources */,
 				E3E98A1026580EAB006112DB /* AllCountryUseCase.swift in Sources */,
+				E3DD8B4A2664C6EA000FF398 /* HandWashingModel.swift in Sources */,
 				04AF184C265498CE00E3BB57 /* CovidAPIResponse.swift in Sources */,
 				04485CCD26576AC200E85DA3 /* RankingViewModel.swift in Sources */,
 				E3FDACBF2653958B00D91465 /* NewsViewController.swift in Sources */,
@@ -886,6 +960,7 @@
 				046747EA265C97D700193BF9 /* NewsViewModel.swift in Sources */,
 				04485CC0265769AE00E85DA3 /* Int+.swift in Sources */,
 				E3E98A0C26580E4A006112DB /* AllCountryNavigator.swift in Sources */,
+				E3DD8B3C2664C6B4000FF398 /* WashingHandSectionModel.swift in Sources */,
 				04AF18482654986E00E3BB57 /* Error.swift in Sources */,
 				047C0D0F2664B15F00A2314E /* ChangeLanguageNavigator.swift in Sources */,
 				04AF181B26535A1800E3BB57 /* Fonts.swift in Sources */,
@@ -931,6 +1006,7 @@
 				04AF18132653569300E3BB57 /* Assets.swift in Sources */,
 				046747E2265B54EA00193BF9 /* RankNavigator.swift in Sources */,
 				04485BE3265628A300E85DA3 /* FollowCountry+CoreDataProperties.swift in Sources */,
+				E3DD8B422664C6BC000FF398 /* WashingHandTableViewCell.swift in Sources */,
 				E3BC62E7265B3E0B0079E1A4 /* CodeCountries.swift in Sources */,
 				E3E98A06265805B1006112DB /* TrackingNavigator.swift in Sources */,
 				E3FDACDE26539E4D00D91465 /* Localizable.swift in Sources */,
@@ -939,6 +1015,7 @@
 				E3DD8B1F2664A4A5000FF398 /* EmergencyCallViewModel.swift in Sources */,
 				E30CE218265E79DB00C134D7 /* DetailsUseCase.swift in Sources */,
 				04485CB62657685800E85DA3 /* Bindable.swift in Sources */,
+				E3DD8B3B2664C6B4000FF398 /* WashingHandViewModel.swift in Sources */,
 				046747EC265C98E000193BF9 /* NewsNavigator.swift in Sources */,
 				04485BE4265628A300E85DA3 /* FollowCountry+CoreDataClass.swift in Sources */,
 				E3DD8B242664A4B9000FF398 /* EmergencyCallTableViewCell.swift in Sources */,
@@ -947,7 +1024,9 @@
 				E3BC62FA265C0DDB0079E1A4 /* ViewController+Rx.swift in Sources */,
 				E3690174265F8A9E006F494B /* APIServices+GetHistory.swift in Sources */,
 				046747DF265B542500193BF9 /* DetailsViewController.swift in Sources */,
+				E3DD8B472664C6C4000FF398 /* WashingHandCollectionViewCell.swift in Sources */,
 				E35C7F38266099CA000BB183 /* UtilitiesViewModel.swift in Sources */,
+				E3DD8B3A2664C6B4000FF398 /* WahsingHandViewController.swift in Sources */,
 				04485CB42657683700E85DA3 /* ViewModel.swift in Sources */,
 				04485CBE2657698A00E85DA3 /* Formatter+.swift in Sources */,
 				E30CE22F265E7BF300C134D7 /* DefaultLocation.swift in Sources */,
@@ -1029,7 +1108,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1084,7 +1163,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1100,7 +1179,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8HJZFUVFSV;
+				DEVELOPMENT_TEAM = 8L3V3NJFVJ;
 				INFOPLIST_FILE = CovidTracking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1119,7 +1198,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8HJZFUVFSV;
+				DEVELOPMENT_TEAM = 8L3V3NJFVJ;
 				INFOPLIST_FILE = CovidTracking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

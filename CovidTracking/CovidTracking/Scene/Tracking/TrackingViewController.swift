@@ -162,8 +162,8 @@ extension TrackingViewController: Bindable {
 
 extension TrackingViewController {
     private var editingBinder: Binder<Bool> {
-        return Binder(self) { vc, editing in
-            vc.tableView.setEditing(editing, animated: true)
+        return Binder(self) { viewController, editing in
+            viewController.tableView.setEditing(editing, animated: true)
         }
     }
 }

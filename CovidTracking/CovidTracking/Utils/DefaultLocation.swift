@@ -8,8 +8,6 @@
 import Foundation
 
 struct DefaultLocation {
-
-    //MARK: - Mock data
     
     static let articles = Articles(articlesUrl: "",
                             title: "Cập nhật dịch Covid-19 ngày 24-5: 187 ca mắc mới",

@@ -74,7 +74,7 @@ struct NewsViewModel: ViewModel {
         .mapToVoid()
         
         let saveButtonAction = input.saveButtonTrigger
-            .withLatestFrom(dataSource.asDriver()) { ($0,$1) }
+            .withLatestFrom(dataSource.asDriver()) { ($0, $1) }
             .flatMapLatest({ tuple, articles -> Driver<[Articles]> in
                 let (index, saved) = tuple
                 if !saved {
